@@ -3,13 +3,16 @@ default_platform(:ios)
 platform :ios do
   desc "Pass all test for main target"
   lane :pass_tests do
-  	scheme = "MagicPills"
-  	configuration = "Debug"
+  	test_scheme(scheme: "MagicPills-macOS", configuration: "Debug")
+  	test_scheme(scheme: "MagicPills-tvOS", configuration: "Debug")
+  	test_scheme(scheme: "MagicPills-iOS", configuration: "Debug")
+  end
 
-  	ENV['XCPRETTY_JSON_FILE_OUTPUT'] = "./output/xcpretty-#{scheme}-#{configuration}.json"
+  private_lane :test_scheme do |options|
+  	ENV['XCPRETTY_JSON_FILE_OUTPUT'] = "./output/xcpretty-#{options[:scheme]}-#{options[:configuration]}.json"
    	scan(
-		scheme: scheme,
-		configuration: configuration,
+		scheme: options[:scheme],
+		configuration: options[:configuration],
 		disable_concurrent_testing: true,
 	    max_concurrent_simulators: 1,
 	    buildlog_path: "./output",
