@@ -20,6 +20,8 @@ platform :ios do
 	    formatter: 'xcpretty-json-formatter',
 	    skip_slack: true
 	)
-	trainer(output_directory: "./output")
+	report = trainer(output_directory: "./output")
+    report_path, report_finished = report.first
+    File.rename(".#{report_path}", "../output/#{options[:name]}.test-report.xml") if report_finished
   end
 end
