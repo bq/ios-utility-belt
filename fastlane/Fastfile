@@ -3,13 +3,13 @@ default_platform(:ios)
 platform :ios do
   desc "Pass all test for main target"
   lane :pass_tests do
-  	test_scheme(scheme: "MagicPills-macOS", configuration: "Debug")
-  	test_scheme(scheme: "MagicPills-tvOS", configuration: "Debug")
-  	test_scheme(scheme: "MagicPills-iOS", configuration: "Debug")
+  	test_scheme(scheme: "MagicPills-macOS", configuration: "Debug", name: "mac")
+  	test_scheme(scheme: "MagicPills-tvOS", configuration: "Debug", name: "tv")
+  	test_scheme(scheme: "MagicPills-iOS", configuration: "Debug", name: "iOS")
   end
 
   private_lane :test_scheme do |options|
-  	ENV['XCPRETTY_JSON_FILE_OUTPUT'] = "./output/xcpretty-#{options[:scheme]}-#{options[:configuration]}.json"
+  	ENV['XCPRETTY_JSON_FILE_OUTPUT'] = "./output/#{options[:name]}.build-report.json"
    	scan(
 		scheme: options[:scheme],
 		configuration: options[:configuration],
