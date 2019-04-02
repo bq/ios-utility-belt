@@ -10,15 +10,15 @@ Find.find("./output") do |path|
 	test_reports << path if path =~ /.*TestSummaries.xml$/
 end
 
-def label_tests_summary(file_name:) 
-	json = File.read(file_name)
+def label_tests_summary(path:) 
+	json = File.read(path.to_s)
 	data = JSON.parse(json)
 	data["tests_summary_messages"].each { |message| 
     	if !message.empty?
-    	   message.insert(1, " " + file_name.split('.').first + ":")
+    	   message.insert(1, " " + path.basename.to_s.split('.').first + ":")
     	end
 	}
-	File.open(file_name,"w") do |f|
+	File.open(path.to_s,"w") do |f|
 	   f.puts JSON.pretty_generate(data)
 	end 
 end
@@ -32,8 +32,8 @@ fail 'This PR don\'t have any user reviewers 😙' if github.pr_json["requested_
 
 #BUILD PARSE:
 build_reports.each do |path|
-    label_tests_summary(file_name: path)
 	path = Pathname(path)
+    label_tests_summary(path: path)
 	xcode_summary.report path.to_s
 end
 
