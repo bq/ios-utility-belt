@@ -19,7 +19,7 @@ def label_tests_summary(path:)
 	data = JSON.parse(json)
 	data["tests_summary_messages"].each { |message| 
     	if !message.empty?
-    	   message.insert(1, " " + read_platform_from_file(path: path) + ":")
+    	   message.insert(1, "*[" + read_platform_from_file(path: path) + "]*")
     	end
 	}
 	File.open(path.to_s,"w") do |f|
@@ -49,7 +49,7 @@ test_reports.each do |path|
 
 	all_test = junit.tests.map(&:attributes)
 	slowest_test = all_test.sort_by { |attributes| attributes[:time].to_f }.last
-	message "#{read_platform_from_file(path: path)}: Slowest test: #{slowest_test[:name]} took #{'%.3f' % slowest_test[:time]} seconds"
+	message "*[#{read_platform_from_file(path: path)}]* Slowest test: #{slowest_test[:name]} took #{'%.3f' % slowest_test[:time]} seconds"
 end
 
 #SWIFTLINT
