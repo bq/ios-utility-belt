@@ -7,21 +7,4 @@ platform :ios do
   	test_scheme(scheme: "MagicPills-tvOS", configuration: "Debug", name: "tv")
   	test_scheme(scheme: "MagicPills-iOS", configuration: "Debug", name: "iOS")
   end
-
-  private_lane :test_scheme do |options|
-  	ENV['XCPRETTY_JSON_FILE_OUTPUT'] = "./output/#{options[:name]}.build-report.json"
-   	scan(
-		scheme: options[:scheme],
-		configuration: options[:configuration],
-		disable_concurrent_testing: true,
-	    max_concurrent_simulators: 1,
-	    buildlog_path: "./output",
-	    output_directory: "./output",
-	    formatter: 'xcpretty-json-formatter',
-	    skip_slack: true
-	)
-	report = trainer(output_directory: "./output")
-    report_path, report_finished = report.first
-    File.rename(".#{report_path}", "../output/#{options[:name]}.test-report.xml") if report_finished
-  end
 end
