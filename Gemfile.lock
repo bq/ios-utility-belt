@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/bq/danger-bq_helpers
+  revision: 8127d3f68d8ca7774725b8103f2183654193013c
+  specs:
+    danger-bq_helpers (1.0.0)
+      danger-plugin-api (~> 1.0)
+
+GIT
   remote: https://github.com/bq/fastlane-plugin-test_scheme
   revision: 468e47e1d218bafa6ba607a8f0eea807640bb82b
   specs:
@@ -225,6 +232,7 @@ PLATFORMS
 
 DEPENDENCIES
   danger
+  danger-bq_helpers!
   danger-junit
   danger-swiftlint
   danger-xcode_summary
