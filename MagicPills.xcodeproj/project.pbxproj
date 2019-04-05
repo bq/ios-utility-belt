@@ -16,13 +16,17 @@
 		E28124562122CCE300E4F6D0 /* MagicPills.h in Headers */ = {isa = PBXBuildFile; fileRef = E26053F12121880000D013B5 /* MagicPills.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E28124572122CCE300E4F6D0 /* MagicPills.h in Headers */ = {isa = PBXBuildFile; fileRef = E26053F12121880000D013B5 /* MagicPills.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E28C312621494B7E00DE964B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28C312021494B4300DE964B /* SystemConfiguration.framework */; };
-		F26C3AF422537A3600189D28 /* MagicPillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF322537A3500189D28 /* MagicPillsTests.swift */; };
-		F26C3AF522537A3600189D28 /* MagicPillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF322537A3500189D28 /* MagicPillsTests.swift */; };
-		F26C3AF622537A3600189D28 /* MagicPillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF322537A3500189D28 /* MagicPillsTests.swift */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFB22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
+		F2A74DB9225765CF001F0DF2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */; };
+		F2A74DBA225765CF001F0DF2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */; };
+		F2A74DBB225765CF001F0DF2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */; };
+		F2A74DBC225765CF001F0DF2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */; };
+		F2A74DC022576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */; };
+		F2A74DC122576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */; };
+		F2A74DC222576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +66,9 @@
 		E281243A2122CC4C00E4F6D0 /* MagicPills-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MagicPills-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E281244E2122CC5B00E4F6D0 /* MagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28C312021494B4300DE964B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F26C3AF322537A3500189D28 /* MagicPillsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPillsTests.swift; sourceTree = "<group>"; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
+		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,13 +129,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E23E37012121936000A81C2A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		E26053E4212187FF00D013B5 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +156,7 @@
 		E26053F02121880000D013B5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F2A74DB6225765B5001F0DF2 /* Extensions */,
 				F26C3AF722537A4600189D28 /* MagicPills.swift */,
 				E26053F12121880000D013B5 /* MagicPills.h */,
 				E26053F22121880000D013B5 /* Info.plist */,
@@ -168,8 +167,7 @@
 		E26053FB2121880000D013B5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E23E37012121936000A81C2A /* Resources */,
-				F26C3AF322537A3500189D28 /* MagicPillsTests.swift */,
+				F2A74DBD225765F6001F0DF2 /* Extensions */,
 				E26053FE2121880000D013B5 /* Info.plist */,
 			);
 			path = Tests;
@@ -214,6 +212,38 @@
 			children = (
 			);
 			name = watchOS;
+			sourceTree = "<group>";
+		};
+		F2A74DB6225765B5001F0DF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2A74DB7225765BC001F0DF2 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2A74DB7225765BC001F0DF2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F2A74DBD225765F6001F0DF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2A74DBE225765FB001F0DF2 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2A74DBE225765FB001F0DF2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +459,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E26053E4212187FF00D013B5;
 			productRefGroup = E26053EF212187FF00D013B5 /* Products */;
@@ -511,7 +542,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, run: brew install swiftlint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nswiftlint\nelse\necho \"warning: SwiftLint not installed, run: brew install swiftlint\"\nfi\n";
 		};
 		E20BA60621389BF7005BA13B /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -525,7 +556,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, run: brew install swiftlint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nswiftlint\nelse\necho \"warning: SwiftLint not installed, run: brew install swiftlint\"\nfi\n";
 		};
 		E260540821218AF400D013B5 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -539,7 +570,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, run: brew install swiftlint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nswiftlint\nelse\necho \"warning: SwiftLint not installed, run: brew install swiftlint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -549,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */,
+				F2A74DB9225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,7 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26C3AF422537A3600189D28 /* MagicPillsTests.swift in Sources */,
+				F2A74DC022576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */,
+				F2A74DBA225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26C3AF522537A3600189D28 /* MagicPillsTests.swift in Sources */,
+				F2A74DC122576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */,
+				F2A74DBB225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,7 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26C3AF622537A3600189D28 /* MagicPillsTests.swift in Sources */,
+				F2A74DC222576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26C3AFB22537A4600189D28 /* MagicPills.swift in Sources */,
+				F2A74DBC225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
