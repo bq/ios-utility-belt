@@ -37,6 +37,13 @@
 		F20082E1225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E0225DFFD900AC6EE1 /* OptionalExtensionsTests.swift */; };
 		F20082E2225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E0225DFFD900AC6EE1 /* OptionalExtensionsTests.swift */; };
 		F20082E3225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E0225DFFD900AC6EE1 /* OptionalExtensionsTests.swift */; };
+		F20082E5225E1E0000AC6EE1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */; };
+		F20082E6225E1E0000AC6EE1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */; };
+		F20082E7225E1E0000AC6EE1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */; };
+		F20082E8225E1E0000AC6EE1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */; };
+		F20082EA225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */; };
+		F20082EB225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */; };
+		F20082EC225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
@@ -93,6 +100,8 @@
 		F20082D8225DFFC300AC6EE1 /* OptionableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionableTests.swift; sourceTree = "<group>"; };
 		F20082DC225DFFCF00AC6EE1 /* BoolExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtensionsTests.swift; sourceTree = "<group>"; };
 		F20082E0225DFFD900AC6EE1 /* OptionalExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensionsTests.swift; sourceTree = "<group>"; };
+		F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
@@ -273,6 +282,7 @@
 				F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */,
 				F20082C6225DFC9D00AC6EE1 /* BoolExtensions.swift */,
 				F20082C1225DFC6E00AC6EE1 /* OptionalExtensions.swift */,
+				F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -291,6 +301,7 @@
 				F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */,
 				F20082DC225DFFCF00AC6EE1 /* BoolExtensionsTests.swift */,
 				F20082E0225DFFD900AC6EE1 /* OptionalExtensionsTests.swift */,
+				F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -633,6 +644,7 @@
 				F2A74DB9225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 				F20082D3225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
 				F20082C7225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
+				F20082E5225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20082EA225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F20082D9225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
 				F20082E1225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2A74DC022576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
@@ -656,6 +669,7 @@
 				F2A74DBA225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 				F20082D4225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
 				F20082C8225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
+				F20082E6225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +677,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20082EB225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F20082DA225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
 				F20082E2225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2A74DC122576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
@@ -679,6 +694,7 @@
 				F2A74DBB225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 				F20082D5225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
 				F20082C9225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
+				F20082E7225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20082EC225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F20082DB225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
 				F20082E3225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2A74DC222576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
@@ -702,6 +719,7 @@
 				F2A74DBC225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 				F20082D6225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
 				F20082CA225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
+				F20082E8225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
