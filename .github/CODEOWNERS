@@ -1,0 +1,11 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+# Current code owners
+# - The team masmovil/ragnarok-android-lovers
+# - @sebastianvarela -> Sebastián Varela
+# - @r-pedraza -> Raul Pedraza
+# - @minuscorp -> Jorge Revuelta
+# - @EdiLT -> Edilberto López
+
+* @sebastianvarela @r-pedraza @EdiLT
