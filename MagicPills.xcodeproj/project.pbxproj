@@ -66,9 +66,6 @@
 		F2008310225F4C5200AC6EE1 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200830F225F4C5200AC6EE1 /* StringExtensionsTests.swift */; };
 		F2008311225F4C5200AC6EE1 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200830F225F4C5200AC6EE1 /* StringExtensionsTests.swift */; };
 		F2008312225F4C5200AC6EE1 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200830F225F4C5200AC6EE1 /* StringExtensionsTests.swift */; };
-		F2008316225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2008315225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift */; };
-		F2008317225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2008315225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift */; };
-		F2008319225F4FC200AC6EE1 /* StringExtensions+UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2008318225F4FC200AC6EE1 /* StringExtensions+UIKitTests.swift */; };
 		F200831B225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */; };
 		F200831C225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */; };
 		F200831D225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */; };
@@ -123,6 +120,12 @@
 		F2A74DC022576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */; };
 		F2A74DC122576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */; };
 		F2A74DC222576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */; };
+		F69A081E2264DF1200CB09F2 /* StringExtensionsUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */; };
+		F69A082022672BDC00CB09F2 /* UIFontExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */; };
+		F69A08222267323600CB09F2 /* UILabelExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */; };
+		F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3838E22649D56001E4068 /* UILabelExtensions.swift */; };
+		F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */; };
+		F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,8 +179,6 @@
 		F20082FD225E556500AC6EE1 /* DecimalExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtensionsTests.swift; sourceTree = "<group>"; };
 		F200830A225F4BFC00AC6EE1 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F200830F225F4C5200AC6EE1 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
-		F2008315225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKit.swift"; sourceTree = "<group>"; };
-		F2008318225F4FC200AC6EE1 /* StringExtensions+UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKitTests.swift"; sourceTree = "<group>"; };
 		F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+Values.swift"; sourceTree = "<group>"; };
 		F200831F225F83EF00AC6EE1 /* StringExtensions+Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+Validators.swift"; sourceTree = "<group>"; };
 		F2008324225F84A100AC6EE1 /* StringExtensions+Formating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+Formating.swift"; sourceTree = "<group>"; };
@@ -194,6 +195,12 @@
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
+		F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsUIKitTests.swift; sourceTree = "<group>"; };
+		F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionsTests.swift; sourceTree = "<group>"; };
+		F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensionTests.swift; sourceTree = "<group>"; };
+		F6B3838E22649D56001E4068 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKit.swift"; sourceTree = "<group>"; };
+		F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +387,7 @@
 		F2A74DB6225765B5001F0DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F6E394DB2260B50600AFE7B1 /* UIKit */,
 				F2A74DB7225765BC001F0DF2 /* Foundation */,
 			);
 			path = Extensions;
@@ -400,7 +408,6 @@
 				F200831F225F83EF00AC6EE1 /* StringExtensions+Validators.swift */,
 				F2008324225F84A100AC6EE1 /* StringExtensions+Formating.swift */,
 				F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */,
-				F2008315225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift */,
 				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
 			);
 			path = Foundation;
@@ -409,6 +416,7 @@
 		F2A74DBD225765F6001F0DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F69A081B2264C6D400CB09F2 /* UIKit */,
 				F2A74DBE225765FB001F0DF2 /* Foundation */,
 			);
 			path = Extensions;
@@ -427,10 +435,29 @@
 				F200832E225F876300AC6EE1 /* StringExtensions+ValidatorsTests.swift */,
 				F2008332225F877700AC6EE1 /* StringExtensions+FormatingTests.swift */,
 				F2008336225F878600AC6EE1 /* StringExtensions+ValuesTests.swift */,
-				F2008318225F4FC200AC6EE1 /* StringExtensions+UIKitTests.swift */,
 				F20083612266317600AC6EE1 /* URLExtensionsTests.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F69A081B2264C6D400CB09F2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */,
+				F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */,
+				F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F6E394DB2260B50600AFE7B1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */,
+				F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */,
+				F6B3838E22649D56001E4068 /* UILabelExtensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -768,6 +795,9 @@
 			files = (
 				F2008320225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
 				F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */,
+				F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */,
+				F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */,
+				F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */,
 				F20082F3225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F200830B225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
 				F20082C2225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
@@ -780,7 +810,6 @@
 				F20083602266316C00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20083402266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082EE225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
-				F2008316225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
 				F2008325225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F20082F9225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 			);
@@ -796,14 +825,16 @@
 				F20083452266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F20082D9225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
 				F2008310225F4C5200AC6EE1 /* StringExtensionsTests.swift in Sources */,
+				F69A081E2264DF1200CB09F2 /* StringExtensionsUIKitTests.swift in Sources */,
 				F20082E1225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2008333225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
 				F2008337225F878600AC6EE1 /* StringExtensions+ValuesTests.swift in Sources */,
 				F20083632266317900AC6EE1 /* URLExtensionsTests.swift in Sources */,
-				F2008319225F4FC200AC6EE1 /* StringExtensions+UIKitTests.swift in Sources */,
 				F2A74DC022576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
+				F69A082022672BDC00CB09F2 /* UIFontExtensionsTests.swift in Sources */,
 				F20082DD225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
 				F200834A226612F800AC6EE1 /* FakeBundle.swift in Sources */,
+				F69A08222267323600CB09F2 /* UILabelExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,7 +942,6 @@
 				F20083682266317F00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20083432266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
-				F2008317225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
 				F2008328225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F20082FC225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 			);
