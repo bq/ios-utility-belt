@@ -3,5 +3,11 @@ coverage:
   round: down
   precision: 2
   ignore:
-  - Carthage/.*
-  - Tests/.*
+  - Tests/*
+  status:
+    project:
+      default: false
+      framework:
+        target: auto
+        paths: "Source/"
+    patch: off
