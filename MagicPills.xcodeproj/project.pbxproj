@@ -105,6 +105,13 @@
 		F200834A226612F800AC6EE1 /* FakeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2008349226612F800AC6EE1 /* FakeBundle.swift */; };
 		F200834B226612F800AC6EE1 /* FakeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2008349226612F800AC6EE1 /* FakeBundle.swift */; };
 		F200834C226612F800AC6EE1 /* FakeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2008349226612F800AC6EE1 /* FakeBundle.swift */; };
+		F20083602266316C00AC6EE1 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200835F2266316C00AC6EE1 /* URLExtensions.swift */; };
+		F20083632266317900AC6EE1 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20083612266317600AC6EE1 /* URLExtensionsTests.swift */; };
+		F20083642266317A00AC6EE1 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20083612266317600AC6EE1 /* URLExtensionsTests.swift */; };
+		F20083652266317A00AC6EE1 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20083612266317600AC6EE1 /* URLExtensionsTests.swift */; };
+		F20083662266317E00AC6EE1 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200835F2266316C00AC6EE1 /* URLExtensions.swift */; };
+		F20083672266317F00AC6EE1 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200835F2266316C00AC6EE1 /* URLExtensions.swift */; };
+		F20083682266317F00AC6EE1 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200835F2266316C00AC6EE1 /* URLExtensions.swift */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
@@ -182,6 +189,8 @@
 		F200833F2266115E00AC6EE1 /* BundleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		F20083442266117700AC6EE1 /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
 		F2008349226612F800AC6EE1 /* FakeBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBundle.swift; sourceTree = "<group>"; };
+		F200835F2266316C00AC6EE1 /* URLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
+		F20083612266317600AC6EE1 /* URLExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionsTests.swift; sourceTree = "<group>"; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
@@ -392,6 +401,7 @@
 				F2008324225F84A100AC6EE1 /* StringExtensions+Formating.swift */,
 				F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */,
 				F2008315225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift */,
+				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -418,6 +428,7 @@
 				F2008332225F877700AC6EE1 /* StringExtensions+FormatingTests.swift */,
 				F2008336225F878600AC6EE1 /* StringExtensions+ValuesTests.swift */,
 				F2008318225F4FC200AC6EE1 /* StringExtensions+UIKitTests.swift */,
+				F20083612266317600AC6EE1 /* URLExtensionsTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -766,6 +777,7 @@
 				F200832A225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082C7225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F20082E5225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
+				F20083602266316C00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20083402266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082EE225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008316225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
@@ -787,6 +799,7 @@
 				F20082E1225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2008333225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
 				F2008337225F878600AC6EE1 /* StringExtensions+ValuesTests.swift in Sources */,
+				F20083632266317900AC6EE1 /* URLExtensionsTests.swift in Sources */,
 				F2008319225F4FC200AC6EE1 /* StringExtensions+UIKitTests.swift in Sources */,
 				F2A74DC022576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 				F20082DD225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
@@ -799,6 +812,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */,
+				F20083662266317E00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20082F4225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F200830C225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
 				F20082C3225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
@@ -827,6 +841,7 @@
 				F20082E2225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2A74DC122576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 				F2008334225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
+				F20083642266317A00AC6EE1 /* URLExtensionsTests.swift in Sources */,
 				F20083462266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F200834B226612F800AC6EE1 /* FakeBundle.swift in Sources */,
 				F20082DE225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
@@ -840,6 +855,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */,
+				F20083672266317F00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20082F5225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F200830D225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
 				F20082C4225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
@@ -868,6 +884,7 @@
 				F20082E3225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2A74DC222576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 				F2008335225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
+				F20083652266317A00AC6EE1 /* URLExtensionsTests.swift in Sources */,
 				F20083472266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F200834C226612F800AC6EE1 /* FakeBundle.swift in Sources */,
 				F20082DF225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
@@ -891,6 +908,7 @@
 				F200832D225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082CA225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F20082E8225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
+				F20083682266317F00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20083432266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008317225F4DBA00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
