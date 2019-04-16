@@ -52,4 +52,13 @@ class DateExtensionsTests: XCTestCase {
             XCTAssertEqual(date?.isInTheFirstElevenDaysOfTheMonth, day <= 11)
         }
     }
+
+    func test_time_format() {
+        let expectedResult = "22:31"
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        let someDateTime = formatter.date(from: "2016/10/12 22:31")
+        let timeDate = someDateTime?.formattedTime()
+        XCTAssertEqual(timeDate, expectedResult)
+    }
 }

@@ -53,6 +53,10 @@ public extension Date {
         return formatWith(dateFormat: "dd/MM/yyyy HH:mm", timeZone: timeZone)
     }
 
+    func formattedTime(timeZone: TimeZone? = nil) -> String {
+        return formatWith(dateFormat: "HH:mm", timeZone: timeZone)
+    }
+
     var isInTheFirstElevenDaysOfTheMonth: Bool {
         let day = Calendar.current.component(.day, from: self)
         return 1...11 ~= day
