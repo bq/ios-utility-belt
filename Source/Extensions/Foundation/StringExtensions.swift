@@ -83,7 +83,7 @@ public extension String {
         return NSRange(range, in: self)
     }
 
-    /// Look Ranges of texts occurrences inn all string
+    /// Look Ranges of texts occurrences in all string
     ///
     /// - Parameters:
     ///   - text: Text to look for
@@ -91,7 +91,7 @@ public extension String {
     ///   - range: Range of string where look for
     ///   - locale: Information for use in formatting data for presentation
     /// - Returns: Ranges of texts occurrences in all string (if not find any, return empty array)
-    func rangesOcurrences(_ text: String,
+    func ocurrencesRanges(_ text: String,
                           options: String.CompareOptions = [],
                           range: Range<Index>? = nil,
                           locale: Locale? = nil) -> [NSRange] {

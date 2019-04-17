@@ -121,7 +121,7 @@ class StringExtensionsUIKitTests: XCTestCase {
     func test_ranges_text_ocurrences() {
         let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
-        let foundRanges = text.rangesOcurrences("ipsum")
+        let foundRanges = text.ocurrencesRanges("ipsum")
         let expectedRanges = [NSRange(location: 6, length: "ipsum".count),
                               NSRange(location: 63, length: "ipsum".count)]
 
