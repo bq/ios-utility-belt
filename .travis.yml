@@ -1,4 +1,6 @@
 language: swift
+osx_image: xcode10.2
+
 script:
 - set -o pipefail
 - swift --version
