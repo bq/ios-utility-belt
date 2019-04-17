@@ -4,10 +4,12 @@ platform :ios do
   desc "Pass all test for main target"
   lane :pass_tests do
   	test_scheme(scheme: "MagicPills-macOS", configuration: "Debug", name: "mac")
-  	sh "curl -s https://codecov.io/bash | bash -s -- -cF mac -J 'MagicPills'"
+  	sh "curl -s https://codecov.io/bash | bash -s -- -F mac -J 'MagicPills'"
+
   	test_scheme(scheme: "MagicPills-tvOS", configuration: "Debug", name: "tv")
-  	sh "curl -s https://codecov.io/bash | bash -s -- -cF tv -J 'MagicPills'"
+  	sh "curl -s https://codecov.io/bash | bash -s -- -F tv -J 'MagicPills'"
+
   	test_scheme(scheme: "MagicPills-iOS", configuration: "Debug", name: "iOS")
-  	sh "curl -s https://codecov.io/bash | bash -s -- -cF ios -J 'MagicPills'"
+  	sh "curl -s https://codecov.io/bash | bash -s -- -F ios -J 'MagicPills'"
   end
 end
