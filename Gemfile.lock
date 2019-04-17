@@ -7,9 +7,9 @@ GIT
 
 GIT
   remote: https://github.com/bq/fastlane-plugin-test_scheme
-  revision: 468e47e1d218bafa6ba607a8f0eea807640bb82b
+  revision: e4a44ad93446b1a26533f798eca97ef0534e0cb4
   specs:
-    fastlane-plugin-test_scheme (1.0.0)
+    fastlane-plugin-test_scheme (1.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -30,7 +30,7 @@ GEM
       highline (~> 1.7.2)
     cork (0.3.0)
       colored2 (~> 3.1)
-    danger (6.0.4)
+    danger (6.0.5)
       claide (~> 1.0)
       claide-plugins (>= 0.9.2)
       colored2 (~> 3.1)
