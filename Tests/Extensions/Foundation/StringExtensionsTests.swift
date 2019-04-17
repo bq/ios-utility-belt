@@ -91,4 +91,14 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertNil("hola".nsRange(of: "chau"))
         XCTAssertEqual("hola".nsRange(of: "la"), NSRange(location: 2, length: 2))
     }
+
+    func test_localized() {
+        let bundle = Bundle(for: StringExtensionsTests.self)
+        let tableName = "LocalizedSample"
+        let localizedExample = NSLocalizedString("sample_text", tableName: tableName, bundle: bundle, comment: "")
+
+        XCTAssertEqual(localizedExample, "Sample Text")
+        XCTAssertEqual("sample_text".localized(bundle: bundle, tableName: tableName), localizedExample)
+        XCTAssertEqual("not_found".localized(bundle: bundle, tableName: tableName), "**not_found**")
+    }
 }

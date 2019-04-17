@@ -42,7 +42,7 @@ public extension String {
     }
 
     func localized(bundle: Bundle = .main, tableName: String = "Common") -> String {
-        return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
+        return NSLocalizedString(self, tableName: tableName, bundle: bundle, value: "**\(self)**", comment: "")
     }
 
     func htmlValue(fontSize: Float, fontFamily: String? = nil) -> String {
