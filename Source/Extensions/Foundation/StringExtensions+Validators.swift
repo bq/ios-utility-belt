@@ -28,7 +28,7 @@ public extension String {
 
         let letterMap = "TRWAGMYFPDXBNJZSQVHLCKET"
         let letterIndex = numberBase % 23
-        let letterPositionInMap = letterMap.index(of: letter)?.encodedOffset
+        let letterPositionInMap = letterMap.index(of: letter)?.utf16Offset(in: letterMap)
 
         return letterPositionInMap == letterIndex ? true : false
     }

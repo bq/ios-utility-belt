@@ -9,13 +9,12 @@ public extension UILabel {
     ///   - color: Color to use in highlight text
     func highlight(_ text: String,
                    color: UIColor? = nil) {
-        guard let baseText = self.text,
-            let boldedText = baseText.bold(text,
-                                       font: self.font,
-                                       boldColor: color ?? self.textColor) else {
-                                        return
+        guard let baseText = self.text else {
+            return
         }
 
-        self.attributedText = boldedText
+        self.attributedText = baseText.bold(text,
+                                            font: self.font,
+                                            boldColor: color ?? self.textColor)
     }
 }

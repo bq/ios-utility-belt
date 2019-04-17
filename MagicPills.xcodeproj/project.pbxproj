@@ -123,6 +123,10 @@
 		F69A081E2264DF1200CB09F2 /* StringExtensionsUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */; };
 		F69A082022672BDC00CB09F2 /* UIFontExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */; };
 		F69A08222267323600CB09F2 /* UILabelExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */; };
+		F69A082422677E2700CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
+		F69A082522677E3A00CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
+		F69A082622677E3B00CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
+		F69A082722677E3C00CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
 		F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3838E22649D56001E4068 /* UILabelExtensions.swift */; };
 		F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */; };
 		F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */; };
@@ -198,6 +202,7 @@
 		F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsUIKitTests.swift; sourceTree = "<group>"; };
 		F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionsTests.swift; sourceTree = "<group>"; };
 		F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensionTests.swift; sourceTree = "<group>"; };
+		F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringProtocolExtensions.swift; path = ../../../Tests/Extensions/Foundation/StringProtocolExtensions.swift; sourceTree = "<group>"; };
 		F6B3838E22649D56001E4068 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKit.swift"; sourceTree = "<group>"; };
 		F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
@@ -409,6 +414,7 @@
 				F2008324225F84A100AC6EE1 /* StringExtensions+Formating.swift */,
 				F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */,
 				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
+				F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -811,6 +817,7 @@
 				F20083402266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082EE225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008325225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
+				F69A082422677E2700CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F20082F9225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,6 +861,7 @@
 				F20082E6225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F200831C225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
 				F2008321225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
+				F69A082522677E3A00CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F200832B225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082EF225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F20082FA225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
@@ -897,6 +905,7 @@
 				F20082E7225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F200831D225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
 				F2008322225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
+				F69A082622677E3B00CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F200832C225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082F0225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F20082FB225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
@@ -940,6 +949,7 @@
 				F20082CA225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F20082E8225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F20083682266317F00AC6EE1 /* URLExtensions.swift in Sources */,
+				F69A082722677E3C00CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F20083432266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008328225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
@@ -1020,7 +1030,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1080,7 +1090,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = MagicPills;
