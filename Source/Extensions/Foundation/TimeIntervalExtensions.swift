@@ -1,6 +1,13 @@
 import Foundation
 
 public extension TimeInterval {
+    /// Format the 'TimeInterval' in a human-readable string.
+    ///
+    /// - Output examples:
+    ///     ```
+    ///     TimeInterval(3_600_000).formatted //1h 0m 0s
+    ///     TimeInterval(3_600_000).formatted //1m 2s
+    ///     ```
     var formatted: String {
         switch self {
         case (-Double.greatestFiniteMagnitude)...(-3_600_000), 3_600_000...Double.greatestFiniteMagnitude:
