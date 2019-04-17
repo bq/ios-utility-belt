@@ -109,6 +109,11 @@
 		F20083662266317E00AC6EE1 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200835F2266316C00AC6EE1 /* URLExtensions.swift */; };
 		F20083672266317F00AC6EE1 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200835F2266316C00AC6EE1 /* URLExtensions.swift */; };
 		F20083682266317F00AC6EE1 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200835F2266316C00AC6EE1 /* URLExtensions.swift */; };
+		F20083772267899A00AC6EE1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */; };
+		F2008378226789A700AC6EE1 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */; };
+		F2008379226789AA00AC6EE1 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3838E22649D56001E4068 /* UILabelExtensions.swift */; };
+		F200837A226789B100AC6EE1 /* UIFontExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */; };
+		F200837B226789B500AC6EE1 /* UILabelExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
@@ -123,10 +128,6 @@
 		F69A081E2264DF1200CB09F2 /* StringExtensionsUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */; };
 		F69A082022672BDC00CB09F2 /* UIFontExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */; };
 		F69A08222267323600CB09F2 /* UILabelExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */; };
-		F69A082422677E2700CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
-		F69A082522677E3A00CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
-		F69A082622677E3B00CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
-		F69A082722677E3C00CB09F2 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */; };
 		F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3838E22649D56001E4068 /* UILabelExtensions.swift */; };
 		F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */; };
 		F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */; };
@@ -202,7 +203,6 @@
 		F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsUIKitTests.swift; sourceTree = "<group>"; };
 		F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionsTests.swift; sourceTree = "<group>"; };
 		F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensionTests.swift; sourceTree = "<group>"; };
-		F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringProtocolExtensions.swift; path = ../../../Tests/Extensions/Foundation/StringProtocolExtensions.swift; sourceTree = "<group>"; };
 		F6B3838E22649D56001E4068 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKit.swift"; sourceTree = "<group>"; };
 		F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
@@ -414,7 +414,6 @@
 				F2008324225F84A100AC6EE1 /* StringExtensions+Formating.swift */,
 				F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */,
 				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
-				F69A082322677E2700CB09F2 /* StringProtocolExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -817,7 +816,6 @@
 				F20083402266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082EE225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008325225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
-				F69A082422677E2700CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F20082F9225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,7 +859,6 @@
 				F20082E6225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F200831C225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
 				F2008321225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
-				F69A082522677E3A00CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F200832B225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082EF225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F20082FA225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
@@ -900,14 +897,16 @@
 				F20082C4225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
 				F2A74DBB225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 				F20082D5225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
+				F20083772267899A00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
 				F2008327225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F20082C9225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F20082E7225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F200831D225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
+				F2008379226789AA00AC6EE1 /* UILabelExtensions.swift in Sources */,
 				F2008322225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
-				F69A082622677E3B00CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F200832C225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082F0225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
+				F2008378226789A700AC6EE1 /* UIFontExtensions.swift in Sources */,
 				F20082FB225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 				F20083422266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 			);
@@ -927,6 +926,8 @@
 				F20083652266317A00AC6EE1 /* URLExtensionsTests.swift in Sources */,
 				F20083472266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F200834C226612F800AC6EE1 /* FakeBundle.swift in Sources */,
+				F200837A226789B100AC6EE1 /* UIFontExtensionsTests.swift in Sources */,
+				F200837B226789B500AC6EE1 /* UILabelExtensionTests.swift in Sources */,
 				F20082DF225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
 				F2008339225F878600AC6EE1 /* StringExtensions+ValuesTests.swift in Sources */,
 				F2008331225F876300AC6EE1 /* StringExtensions+ValidatorsTests.swift in Sources */,
@@ -949,7 +950,6 @@
 				F20082CA225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F20082E8225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F20083682266317F00AC6EE1 /* URLExtensions.swift in Sources */,
-				F69A082722677E3C00CB09F2 /* StringProtocolExtensions.swift in Sources */,
 				F20083432266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008328225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
