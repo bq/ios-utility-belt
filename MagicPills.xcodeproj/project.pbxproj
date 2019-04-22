@@ -149,6 +149,11 @@
 		F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3838E22649D56001E4068 /* UILabelExtensions.swift */; };
 		F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */; };
 		F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */; };
+		F6F97EE9226DA88500C3E953 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */; };
+		F6F97EEC226DABE400C3E953 /* UICollectionViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */; };
+		F6F97EEE226DAF2C00C3E953 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */; };
+		F6F97EF7226E027E00C3E953 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EF6226E027E00C3E953 /* UIViewExtensions.swift */; };
+		F6F97EF8226E1BD900C3E953 /* UICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F97EF3226DED8A00C3E953 /* UICollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +234,11 @@
 		F6B3838E22649D56001E4068 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKit.swift"; sourceTree = "<group>"; };
 		F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensionsTests.swift; sourceTree = "<group>"; };
+		F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		F6F97EF3226DED8A00C3E953 /* UICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICollectionViewCell.xib; sourceTree = "<group>"; };
+		F6F97EF6226E027E00C3E953 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,9 +486,12 @@
 		F69A081B2264C6D400CB09F2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F6F97EF2226DED4A00C3E953 /* Views */,
 				F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */,
 				F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */,
 				F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */,
+				F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */,
+				F6F97EF6226E027E00C3E953 /* UIViewExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -487,10 +500,20 @@
 			isa = PBXGroup;
 			children = (
 				F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */,
+				F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */,
 				F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */,
 				F6B3838E22649D56001E4068 /* UILabelExtensions.swift */,
+				F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F6F97EF2226DED4A00C3E953 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6F97EF3226DED8A00C3E953 /* UICollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -736,6 +759,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F97EF8226E1BD900C3E953 /* UICollectionViewCell.xib in Resources */,
 				F20083832267E47F00AC6EE1 /* LocalizedSample.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -833,6 +857,7 @@
 				F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */,
 				F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */,
 				F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */,
+				F6F97EEE226DAF2C00C3E953 /* UIViewExtensions.swift in Sources */,
 				F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */,
 				F20082F3225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F200830B225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
@@ -841,6 +866,7 @@
 				F20082D3225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
 				F200836F2266339800AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F200831B225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
+				F6F97EE9226DA88500C3E953 /* UICollectionViewExtensions.swift in Sources */,
 				F200832A225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082C7225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F20082E5225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
@@ -863,8 +889,10 @@
 				F20083452266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F20082D9225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
 				F2008310225F4C5200AC6EE1 /* StringExtensionsTests.swift in Sources */,
+				F6F97EF7226E027E00C3E953 /* UIViewExtensions.swift in Sources */,
 				F69A081E2264DF1200CB09F2 /* StringExtensionsUIKitTests.swift in Sources */,
 				F2008371226633A500AC6EE1 /* SequenceExtensionsTests.swift in Sources */,
+				F6F97EEC226DABE400C3E953 /* UICollectionViewExtensionsTests.swift in Sources */,
 				F20082E1225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2008333225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
 				F2008337225F878600AC6EE1 /* StringExtensions+ValuesTests.swift in Sources */,
