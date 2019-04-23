@@ -20,21 +20,21 @@ final class UICollectionViewExtensionsTests: XCTestCase {
         emptyCollectionView.reloadData()
     }
 
-    func testRegisterCellWithClass() {
+    func test_register_cell_with_class() {
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView.register(TestCell.self)
         let cell: TestCell? = collectionView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
     }
 
-    func testRegisterCellWithNibUsingClass() {
+    func test_register_cell_with_nib_using_class() {
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView.registerWithNib(UICollectionViewCell.self, bundle: Bundle(for: UICollectionViewExtensionsTests.self))
         let cell: UICollectionViewCell? = collectionView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
     }
 
-    func testDequeueReusableSupplementaryView() {
+    func test_dequeue_reusable_supplementary_view() {
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView.register(TestCell.self)
         let _: TestCell? = collectionView.dequeueReusableCell(indexPath)

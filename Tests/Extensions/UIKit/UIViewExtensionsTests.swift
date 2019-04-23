@@ -4,12 +4,12 @@ import UIKit
 
 final class UIViewExtensionsTests: XCTestCase {
 
-    func testInitFromNib() {
+    func test_init_from_nib() {
         let cell: UICollectionViewCell? = .fromNib(bundle: Bundle(for: UIViewExtensionsTests.self))
         XCTAssertNotNil(cell)
     }
 
-    func testAddSubviews() {
+    func test_add_subviews() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         XCTAssertEqual(view.subviews.count, 0)
@@ -18,14 +18,14 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.subviews.count, 2)
     }
 
-    func testRemoveSubviews() {
+    func test_remove_subviews() {
         let view = UIView()
         view.addSubviews([UIView(), UIView()])
         view.removeSubviews()
         XCTAssertEqual(view.subviews.count, 0)
     }
 
-    func testShadowColor() {
+    func test_shadow_color() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         var color: UIColor = .red
@@ -36,7 +36,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.layer.shadowColor, color.cgColor)
     }
 
-    func testShadowOffset() {
+    func test_shadow_offset() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         var offset = CGSize(width: 2, height: 2)
@@ -47,7 +47,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.layer.shadowOffset, offset)
     }
 
-    func testShadowOpacity() {
+    func test_shadow_opacity() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         view.layer.shadowOpacity = 1
@@ -56,7 +56,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.layer.shadowOpacity, 0.5)
     }
 
-    func testShadowRadius() {
+    func test_shadow_radius() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         view.layer.shadowRadius = 5
@@ -65,7 +65,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.layer.shadowRadius, 0.75)
     }
 
-    func testAddShadow() {
+    func test_add_shadow() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         view.addShadow()
@@ -75,7 +75,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.shadowOpacity, 0.5)
     }
 
-    func testRemoveShadow() {
+    func test_remove_shadow() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         view.addShadow()
@@ -90,7 +90,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.shadowOpacity, 0)
     }
 
-    func testShowAndHide() {
+    func test_show_and_hide() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         view.hide()
@@ -103,7 +103,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.isHidden, false)
     }
 
-    func testRotateByAngle() {
+    func test_rotate_by_angle() {
         var angle: CGFloat = 0
         var angleInRadians: CGFloat {
             return angle * .pi / 180
