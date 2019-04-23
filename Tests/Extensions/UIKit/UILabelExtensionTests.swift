@@ -31,4 +31,14 @@ class UILabelExtensionsTests: XCTestCase {
 
         XCTAssertTrue(foundFont?.fontDescriptor.symbolicTraits.contains(.traitBold) ?? false)
     }
+
+    func test_highlight_text_without_assigning_text() {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 100))
+        label.font = UIFont(name: "Helvetica", size: 14)
+
+        label.highlight("wawa")
+
+        XCTAssertNil(label.text)
+        XCTAssertNil(label.attributedText)
+    }
 }

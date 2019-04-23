@@ -78,12 +78,11 @@ class StringExtensionsUIKitTests: XCTestCase {
 
     func test_attributed_bold() {
         let text = "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis"
-        let attributedText = text.bold("consectetur",
-                                       font: UIFont(name: "Helvetica", size: 14)!,
-                                       boldColor: .black)
+        let textToBold = "consectetur"
+        let attributedText = text.bold(textToBold, font: UIFont(name: "Helvetica", size: 14)!, boldColor: .black)
 
         let fullRange = NSRange(location: 0, length: attributedText.length)
-        let boldedRange = text.firstRangeOcurrence("consectetur")!
+        let boldedRange = text.firstRangeOcurrence(textToBold)!
         var foundFont: UIFont?
         var foundColor: UIColor?
 
@@ -107,6 +106,71 @@ class StringExtensionsUIKitTests: XCTestCase {
 
         XCTAssertTrue(foundFont?.fontDescriptor.symbolicTraits.contains(.traitBold) ?? false)
         XCTAssertEqual(foundColor, .black)
+    }
+
+    func test_attributed_bold_for_text_not_present_in_text() {
+        let text = "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis"
+        let textToBold = "wawawa"
+        let attributedText = text.bold(textToBold,
+                                       font: UIFont(name: "Helvetica", size: 14)!,
+                                       boldColor: .black)
+
+        let fullRange = NSRange(location: 0, length: attributedText.length)
+        var foundFont: UIFont?
+        var foundColor: UIColor?
+
+        attributedText
+            .enumerateAttribute(.font,
+                                in: fullRange,
+                                options: [.longestEffectiveRangeNotRequired]) { value, _, _ in
+                                    if let font = value as? UIFont {
+                                        foundFont = font
+                                    }
+            }
+
+        attributedText
+            .enumerateAttribute(.foregroundColor,
+                                in: fullRange,
+                                options: [.longestEffectiveRangeNotRequired]) { value, _, _ in
+                                    if let color = value as? UIColor {
+                                        foundColor = color
+                                    }
+            }
+
+        XCTAssertNil(foundFont)
+        XCTAssertNil(foundColor)
+    }
+
+    func test_attributed_bold_without_passing_color() {
+        let text = "Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis"
+        let textToBold = "adipiscing"
+        let attributedText = text.bold(textToBold, font: UIFont(name: "Helvetica", size: 14)!)
+
+        let fullRange = NSRange(location: 0, length: attributedText.length)
+        let boldedRange = text.firstRangeOcurrence(textToBold)!
+        var foundFont: UIFont?
+        var foundColor: UIColor?
+
+        attributedText
+            .enumerateAttribute(.font,
+                                in: fullRange,
+                                options: [.longestEffectiveRangeNotRequired]) { value, range, _ in
+                                    if range == boldedRange, let font = value as? UIFont {
+                                        foundFont = font
+                                    }
+            }
+
+        attributedText
+            .enumerateAttribute(.foregroundColor,
+                                in: fullRange,
+                                options: [.longestEffectiveRangeNotRequired]) { value, range, _ in
+                                    if range == boldedRange, let color = value as? UIColor {
+                                        foundColor = color
+                                    }
+            }
+
+        XCTAssertTrue(foundFont?.fontDescriptor.symbolicTraits.contains(.traitBold) ?? false)
+        XCTAssertNil(foundColor)
     }
 
     func test_first_range_text_ocurrence() {
