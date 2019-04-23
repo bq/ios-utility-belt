@@ -23,24 +23,24 @@ final class UICollectionViewExtensionsTests: XCTestCase {
     func testRegisterCellWithClass() {
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView.register(TestCell.self)
-        let cell: TestCell = collectionView.dequeueReusableCell(indexPath)
+        let cell: TestCell? = collectionView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
     }
 
     func testRegisterCellWithNibUsingClass() {
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView.registerWithNib(UICollectionViewCell.self, bundle: Bundle(for: UICollectionViewExtensionsTests.self))
-        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(indexPath)
+        let cell: UICollectionViewCell? = collectionView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
     }
 
     func testDequeueReusableSupplementaryView() {
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView.register(TestCell.self)
-        let _: TestCell = collectionView.dequeueReusableCell(indexPath)
+        let _: TestCell? = collectionView.dequeueReusableCell(indexPath)
         collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withClass: HeaderCollectionReusableView.self)
-        let headerVIew: HeaderCollectionReusableView = collectionView.dequeueReusableSupplementaryView(kind: "UICollectionElementKindSectionHeader", indexPath: indexPath)
+        let headerVIew: HeaderCollectionReusableView? = collectionView.dequeueReusableSupplementaryView(kind: "UICollectionElementKindSectionHeader", indexPath: indexPath)
         XCTAssertNotNil(headerVIew)
     }
 }

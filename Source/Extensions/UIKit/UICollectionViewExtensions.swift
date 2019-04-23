@@ -32,13 +32,9 @@ public extension UICollectionView {
     /// - Parameters:
     ///   - indexPath: location of cell in collectionView.
     /// - Returns: UICollectionViewCell object with associated class name.
-    func dequeueReusableCell<T: UICollectionViewCell>(_ indexPath: IndexPath) -> T {
-        guard let cell = dequeueReusableCell(withReuseIdentifier: String(describing: T.self),
-                                             for: indexPath) as? T else {
-            fatalError("\(String(describing: T.self)) could not be dequeued for \(indexPath) as \(T.self)")
-        }
-
-        return cell
+    func dequeueReusableCell<T: UICollectionViewCell>(_ indexPath: IndexPath) -> T? {
+        return dequeueReusableCell(withReuseIdentifier: String(describing: T.self),
+                                   for: indexPath) as? T
     }
 
     /// Dequeue reusable UICollectionReusableView using class name.
@@ -47,13 +43,9 @@ public extension UICollectionView {
     ///   - kind: the kind of supplementary view to retrieve. This value is defined by the layout object.
     ///   - indexPath: location of cell in collectionView.
     /// - Returns: UICollectionReusableView object with associated class name.
-    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(kind: String, indexPath: IndexPath) -> T {
-        guard let cell = dequeueReusableSupplementaryView(ofKind: kind,
-                                                          withReuseIdentifier: String(describing: T.self),
-                                                          for: indexPath) as? T else {
-            fatalError("\(String(describing: T.self)) could not be dequeued for \(indexPath) of kind \(kind) as \(T.self)")
-        }
-
-        return cell
+    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(kind: String, indexPath: IndexPath) -> T? {
+        return dequeueReusableSupplementaryView(ofKind: kind,
+                                                withReuseIdentifier: String(describing: T.self),
+                                                for: indexPath) as? T
     }
 }

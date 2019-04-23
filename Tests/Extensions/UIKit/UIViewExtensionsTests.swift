@@ -20,6 +20,17 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.subviews.count, 0)
     }
 
+    func testShadowColor() {
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let view = UIView(frame: frame)
+        var color: UIColor = .red
+        view.layer.shadowColor = color.cgColor
+        XCTAssertEqual(view.shadowColor, color)
+        color = .blue
+        view.shadowColor = color
+        XCTAssertEqual(view.layer.shadowColor, color.cgColor)
+    }
+
     func testShadowOffset() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
