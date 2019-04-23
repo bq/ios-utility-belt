@@ -1,16 +1,9 @@
 import UIKit
 
 public extension UIImage {
-    
-    // MARK: - Properties
-    
-    /// Size in bytes of UIImage
-    var bytesSize: Int {
-        return jpegData(compressionQuality: 1)?.count ?? 0
-    }
-    
+
     // MARK: - Methods
-    
+
     /// Create UIImage from color and size.
     ///
     /// - Parameters:
@@ -18,19 +11,19 @@ public extension UIImage {
     ///   - size: image size.
     convenience init(color: UIColor, size: CGSize) {
         UIGraphicsBeginImageContextWithOptions(size, false, 1)
-        
+
         defer {
             UIGraphicsEndImageContext()
         }
-        
+
         color.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
-        
+
         guard let cgImage = UIGraphicsGetImageFromCurrentImageContext()?.cgImage else {
             self.init()
             return
         }
-        
+
         self.init(cgImage: cgImage)
     }
 
@@ -41,28 +34,36 @@ public extension UIImage {
     func colored(_ color: UIColor) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         color.setFill()
-        guard let context = UIGraphicsGetCurrentContext() else { return self }
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+
+        defer {
+            UIGraphicsEndImageContext()
+        }
 
         context.translateBy(x: 0, y: size.height)
         context.scaleBy(x: 1.0, y: -1.0)
         context.setBlendMode(CGBlendMode.normal)
 
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-        guard let mask = cgImage else { return self }
+        guard let mask = cgImage else {
+            return nil
+        }
         context.clip(to: rect, mask: mask)
         context.fill(rect)
 
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return newImage
+        return UIGraphicsGetImageFromCurrentImageContext()
     }
 
     /// Put tinted mask over image
     ///
     /// - Parameter color: color for tint mask
     /// - Returns: image with tinted mask
-    func tint(_ color: UIColor) -> UIImage? {
-        let maskImage = cgImage!
+    func tinted(_ color: UIColor) -> UIImage? {
+        defer {
+            UIGraphicsEndImageContext()
+        }
 
         let width = size.width
         let height = size.height
@@ -70,20 +71,24 @@ public extension UIImage {
 
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue)
-        guard let context = CGContext(data: nil,
-                                width: Int(width),
-                                height: Int(height),
-                                bitsPerComponent: 8,
-                                bytesPerRow: 0,
-                                space: colorSpace,
-                                bitmapInfo: bitmapInfo.rawValue) else { return nil }
+
+        guard
+            let context = CGContext(data: nil,
+                                    width: Int(width),
+                                    height: Int(height),
+                                    bitsPerComponent: 8,
+                                    bytesPerRow: 0,
+                                    space: colorSpace,
+                                    bitmapInfo: bitmapInfo.rawValue),
+            let maskImage = cgImage else {
+                return nil
+        }
 
         context.clip(to: bounds,
                      mask: maskImage)
         context.setFillColor(color.cgColor)
         context.fill(bounds)
 
-        guard let cgImage = context.makeImage() else { return nil }
-        return UIImage(cgImage: cgImage)
+        return context.makeImage()?.uiImage
     }
 }
