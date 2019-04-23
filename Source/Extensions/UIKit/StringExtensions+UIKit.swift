@@ -57,27 +57,21 @@ public extension String {
     ///   - text: Text to bold
     ///   - font: Font to use
     ///   - boldColor: Color for bolded text
-    /// - Returns: Attributed string with text indicated in bold (optional)
+    /// - Returns: Attributed string with text indicated in bold (if founded)
     func bold(_ text: String,
               font: UIFont,
               boldColor: UIColor? = nil) -> NSAttributedString {
-        guard let boldRange = self.firstRangeOcurrence(text), let boldFont = font.bold else {
-            return self.attributed()
-        }
+        let attr = NSMutableAttributedString(string: self)
 
-        let attributedString = NSMutableAttributedString(string: self)
-        var attributes: [NSAttributedString.Key: Any] = [:]
+        guard let boldRange = self.firstRangeOcurrence(text), let boldFont = font.bold else {
+            return attr
+        }
 
         if let boldColor = boldColor {
-            attributes = [.foregroundColor: boldColor,
-                          .font: boldFont]
+            attr.addAttributes([.font: boldFont, .foregroundColor: boldColor], range: boldRange)
         } else {
-            attributes = [.font: boldFont]
+            attr.addAttributes([.font: boldFont], range: boldRange)
         }
-
-        attributedString
-            .addAttributes(attributes,
-                           range: boldRange)
-        return attributedString
+        return attr
     }
 }
