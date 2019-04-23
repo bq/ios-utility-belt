@@ -50,8 +50,8 @@ public extension UIView {
     /// Load view from nib.
     ///
     /// - Returns: optional UIView (if applicable).
-    class func fromNib<T: UIView>() -> T? {
-        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)?[0] as? T
+    class func fromNib<T: UIView>(bundle: Bundle = .main) -> T? {
+        return bundle.loadNibNamed(String(describing: T.self), owner: nil, options: nil)?[0] as? T
     }
 
     /// Add array of subviews

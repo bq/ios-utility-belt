@@ -4,6 +4,11 @@ import UIKit
 
 final class UIViewExtensionsTests: XCTestCase {
 
+    func testInitFromNib() {
+        let cell: UICollectionViewCell? = .fromNib(bundle: Bundle(for: UIViewExtensionsTests.self))
+        XCTAssertNotNil(cell)
+    }
+
     func testAddSubviews() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
