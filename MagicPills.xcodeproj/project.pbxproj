@@ -154,6 +154,8 @@
 		F6F97EEE226DAF2C00C3E953 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */; };
 		F6F97EF7226E027E00C3E953 /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EF6226E027E00C3E953 /* UIViewExtensionsTests.swift */; };
 		F6F97EF8226E1BD900C3E953 /* UICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F97EF3226DED8A00C3E953 /* UICollectionViewCell.xib */; };
+		F6F97EFA226F1E5000C3E953 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */; };
+		F6F97EFC226F246100C3E953 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EFB226F246100C3E953 /* UIImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +241,8 @@
 		F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		F6F97EF3226DED8A00C3E953 /* UICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICollectionViewCell.xib; sourceTree = "<group>"; };
 		F6F97EF6226E027E00C3E953 /* UIViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionsTests.swift; sourceTree = "<group>"; };
+		F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		F6F97EFB226F246100C3E953 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,6 +496,7 @@
 				F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */,
 				F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */,
 				F6F97EF6226E027E00C3E953 /* UIViewExtensionsTests.swift */,
+				F6F97EFB226F246100C3E953 /* UIImageExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 				F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */,
 				F6B3838E22649D56001E4068 /* UILabelExtensions.swift */,
 				F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */,
+				F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -854,6 +860,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2008320225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
+				F6F97EFA226F1E5000C3E953 /* UIImageExtensions.swift in Sources */,
 				F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */,
 				F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */,
 				F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */,
@@ -885,6 +892,7 @@
 			files = (
 				F20082EA225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F200832F225F876300AC6EE1 /* StringExtensions+ValidatorsTests.swift in Sources */,
+				F6F97EFC226F246100C3E953 /* UIImageExtensions.swift in Sources */,
 				F20082FE225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */,
 				F20083452266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F20082D9225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
