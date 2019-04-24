@@ -4,6 +4,43 @@ public extension UIView {
 
     // MARK: - Variables
 
+    /// Border color
+    var borderColor: UIColor? {
+        get {
+            guard let color = layer.borderColor else { return nil }
+            return UIColor(cgColor: color)
+        }
+        set {
+            guard let color = newValue else {
+                layer.borderColor = nil
+                return
+            }
+
+            layer.borderColor = color.cgColor
+        }
+    }
+
+    /// Border width
+    var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+
+    /// Corner radius
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.masksToBounds = true
+            layer.cornerRadius = abs(CGFloat(Int(newValue * 100)) / 100)
+        }
+    }
+
     /// Shadow color of view
     var shadowColor: UIColor? {
         get {

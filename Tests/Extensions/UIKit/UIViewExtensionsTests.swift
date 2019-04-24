@@ -4,6 +4,36 @@ import MagicPills
 
 final class UIViewExtensionsTests: XCTestCase {
 
+    func testBorderColor() {
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let view = UIView(frame: frame)
+        view.borderColor = nil
+        XCTAssertNil(view.borderColor)
+        view.borderColor = UIColor.blue
+        XCTAssertNotNil(view.layer.borderColor)
+        XCTAssertEqual(view.borderColor, UIColor.blue)
+        XCTAssertEqual(view.layer.borderColor, UIColor.blue.cgColor)
+    }
+
+    func testBorderWidth() {
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let view = UIView(frame: frame)
+        view.borderWidth = 1
+        XCTAssertEqual(view.layer.borderWidth, 1)
+
+        view.borderWidth = 0
+        XCTAssertEqual(view.borderWidth, 0)
+    }
+
+    func testCornerRadius() {
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let view = UIView(frame: frame)
+        XCTAssertEqual(view.layer.cornerRadius, 0)
+
+        view.cornerRadius = 20
+        XCTAssertEqual(view.cornerRadius, 20)
+    }
+
     func test_init_from_nib() {
         let cell: UICollectionViewCell? = .fromNib(bundle: Bundle(for: UIViewExtensionsTests.self))
         XCTAssertNotNil(cell)
