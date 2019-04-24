@@ -32,5 +32,4 @@ public extension UIScrollView {
             setContentOffset(bottomOffset, animated: animated)
         }
     }
-
 }
