@@ -158,6 +158,12 @@
 		F62CC32822704F0500DC46F2 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32622704F0500DC46F2 /* UIStackViewExtensions.swift */; };
 		F62CC32A22705F5700DC46F2 /* UIStackViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32922705F5700DC46F2 /* UIStackViewExtensionsTests.swift */; };
 		F62CC32B22705F5700DC46F2 /* UIStackViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32922705F5700DC46F2 /* UIStackViewExtensionsTests.swift */; };
+		F62CC32D2270683C00DC46F2 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32C2270683C00DC46F2 /* UITableViewExtensions.swift */; };
+		F62CC32E2270683C00DC46F2 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32C2270683C00DC46F2 /* UITableViewExtensions.swift */; };
+		F62CC33022706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */; };
+		F62CC33122706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */; };
+		F62CC3332270701B00DC46F2 /* UITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CC3322270701B00DC46F2 /* UITableViewCell.xib */; };
+		F62CC33B2270854200DC46F2 /* UITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CC33A2270854200DC46F2 /* UITableViewCell.xib */; };
 		F69A081E2264DF1200CB09F2 /* StringExtensionsUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */; };
 		F69A082022672BDC00CB09F2 /* UIFontExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */; };
 		F69A08222267323600CB09F2 /* UILabelExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */; };
@@ -248,12 +254,16 @@
 		F20083822267E47F00AC6EE1 /* LocalizedSample.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizedSample.strings; sourceTree = "<group>"; };
 		F21A6776226F4E260026F6E9 /* CIImageExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImageExtensions+UIKit.swift"; sourceTree = "<group>"; };
 		F21A6778226F4E360026F6E9 /* CGImageExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImageExtensions+UIKit.swift"; sourceTree = "<group>"; };
-		F21A6789226F52730026F6E9 /* UICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UICollectionViewCell.xib; path = Tests/Extensions/UIKit/Views/UICollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		F21A6789226F52730026F6E9 /* UICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UICollectionViewCell.xib; path = Tests/Extensions/UIKit/Views/tvOS/UICollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		F62CC32622704F0500DC46F2 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		F62CC32922705F5700DC46F2 /* UIStackViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensionsTests.swift; sourceTree = "<group>"; };
+		F62CC32C2270683C00DC46F2 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
+		F62CC3322270701B00DC46F2 /* UITableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITableViewCell.xib; sourceTree = "<group>"; };
+		F62CC33A2270854200DC46F2 /* UITableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITableViewCell.xib; sourceTree = "<group>"; };
 		F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsUIKitTests.swift; sourceTree = "<group>"; };
 		F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionsTests.swift; sourceTree = "<group>"; };
 		F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensionTests.swift; sourceTree = "<group>"; };
@@ -457,6 +467,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F97EF3226DED8A00C3E953 /* UICollectionViewCell.xib */,
+				F62CC3322270701B00DC46F2 /* UITableViewCell.xib */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -465,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				F21A6789226F52730026F6E9 /* UICollectionViewCell.xib */,
+				F62CC33A2270854200DC46F2 /* UITableViewCell.xib */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -503,8 +515,8 @@
 		F2A74DBD225765F6001F0DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F69A081B2264C6D400CB09F2 /* UIKit */,
 				F2A74DBE225765FB001F0DF2 /* Foundation */,
+				F69A081B2264C6D400CB09F2 /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -541,6 +553,7 @@
 				F6F97EFB226F246100C3E953 /* UIImageExtensionsTests.swift */,
 				F6F97F03226F53E100C3E953 /* UIScrollViewExtensionsTest.swift */,
 				F62CC32922705F5700DC46F2 /* UIStackViewExtensionsTests.swift */,
+				F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -548,10 +561,14 @@
 		F6E394DB2260B50600AFE7B1 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F21A6778226F4E360026F6E9 /* CGImageExtensions+UIKit.swift */,
+				F21A6776226F4E260026F6E9 /* CIImageExtensions+UIKit.swift */,
 				F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */,
 				F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */,
 				F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */,
+				F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */,
 				F6B3838E22649D56001E4068 /* UILabelExtensions.swift */,
+				F62CC32C2270683C00DC46F2 /* UITableViewExtensions.swift */,
 				F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */,
 				F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */,
 				F21A6776226F4E260026F6E9 /* CIImageExtensions+UIKit.swift */,
@@ -814,6 +831,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62CC3332270701B00DC46F2 /* UITableViewCell.xib in Resources */,
 				F6F97EF8226E1BD900C3E953 /* UICollectionViewCell.xib in Resources */,
 				F20083832267E47F00AC6EE1 /* LocalizedSample.strings in Resources */,
 			);
@@ -845,6 +863,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62CC33B2270854200DC46F2 /* UITableViewCell.xib in Resources */,
 				F21A678A226F52730026F6E9 /* UICollectionViewCell.xib in Resources */,
 				F20083852267E47F00AC6EE1 /* LocalizedSample.strings in Resources */,
 			);
@@ -922,6 +941,7 @@
 				F200830B225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
 				F20082C2225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
 				F2A74DB9225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
+				F62CC32D2270683C00DC46F2 /* UITableViewExtensions.swift in Sources */,
 				F20082D3225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
 				F200836F2266339800AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F200831B225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
@@ -946,6 +966,7 @@
 			files = (
 				F20082EA225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F200832F225F876300AC6EE1 /* StringExtensions+ValidatorsTests.swift in Sources */,
+				F62CC33022706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */,
 				F6F97EFC226F246100C3E953 /* UIImageExtensionsTests.swift in Sources */,
 				F20082FE225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */,
 				F20083452266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
@@ -1035,6 +1056,7 @@
 				F20083772267899A00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
 				F2008327225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F20082C9225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
+				F62CC32E2270683C00DC46F2 /* UITableViewExtensions.swift in Sources */,
 				F20082E7225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F200831D225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
 				F2008379226789AA00AC6EE1 /* UILabelExtensions.swift in Sources */,
@@ -1058,6 +1080,7 @@
 			files = (
 				F20083812267E0AE00AC6EE1 /* StringExtensionsUIKitTests.swift in Sources */,
 				F2008373226633A700AC6EE1 /* SequenceExtensionsTests.swift in Sources */,
+				F62CC33122706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */,
 				F20082EC225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F2008300225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */,
 				F20082DB225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,

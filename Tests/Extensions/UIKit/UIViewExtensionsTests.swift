@@ -1,6 +1,6 @@
 import XCTest
 import UIKit
-@testable import MagicPills
+import MagicPills
 
 final class UIViewExtensionsTests: XCTestCase {
 

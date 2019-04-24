@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-@testable import MagicPills
+import MagicPills
 
 class UIImageExtensionsTests: XCTestCase {
 

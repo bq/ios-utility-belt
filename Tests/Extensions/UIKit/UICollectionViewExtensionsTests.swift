@@ -1,29 +1,24 @@
 import XCTest
 import UIKit
-@testable import MagicPills
+import MagicPills
 
 final private class HeaderCollectionReusableView: UICollectionReusableView {}
-final private class TestCell: UICollectionViewCell {}
 
 final class UICollectionViewExtensionsTests: XCTestCase {
 
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-    let emptyCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
 
     override func setUp() {
         super.setUp()
 
         collectionView.dataSource = self
         collectionView.reloadData()
-
-        emptyCollectionView.dataSource = self
-        emptyCollectionView.reloadData()
     }
 
     func test_register_cell_with_class() {
         let indexPath = IndexPath(row: 0, section: 0)
-        collectionView.register(TestCell.self)
-        let cell: TestCell? = collectionView.dequeueReusableCell(indexPath)
+        collectionView.register(UICollectionViewCell.self)
+        let cell: UICollectionViewCell? = collectionView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
     }
 
@@ -36,8 +31,8 @@ final class UICollectionViewExtensionsTests: XCTestCase {
 
     func test_dequeue_reusable_supplementary_view() {
         let indexPath = IndexPath(row: 0, section: 0)
-        collectionView.register(TestCell.self)
-        let _: TestCell? = collectionView.dequeueReusableCell(indexPath)
+        collectionView.register(UICollectionViewCell.self)
+        let _: UICollectionViewCell? = collectionView.dequeueReusableCell(indexPath)
         collectionView.register(supplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withClass: HeaderCollectionReusableView.self)
         let headerVIew: HeaderCollectionReusableView? = collectionView.dequeueReusableSupplementaryView(kind: "UICollectionElementKindSectionHeader", indexPath: indexPath)
