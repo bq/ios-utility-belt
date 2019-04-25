@@ -4,7 +4,7 @@ import MagicPills
 
 final class UIViewExtensionsTests: XCTestCase {
 
-    func testBorderColor() {
+    func test_border_color() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         view.borderColor = nil
@@ -15,7 +15,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.layer.borderColor, UIColor.blue.cgColor)
     }
 
-    func testBorderWidth() {
+    func test_border_width() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         view.borderWidth = 1
@@ -25,7 +25,7 @@ final class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view.borderWidth, 0)
     }
 
-    func testCornerRadius() {
+    func test_corner_radius() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let view = UIView(frame: frame)
         XCTAssertEqual(view.layer.cornerRadius, 0)
