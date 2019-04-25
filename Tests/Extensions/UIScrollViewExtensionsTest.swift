@@ -2,7 +2,7 @@ import XCTest
 import UIKit
 import MagicPills
 
-final class UIScrollViewExtensionsTests: XCTestCase {
+class UIScrollViewExtensionsTests: XCTestCase {
 
     let screenWidth: CGFloat = 828
     let screenHeight: CGFloat = 1_792

@@ -2,9 +2,9 @@ import XCTest
 import UIKit
 import MagicPills
 
-final private class HeaderCollectionReusableView: UICollectionReusableView {}
+private class HeaderCollectionReusableView: UICollectionReusableView {}
 
-final class UICollectionViewExtensionsTests: XCTestCase {
+class UICollectionViewExtensionsTests: XCTestCase {
 
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
 

@@ -2,7 +2,7 @@ import XCTest
 import UIKit
 import MagicPills
 
-final class UIViewExtensionsTests: XCTestCase {
+class UIViewExtensionsTests: XCTestCase {
 
     func test_border_color() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)

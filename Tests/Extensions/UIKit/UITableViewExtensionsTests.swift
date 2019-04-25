@@ -2,7 +2,7 @@ import XCTest
 import UIKit
 import MagicPills
 
-final class UITableViewExtensionsTests: XCTestCase {
+class UITableViewExtensionsTests: XCTestCase {
 
     let tableView = UITableView()
     let emptyTableView = UITableView()
