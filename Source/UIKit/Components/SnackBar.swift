@@ -1,30 +1,43 @@
 import UIKit
 
 public class SnackBar: UIView {
-
+    public let message: String
+    public let messageFont: UIFont
     private let label: UILabel = UILabel()
 
-    public var message: String? {
-        return label.text
-    }
+    public init(_ message: String, font: UIFont, frame: CGRect) {
+        self.message = message
+        self.messageFont = font
 
-    required init(_ message: String,
-                  font: UIFont,
-                  frame: CGRect) {
         super.init(frame: frame)
-        setup(message, font: font)
+        setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    public required init?(coder aDecoder: NSCoder) {
+        guard
+            let message = aDecoder.decodeObject(forKey: "messageKey") as? String,
+            let font = aDecoder.decodeObject(forKey: "fontKey") as? UIFont else {
+                return nil
+        }
+        self.message = message
+        self.messageFont = font
+
+        super.init(coder: aDecoder)
+        setup()
     }
 
-    private func setup(_ message: String, font: UIFont) {
+    public override func encode(with aCoder: NSCoder) {
+        aCoder.encode(message, forKey: "messageKey")
+        aCoder.encode(messageFont, forKey: "fontKey")
 
+        super.encode(with: aCoder)
+    }
+
+    private func setup() {
         self.accessibilityIdentifier = "SnackBarID"
         self.backgroundColor = UIColor.black.withAlphaComponent(0.6)
 
-        label.font = font
+        label.font = messageFont
         label.text = message
         label.textColor = UIColor.white
         label.numberOfLines = 0
@@ -73,11 +86,14 @@ public class SnackBar: UIView {
 
         NSLayoutConstraint.activate(constraintsLabel)
     }
+}
 
+public extension SnackBar {
     @discardableResult
-    static public func showMessage(_ message: String,
-                                   font: UIFont = UIFont.systemRegular(size: 14),
-                                   in view: UIView) -> SnackBar {
+    static func show(message: String,
+                     font: UIFont = UIFont.systemRegular(size: 14),
+                     in view: UIView,
+                     completion: (() -> Void)? = nil) -> SnackBar {
 
         let snackBar = SnackBar(message,
                                 font: font,
@@ -93,6 +109,7 @@ public class SnackBar: UIView {
                                  block: { _ in
                                     UIView.animate(withDuration: 0.4, animations: {
                                         snackBar.frame.origin.y = view.frame.height
+                                        completion?()
                                     })
             })
         })
