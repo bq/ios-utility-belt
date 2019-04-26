@@ -142,11 +142,12 @@
 		F21A677F226F4E6B0026F6E9 /* UICollectionViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */; };
 		F21A6780226F4E6B0026F6E9 /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EF6226E027E00C3E953 /* UIViewExtensionsTests.swift */; };
 		F21A6781226F4E6B0026F6E9 /* UIImageExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EFB226F246100C3E953 /* UIImageExtensionsTests.swift */; };
-		F21A678A226F52730026F6E9 /* UICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21A6789226F52730026F6E9 /* UICollectionViewCell.xib */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFB22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
+		F293267022734C9300B9A5E8 /* UICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21A6789226F52730026F6E9 /* UICollectionViewCell.xib */; };
+		F293267122734C9D00B9A5E8 /* UITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CC33A2270854200DC46F2 /* UITableViewCell.xib */; };
 		F2A74DB9225765CF001F0DF2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */; };
 		F2A74DBA225765CF001F0DF2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */; };
 		F2A74DBB225765CF001F0DF2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */; };
@@ -163,7 +164,6 @@
 		F62CC33022706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */; };
 		F62CC33122706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */; };
 		F62CC3332270701B00DC46F2 /* UITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CC3322270701B00DC46F2 /* UITableViewCell.xib */; };
-		F62CC33B2270854200DC46F2 /* UITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CC33A2270854200DC46F2 /* UITableViewCell.xib */; };
 		F62CC33D2270862800DC46F2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC33C2270862800DC46F2 /* UIViewControllerExtensions.swift */; };
 		F62CC33E2270862800DC46F2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC33C2270862800DC46F2 /* UIViewControllerExtensions.swift */; };
 		F62CC34122709F4500DC46F2 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC34022709F4500DC46F2 /* Toast.swift */; };
@@ -266,7 +266,7 @@
 		F20083822267E47F00AC6EE1 /* LocalizedSample.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizedSample.strings; sourceTree = "<group>"; };
 		F21A6776226F4E260026F6E9 /* CIImageExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImageExtensions+UIKit.swift"; sourceTree = "<group>"; };
 		F21A6778226F4E360026F6E9 /* CGImageExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImageExtensions+UIKit.swift"; sourceTree = "<group>"; };
-		F21A6789226F52730026F6E9 /* UICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UICollectionViewCell.xib; path = Tests/Extensions/UIKit/Views/tvOS/UICollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		F21A6789226F52730026F6E9 /* UICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICollectionViewCell.xib; sourceTree = "<group>"; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
@@ -916,8 +916,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62CC33B2270854200DC46F2 /* UITableViewCell.xib in Resources */,
-				F21A678A226F52730026F6E9 /* UICollectionViewCell.xib in Resources */,
+				F293267122734C9D00B9A5E8 /* UITableViewCell.xib in Resources */,
+				F293267022734C9300B9A5E8 /* UICollectionViewCell.xib in Resources */,
 				F20083852267E47F00AC6EE1 /* LocalizedSample.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
