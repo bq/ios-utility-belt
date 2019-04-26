@@ -296,7 +296,7 @@
 		F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		F6F97EFB226F246100C3E953 /* UIImageExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensionsTests.swift; sourceTree = "<group>"; };
 		F6F97F00226F501E00C3E953 /* UIScrollViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtensions.swift; sourceTree = "<group>"; };
-		F6F97F03226F53E100C3E953 /* UIScrollViewExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIScrollViewExtensionsTest.swift; path = ../UIScrollViewExtensionsTest.swift; sourceTree = "<group>"; };
+		F6F97F03226F53E100C3E953 /* UIScrollViewExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtensionsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,9 +385,8 @@
 		E26053F02121880000D013B5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F62CC33F22709F3000DC46F2 /* Tools */,
-				F20082D1225DFF4400AC6EE1 /* Types */,
-				F2A74DB6225765B5001F0DF2 /* Extensions */,
+				F293266C227330D600B9A5E8 /* Foundation */,
+				F62CC33F22709F3000DC46F2 /* UIKit */,
 				F26C3AF722537A4600189D28 /* MagicPills.swift */,
 				E26053F12121880000D013B5 /* MagicPills.h */,
 				E26053F22121880000D013B5 /* Info.plist */,
@@ -398,10 +397,9 @@
 		E26053FB2121880000D013B5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F62CC3462270B51000DC46F2 /* Tools */,
 				F2008348226612E800AC6EE1 /* Helpers */,
-				F20082D7225DFFB100AC6EE1 /* Types */,
-				F2A74DBD225765F6001F0DF2 /* Extensions */,
+				F2A74DBD225765F6001F0DF2 /* Foundation */,
+				F293266E2273310C00B9A5E8 /* UIKit */,
 				E26053FE2121880000D013B5 /* Info.plist */,
 			);
 			path = Tests;
@@ -501,16 +499,71 @@
 			path = tvOS;
 			sourceTree = "<group>";
 		};
-		F2A74DB6225765B5001F0DF2 /* Extensions */ = {
+		F293266A2273308000B9A5E8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F6E394DB2260B50600AFE7B1 /* UIKit */,
-				F2A74DB7225765BC001F0DF2 /* Foundation */,
+				F62CC34022709F4500DC46F2 /* Toast.swift */,
+				F62CC3432270A1A000DC46F2 /* SnackBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F293266B227330A000B9A5E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */,
+				F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */,
+				F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */,
+				F6B3838E22649D56001E4068 /* UILabelExtensions.swift */,
+				F62CC32C2270683C00DC46F2 /* UITableViewExtensions.swift */,
+				F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */,
+				F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */,
+				F21A6776226F4E260026F6E9 /* CIImageExtensions+UIKit.swift */,
+				F21A6778226F4E360026F6E9 /* CGImageExtensions+UIKit.swift */,
+				F6F97F00226F501E00C3E953 /* UIScrollViewExtensions.swift */,
+				F62CC32622704F0500DC46F2 /* UIStackViewExtensions.swift */,
+				F62CC33C2270862800DC46F2 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F2A74DB7225765BC001F0DF2 /* Foundation */ = {
+		F293266C227330D600B9A5E8 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F2A74DB6225765B5001F0DF2 /* Extensions */,
+				F20082D1225DFF4400AC6EE1 /* Types */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F293266E2273310C00B9A5E8 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F62CC3462270B51000DC46F2 /* Components */,
+				F293266F2273313900B9A5E8 /* Extensions */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F293266F2273313900B9A5E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6F97EF2226DED4A00C3E953 /* Views */,
+				F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */,
+				F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */,
+				F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */,
+				F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */,
+				F6F97EF6226E027E00C3E953 /* UIViewExtensionsTests.swift */,
+				F6F97EFB226F246100C3E953 /* UIImageExtensionsTests.swift */,
+				F6F97F03226F53E100C3E953 /* UIScrollViewExtensionsTest.swift */,
+				F62CC32922705F5700DC46F2 /* UIStackViewExtensionsTests.swift */,
+				F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */,
+				F62CC34D2272015500DC46F2 /* UIViewControllerExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2A74DB6225765B5001F0DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				F20082F7225E523D00AC6EE1 /* Formatters */,
@@ -529,19 +582,19 @@
 				F200835622662DC400AC6EE1 /* TimeIntervalExtensions.swift */,
 				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
 			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		F2A74DBD225765F6001F0DF2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F69A081B2264C6D400CB09F2 /* UIKit */,
-				F2A74DBE225765FB001F0DF2 /* Foundation */,
-			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F2A74DBE225765FB001F0DF2 /* Foundation */ = {
+		F2A74DBD225765F6001F0DF2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F2A74DBE225765FB001F0DF2 /* Extensions */,
+				F20082D7225DFFB100AC6EE1 /* Types */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F2A74DBE225765FB001F0DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */,
@@ -558,62 +611,25 @@
 				F200835B22662DDD00AC6EE1 /* TimeIntervalExtensionsTests.swift */,
 				F20083612266317600AC6EE1 /* URLExtensionsTests.swift */,
 			);
-			path = Foundation;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F62CC33F22709F3000DC46F2 /* Tools */ = {
+		F62CC33F22709F3000DC46F2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F62CC34022709F4500DC46F2 /* Toast.swift */,
-				F62CC3432270A1A000DC46F2 /* SnackBar.swift */,
+				F293266A2273308000B9A5E8 /* Components */,
+				F293266B227330A000B9A5E8 /* Extensions */,
 			);
-			path = Tools;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
-		F62CC3462270B51000DC46F2 /* Tools */ = {
+		F62CC3462270B51000DC46F2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				F62CC3472270B52700DC46F2 /* ToastTests.swift */,
 				F62CC34A2270B53C00DC46F2 /* SnackBarTests.swift */,
 			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		F69A081B2264C6D400CB09F2 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				F6F97EF2226DED4A00C3E953 /* Views */,
-				F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */,
-				F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */,
-				F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */,
-				F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */,
-				F6F97EF6226E027E00C3E953 /* UIViewExtensionsTests.swift */,
-				F6F97EFB226F246100C3E953 /* UIImageExtensionsTests.swift */,
-				F6F97F03226F53E100C3E953 /* UIScrollViewExtensionsTest.swift */,
-				F62CC32922705F5700DC46F2 /* UIStackViewExtensionsTests.swift */,
-				F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */,
-				F62CC34D2272015500DC46F2 /* UIViewControllerExtensionsTests.swift */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		F6E394DB2260B50600AFE7B1 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */,
-				F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */,
-				F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */,
-				F6B3838E22649D56001E4068 /* UILabelExtensions.swift */,
-				F62CC32C2270683C00DC46F2 /* UITableViewExtensions.swift */,
-				F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */,
-				F6F97EF9226F1E5000C3E953 /* UIImageExtensions.swift */,
-				F21A6776226F4E260026F6E9 /* CIImageExtensions+UIKit.swift */,
-				F21A6778226F4E360026F6E9 /* CGImageExtensions+UIKit.swift */,
-				F6F97F00226F501E00C3E953 /* UIScrollViewExtensions.swift */,
-				F62CC32622704F0500DC46F2 /* UIStackViewExtensions.swift */,
-				F62CC33C2270862800DC46F2 /* UIViewControllerExtensions.swift */,
-			);
-			path = UIKit;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F6F97EF2226DED4A00C3E953 /* Views */ = {
