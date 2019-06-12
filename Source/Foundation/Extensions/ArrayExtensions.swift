@@ -11,7 +11,7 @@ public extension Array where Element: Equatable {
     /// Remove first collection element that is equal to the given `object`:
     @discardableResult
     mutating func remove(_ object: Element) -> Bool {
-        if let index = index(of: object) {
+        if let index = firstIndex(of: object) {
             remove(at: index)
             return true
         }

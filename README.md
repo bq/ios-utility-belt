@@ -12,6 +12,11 @@ Set of powerful utilities for development in Swift
 
 ## Requirements
 
+* Xcode 10.2
+* Swift 5.0
+
+For Xcode 10.1 and below, [use Magic Pills 1.2.0](https://github.com/bq/swift-magic-pills/tree/v1.2.0).
+
 ## Installation
 
 MagicPills is available through [CocoaPods](https://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage). 
