@@ -5,6 +5,11 @@ public extension Array where Element: Hashable {
     var unique: [Element] {
         return Array(Set(self))
     }
+    
+    /// Return false or true when array is empty or not
+    var isNotEmpty: Bool {
+        return !self.isEmpty
+    }
 }
 
 public extension Array where Element: Equatable {
