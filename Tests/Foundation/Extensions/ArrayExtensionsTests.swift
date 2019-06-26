@@ -27,4 +27,14 @@ class ArrayExtensionsTests: XCTestCase {
         XCTAssertFalse(array.appendIfNotExists("c"))
         XCTAssertEqual(array, ["a", "b", "c"])
     }
+
+    func test_check_is_not_empty() {
+        let array = ["a", "b"]
+        XCTAssertTrue(array.isNotEmpty)
+    }
+
+    func test_check_is_empty() {
+        let array = [String]()
+        XCTAssertFalse(array.isNotEmpty)
+    }
 }
