@@ -220,6 +220,13 @@
 		F62CC34C2270B53C00DC46F2 /* SnackBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC34A2270B53C00DC46F2 /* SnackBarTests.swift */; };
 		F62CC34E2272015500DC46F2 /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC34D2272015500DC46F2 /* UIViewControllerExtensionsTests.swift */; };
 		F62CC34F2272015500DC46F2 /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CC34D2272015500DC46F2 /* UIViewControllerExtensionsTests.swift */; };
+		F68925CF22CDE8290008263B /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68925CE22CDE8290008263B /* IntExtensions.swift */; };
+		F68925D022CDE83B0008263B /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68925CE22CDE8290008263B /* IntExtensions.swift */; };
+		F68925D122CDE83B0008263B /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68925CE22CDE8290008263B /* IntExtensions.swift */; };
+		F68925D222CDE83C0008263B /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68925CE22CDE8290008263B /* IntExtensions.swift */; };
+		F68925D522CDE8A00008263B /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68925D322CDE8950008263B /* IntExtensionsTests.swift */; };
+		F68925D622CDE8A10008263B /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68925D322CDE8950008263B /* IntExtensionsTests.swift */; };
+		F68925D722CDE8A20008263B /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68925D322CDE8950008263B /* IntExtensionsTests.swift */; };
 		F69A081E2264DF1200CB09F2 /* StringExtensionsUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */; };
 		F69A082022672BDC00CB09F2 /* UIFontExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */; };
 		F69A08222267323600CB09F2 /* UILabelExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */; };
@@ -338,6 +345,8 @@
 		F62CC3472270B52700DC46F2 /* ToastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastTests.swift; sourceTree = "<group>"; };
 		F62CC34A2270B53C00DC46F2 /* SnackBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarTests.swift; sourceTree = "<group>"; };
 		F62CC34D2272015500DC46F2 /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionsTests.swift; sourceTree = "<group>"; };
+		F68925CE22CDE8290008263B /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		F68925D322CDE8950008263B /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 		F69A081C2264C6FD00CB09F2 /* StringExtensionsUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsUIKitTests.swift; sourceTree = "<group>"; };
 		F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionsTests.swift; sourceTree = "<group>"; };
 		F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensionTests.swift; sourceTree = "<group>"; };
@@ -680,6 +689,7 @@
 				F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */,
 				F200835622662DC400AC6EE1 /* TimeIntervalExtensions.swift */,
 				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
+				F68925CE22CDE8290008263B /* IntExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -704,6 +714,7 @@
 				F20082E0225DFFD900AC6EE1 /* OptionalExtensionsTests.swift */,
 				F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */,
 				F20082FD225E556500AC6EE1 /* DecimalExtensionsTests.swift */,
+				F68925D322CDE8950008263B /* IntExtensionsTests.swift */,
 				F22A38EB227C775C0012C010 /* DictionaryExtensionsTests.swift */,
 				F2008370226633A500AC6EE1 /* SequenceExtensionsTests.swift */,
 				F200830F225F4C5200AC6EE1 /* StringExtensionsTests.swift */,
@@ -917,7 +928,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = S3BA;
 				TargetAttributes = {
 					E26053ED212187FF00D013B5 = {
@@ -1116,6 +1127,7 @@
 				F21A6777226F4E260026F6E9 /* CIImageExtensions+UIKit.swift in Sources */,
 				F62CC33D2270862800DC46F2 /* UIViewControllerExtensions.swift in Sources */,
 				F22A38D8227C63250012C010 /* OrderedSet.swift in Sources */,
+				F68925CF22CDE8290008263B /* IntExtensions.swift in Sources */,
 				F200835722662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
 				F20082EE225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008325225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
@@ -1133,6 +1145,7 @@
 				F62CC33022706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */,
 				F6F97EFC226F246100C3E953 /* UIImageExtensionsTests.swift in Sources */,
 				F20082FE225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */,
+				F68925D522CDE8A00008263B /* IntExtensionsTests.swift in Sources */,
 				F22A3568228074D4004E8546 /* FoldTests.swift in Sources */,
 				F20083452266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F20082D9225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
@@ -1188,6 +1201,7 @@
 				F22A38E3227C767A0012C010 /* SharedDictionary.swift in Sources */,
 				F2008374226633AB00AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F20082EF225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
+				F68925D022CDE83B0008263B /* IntExtensions.swift in Sources */,
 				F20082FA225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 				F22A357422807841004E8546 /* DispatchQueueExtensions.swift in Sources */,
 				F20083412266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
@@ -1204,6 +1218,7 @@
 				F20082FF225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */,
 				F20082DA225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
 				F22A38DF227C63930012C010 /* OrderedSetTests.swift in Sources */,
+				F68925D622CDE8A10008263B /* IntExtensionsTests.swift in Sources */,
 				F22A3569228074D4004E8546 /* FoldTests.swift in Sources */,
 				F2008311225F4C5200AC6EE1 /* StringExtensionsTests.swift in Sources */,
 				F200835D22662DDD00AC6EE1 /* TimeIntervalExtensionsTests.swift in Sources */,
@@ -1260,6 +1275,7 @@
 				F2008375226633AC00AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F21A677D226F4E600026F6E9 /* UICollectionViewExtensions.swift in Sources */,
 				F22A38DA227C634E0012C010 /* OrderedSet.swift in Sources */,
+				F68925D122CDE83B0008263B /* IntExtensions.swift in Sources */,
 				F62CC33E2270862800DC46F2 /* UIViewControllerExtensions.swift in Sources */,
 				F20082F0225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008378226789A700AC6EE1 /* UIFontExtensions.swift in Sources */,
@@ -1277,6 +1293,7 @@
 				F62CC33122706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */,
 				F20082EC225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F2008300225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */,
+				F68925D722CDE8A20008263B /* IntExtensionsTests.swift in Sources */,
 				F22A356A228074D4004E8546 /* FoldTests.swift in Sources */,
 				F20082DB225DFFC300AC6EE1 /* OptionableTests.swift in Sources */,
 				F2008312225F4C5200AC6EE1 /* StringExtensionsTests.swift in Sources */,
@@ -1332,6 +1349,7 @@
 				F22A38E5227C767A0012C010 /* SharedDictionary.swift in Sources */,
 				F200835A22662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
 				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
+				F68925D222CDE83C0008263B /* IntExtensions.swift in Sources */,
 				F2008328225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F22A357622807843004E8546 /* DispatchQueueExtensions.swift in Sources */,
 				F20082FC225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
@@ -1692,8 +1710,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1721,8 +1739,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
