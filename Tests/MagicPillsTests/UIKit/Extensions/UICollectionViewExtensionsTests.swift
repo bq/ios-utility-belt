@@ -22,13 +22,13 @@ class UICollectionViewExtensionsTests: XCTestCase {
         let cell: UICollectionViewCell? = collectionView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
     }
-
-    func test_register_cell_with_nib_using_class() {
+    #warning("SPM does not allow assets to be included for now.")
+    /*func test_register_cell_with_nib_using_class() {
         let indexPath = IndexPath(row: 0, section: 0)
         collectionView.registerWithNib(UICollectionViewCell.self, bundle: Bundle(for: UICollectionViewExtensionsTests.self))
         let cell: UICollectionViewCell? = collectionView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
-    }
+    }*/
 
     func test_dequeue_reusable_supplementary_view() {
         let indexPath = IndexPath(row: 0, section: 0)

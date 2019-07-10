@@ -21,13 +21,13 @@ class UITableViewExtensionsTests: XCTestCase {
         let cell: UITableViewCell? = tableView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
     }
-
-    func test_register_cell_with_nib_using_class() {
+    #warning("SPM does not allow assets to be included for now.")
+    /*func test_register_cell_with_nib_using_class() {
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.registerWithNib(UITableViewCell.self, bundle: Bundle(for: UITableViewExtensionsTests.self))
         let cell: UITableViewCell? = tableView.dequeueReusableCell(indexPath)
         XCTAssertNotNil(cell)
-    }
+    }*/
 }
 
 extension UITableViewExtensionsTests: UITableViewDataSource {
