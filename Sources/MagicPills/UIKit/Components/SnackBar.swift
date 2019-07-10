@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 public class SnackBar: UIView {
@@ -117,3 +118,4 @@ public extension SnackBar {
         return snackBar
     }
 }
+#endif

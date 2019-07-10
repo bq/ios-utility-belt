@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -27,4 +28,12 @@ class ArrayExtensionsTests: XCTestCase {
         XCTAssertFalse(array.appendIfNotExists("c"))
         XCTAssertEqual(array, ["a", "b", "c"])
     }
+    
+    static var allTests = [
+        ("test_unique", test_unique),
+        ("test_remove_existing_object", test_remove_existing_object),
+        ("test_remove_unexisting_object", test_remove_unexisting_object),
+        ("test_append_if_not_exists", test_append_if_not_exists)
+    ]
 }
+#endif

@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -62,3 +63,4 @@ class DateExtensionsTests: XCTestCase {
         XCTAssertEqual(timeDate, expectedResult)
     }
 }
+#endif

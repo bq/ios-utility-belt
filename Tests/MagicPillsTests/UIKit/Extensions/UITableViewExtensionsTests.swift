@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import UIKit
 import MagicPills
@@ -48,3 +49,4 @@ extension UITableViewExtensionsTests: UITableViewDataSource {
     }
 
 }
+#endif

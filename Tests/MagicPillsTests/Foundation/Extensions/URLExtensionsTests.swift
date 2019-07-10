@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -11,3 +12,4 @@ class URLExtensionsTests: XCTestCase {
         XCTAssertFalse(url1 > url2)
     }
 }
+#endif

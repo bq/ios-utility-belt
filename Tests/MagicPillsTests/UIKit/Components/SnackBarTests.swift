@@ -1,5 +1,7 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import Foundation
+import UIKit
 import MagicPills
 
 class SnackBarTests: XCTestCase {
@@ -40,3 +42,4 @@ class SnackBarTests: XCTestCase {
         XCTAssertNil(recoveredSnackbar)
     }
 }
+#endif

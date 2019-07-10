@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -36,3 +37,4 @@ class FoldTests: XCTestCase {
         XCTAssertEqual(word, "HOLA")
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import UIKit
 import MagicPills
@@ -43,3 +44,4 @@ class UIScrollViewExtensionsTests: XCTestCase {
         XCTAssertEqual(scrollView.contentOffset, CGPoint(x: 0, y: scrollHeight - screenHeight))
     }
 }
+#endif

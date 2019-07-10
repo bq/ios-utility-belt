@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -17,3 +18,4 @@ class OptionableTests: XCTestCase {
         XCTAssertEqual(array.filterNils, ["uno", "dos"])
     }
 }
+#endif

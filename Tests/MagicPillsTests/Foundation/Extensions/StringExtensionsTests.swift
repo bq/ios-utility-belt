@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -102,3 +103,4 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("not_found".localized(bundle: bundle, tableName: tableName), "**not_found**")
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UICollectionView {
@@ -49,3 +50,4 @@ public extension UICollectionView {
                                                 for: indexPath) as? T
     }
 }
+#endif

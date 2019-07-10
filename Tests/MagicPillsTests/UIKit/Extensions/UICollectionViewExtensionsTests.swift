@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import UIKit
 import MagicPills
@@ -55,3 +56,4 @@ extension UICollectionViewExtensionsTests: UICollectionViewDataSource, UICollect
     }
 
 }
+#endif

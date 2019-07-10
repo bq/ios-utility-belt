@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -21,3 +22,4 @@ class TimeIntervalExtensionsTests: XCTestCase {
         XCTAssertEqual((-412 as TimeInterval).formatted, "0s")
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import UIKit
 import MagicPills
@@ -22,3 +23,4 @@ class UIViewControllerExtensionsTests: XCTestCase {
         XCTAssertTrue(navigationController.visibleViewController is HomeViewController)
     }
 }
+#endif

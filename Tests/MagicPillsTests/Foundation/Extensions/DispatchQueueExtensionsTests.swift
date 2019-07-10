@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import Foundation
 import XCTest
 
@@ -19,3 +20,4 @@ class DispatchQueueExtensionsTests: XCTestCase {
         waitForExpectations(timeout: 5)
     }
 }
+#endif

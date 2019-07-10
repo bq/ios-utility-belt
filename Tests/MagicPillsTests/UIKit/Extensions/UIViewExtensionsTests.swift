@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import UIKit
 import MagicPills
@@ -152,3 +153,4 @@ class UIViewExtensionsTests: XCTestCase {
         XCTAssertEqual(view2.transform, transform2)
     }
 }
+#endif

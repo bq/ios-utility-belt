@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -13,3 +14,4 @@ class SequenceExtensionsTests: XCTestCase {
         XCTAssertEqual(grouped["B"], ["BB"])
     }
 }
+#endif

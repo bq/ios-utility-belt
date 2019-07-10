@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 public class Toast: UIView {
@@ -100,3 +101,4 @@ public extension Toast {
         return toast
     }
 }
+#endif

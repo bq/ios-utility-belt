@@ -5,6 +5,6 @@ script:
 - set -o pipefail
 - swift --version
 - rake
-- bundle exec fastlane pass_tests
-- pod lib lint
+- swift build
+- swift test
 - bundle exec danger

@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -51,3 +52,4 @@ class StringExtensionsValidatorsTests: XCTestCase {
         XCTAssertFalse("".isValidNIE)
     }
 }
+#endif

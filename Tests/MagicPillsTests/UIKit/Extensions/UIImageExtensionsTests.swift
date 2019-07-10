@@ -1,5 +1,7 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import Foundation
+import UIKit
 import MagicPills
 
 class UIImageExtensionsTests: XCTestCase {
@@ -42,3 +44,4 @@ class UIImageExtensionsTests: XCTestCase {
         XCTAssertNil(ciimageBlack.uiImage.tinted(.red))
     }
 }
+#endif

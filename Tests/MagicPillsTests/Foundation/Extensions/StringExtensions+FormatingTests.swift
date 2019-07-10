@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -25,3 +26,4 @@ class StringExtensionsFormatingTests: XCTestCase {
         XCTAssertEqual("".formattedAsPhoneNumber, "")
     }
 }
+#endif

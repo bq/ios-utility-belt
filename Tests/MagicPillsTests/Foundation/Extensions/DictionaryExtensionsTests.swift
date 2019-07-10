@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -19,3 +20,4 @@ class DictionaryExtensionsTests: XCTestCase {
         XCTAssertEqual(dictionary.keys.count, 3)
     }
 }
+#endif

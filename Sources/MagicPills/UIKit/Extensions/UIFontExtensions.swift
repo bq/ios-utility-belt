@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 
 public extension UIFont {
@@ -57,3 +58,4 @@ public extension UIFont {
         return UIFont(descriptor: descriptor, size: 0)
     }
 }
+#endif

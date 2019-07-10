@@ -1,5 +1,7 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import Foundation
+import UIKit
 import MagicPills
 
 class UIStackViewExtensionsTests: XCTestCase {
@@ -18,3 +20,4 @@ class UIStackViewExtensionsTests: XCTestCase {
         XCTAssert(stack.arrangedSubviews.isEmpty)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -42,3 +43,4 @@ class DecimalExtensionsTests: XCTestCase {
         XCTAssertEqual((6_000 as Decimal).secondsToMinutes, 100)
     }
 }
+#endif

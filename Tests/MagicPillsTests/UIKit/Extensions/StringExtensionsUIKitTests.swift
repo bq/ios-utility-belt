@@ -1,5 +1,7 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import Foundation
+import UIKit
 import MagicPills
 
 class StringExtensionsUIKitTests: XCTestCase {
@@ -192,3 +194,4 @@ class StringExtensionsUIKitTests: XCTestCase {
         XCTAssertEqual(foundRanges, expectedRanges)
     }
 }
+#endif

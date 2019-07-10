@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -24,3 +25,4 @@ private struct Person: DefinesPrimaryKey {
         return name
     }
 }
+#endif

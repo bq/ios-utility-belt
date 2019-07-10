@@ -1,5 +1,7 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import Foundation
+import UIKit
 import MagicPills
 
 class UILabelExtensionsTests: XCTestCase {
@@ -42,3 +44,4 @@ class UILabelExtensionsTests: XCTestCase {
         XCTAssertNil(label.attributedText)
     }
 }
+#endif

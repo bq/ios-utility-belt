@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UITableView {
@@ -28,3 +29,4 @@ public extension UITableView {
                                    for: indexPath) as? T
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -37,3 +38,4 @@ class StringExtensionsValuesTests: XCTestCase {
         XCTAssertNil("wawa".dateValue())
     }
 }
+#endif

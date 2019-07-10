@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -47,3 +48,4 @@ class OptionalExtensionsTests: XCTestCase {
         XCTAssertFalse(falseValue.isTruthy)
     }
 }
+#endif

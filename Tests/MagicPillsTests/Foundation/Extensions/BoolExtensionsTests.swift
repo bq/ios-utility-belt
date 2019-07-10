@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -8,3 +9,4 @@ class BoolExtensionsTests: XCTestCase {
         XCTAssertFalse(true.isFalse)
     }
 }
+#endif

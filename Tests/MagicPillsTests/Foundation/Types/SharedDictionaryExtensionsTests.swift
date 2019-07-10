@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -18,3 +19,4 @@ class SharedDictionaryTests: XCTestCase {
         XCTAssertEqual(sharedDictionary.innerDictionary, ["a": 4])
     }
 }
+#endif

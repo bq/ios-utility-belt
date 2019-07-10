@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UIScrollView {
@@ -33,3 +34,4 @@ public extension UIScrollView {
         }
     }
 }
+#endif

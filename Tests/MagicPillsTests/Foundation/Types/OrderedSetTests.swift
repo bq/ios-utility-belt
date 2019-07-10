@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import Foundation
 import MagicPills
@@ -158,3 +159,4 @@ private struct Player: Comparable, Equatable {
     let name: String
     let points: Int
 }
+#endif

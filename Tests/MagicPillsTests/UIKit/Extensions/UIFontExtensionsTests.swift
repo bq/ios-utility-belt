@@ -1,5 +1,7 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 import Foundation
+import UIKit
 import MagicPills
 
 class UIFontExtensionsTests: XCTestCase {
@@ -39,3 +41,4 @@ class UIFontExtensionsTests: XCTestCase {
                        UIFont.systemFont(ofSize: 14, weight: .light))
     }
 }
+#endif

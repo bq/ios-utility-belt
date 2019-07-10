@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UILabel {
@@ -18,3 +19,4 @@ public extension UILabel {
                                             boldColor: color ?? self.textColor)
     }
 }
+#endif

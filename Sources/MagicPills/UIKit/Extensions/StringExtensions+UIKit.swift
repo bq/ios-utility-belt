@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 
 public extension String {
@@ -75,3 +76,4 @@ public extension String {
         return attr
     }
 }
+#endif
