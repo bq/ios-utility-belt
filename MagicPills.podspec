@@ -18,18 +18,18 @@ DESC
 
   s.ios.deployment_target = '11.0'
   s.ios.frameworks = 'UIKit'
-  s.ios.source_files  = 'Source/Foundation/**/*.swift', 'Source/UIKit/**/*.swift'
+  s.ios.source_files  = 'Sources/MagicPills/Foundation/**/*.swift', 'Sources/MagicPills/UIKit/**/*.swift'
 
   s.osx.deployment_target = '10.13'
   s.osx.frameworks = 'AppKit'
-  s.osx.source_files  = 'Source/Foundation/**/*.swift'
+  s.osx.source_files  = 'Sources/MagicPills/Foundation/**/*.swift'
 
   s.watchos.deployment_target = '4.0'
   s.watchos.frameworks = 'UIKit', 'WatchKit'
-  s.watchos.source_files  = 'Source/Foundation/**/*.swift'
-  s.watchos.exclude_files = 'Source/Foundation/Extensions/StringExtensions+Formating.swift'
+  s.watchos.source_files  = 'Sources/MagicPills/Foundation/**/*.swift'
+  s.watchos.exclude_files = 'Sources/MagicPills/Foundation/Extensions/StringExtensions+Formating.swift'
 
   s.tvos.deployment_target = '11.0'
   s.tvos.frameworks = 'UIKit'
-  s.tvos.source_files  = 'Source/Foundation/**/*.swift', 'Source/UIKit/**/*.swift'
+  s.tvos.source_files  = 'Sources/MagicPills/Foundation/**/*.swift', 'Sources/MagicPills/UIKit/**/*.swift'
 end
