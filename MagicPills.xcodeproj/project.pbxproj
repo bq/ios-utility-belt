@@ -5,10 +5,10 @@
    objects = {
       "MagicPills::MagicPills" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_119";
+         buildConfigurationList = "OBJ_117";
          buildPhases = (
-            "OBJ_122",
-            "OBJ_161"
+            "OBJ_120",
+            "OBJ_159"
          );
          dependencies = (
          );
@@ -24,24 +24,24 @@
       };
       "MagicPills::MagicPillsPackageTests::ProductTarget" = {
          isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_169";
+         buildConfigurationList = "OBJ_167";
          buildPhases = (
          );
          dependencies = (
-            "OBJ_172"
+            "OBJ_170"
          );
          name = "MagicPillsPackageTests";
          productName = "MagicPillsPackageTests";
       };
       "MagicPills::MagicPillsTests" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_174";
+         buildConfigurationList = "OBJ_172";
          buildPhases = (
-            "OBJ_177",
-            "OBJ_211"
+            "OBJ_175",
+            "OBJ_209"
          );
          dependencies = (
-            "OBJ_213"
+            "OBJ_211"
          );
          name = "MagicPillsTests";
          productName = "MagicPillsTests";
@@ -55,9 +55,9 @@
       };
       "MagicPills::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_163";
+         buildConfigurationList = "OBJ_161";
          buildPhases = (
-            "OBJ_166"
+            "OBJ_164"
          );
          dependencies = (
          );
@@ -73,13 +73,13 @@
          };
          buildConfigurationList = "OBJ_2";
          compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "English";
+         developmentRegion = "en";
          hasScannedForEncodings = "0";
          knownRegions = (
             "en"
          );
          mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_105";
+         productRefGroup = "OBJ_103";
          projectDirPath = ".";
          targets = (
             "MagicPills::MagicPills",
@@ -89,48 +89,30 @@
          );
       };
       "OBJ_10" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_11",
-            "OBJ_12",
-            "OBJ_13",
-            "OBJ_42",
-            "OBJ_43"
-         );
-         name = "MagicPills";
-         path = "Sources/MagicPills";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "Info.plist";
+         sourceTree = "<group>";
       };
       "OBJ_100" = {
-         isa = "PBXFileReference";
-         path = "UITableViewExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_101" = {
-         isa = "PBXFileReference";
-         path = "UIViewControllerExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_102" = {
-         isa = "PBXFileReference";
-         path = "UIViewExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_103" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_104"
+            "OBJ_101"
          );
          name = "Utilities";
          path = "Utilities";
          sourceTree = "<group>";
       };
-      "OBJ_104" = {
+      "OBJ_101" = {
          isa = "PBXFileReference";
          path = "FoldTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_105" = {
+      "OBJ_102" = {
+         isa = "PBXFileReference";
+         path = "XCTestManifests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_103" = {
          isa = "PBXGroup";
          children = (
             "MagicPills::MagicPillsTests::Product",
@@ -140,78 +122,79 @@
          path = "";
          sourceTree = "BUILT_PRODUCTS_DIR";
       };
-      "OBJ_108" = {
+      "OBJ_106" = {
          isa = "PBXFileReference";
          path = "bin";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_109" = {
+      "OBJ_107" = {
          isa = "PBXFileReference";
          path = "fastlane";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_11" = {
-         isa = "PBXFileReference";
-         path = "MagicPills.h";
-         sourceTree = "<group>";
-      };
-      "OBJ_110" = {
+      "OBJ_108" = {
          isa = "PBXFileReference";
          path = "LICENSE";
          sourceTree = "<group>";
       };
-      "OBJ_111" = {
+      "OBJ_109" = {
          isa = "PBXFileReference";
          path = "README.md";
          sourceTree = "<group>";
       };
-      "OBJ_112" = {
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12",
+            "OBJ_32",
+            "OBJ_35",
+            "OBJ_38"
+         );
+         name = "Foundation";
+         path = "Foundation";
+         sourceTree = "<group>";
+      };
+      "OBJ_110" = {
          isa = "PBXFileReference";
          path = "Rakefile";
          sourceTree = "<group>";
       };
-      "OBJ_113" = {
+      "OBJ_111" = {
          isa = "PBXFileReference";
          path = "DangerFile";
          sourceTree = "<group>";
       };
-      "OBJ_114" = {
+      "OBJ_112" = {
          isa = "PBXFileReference";
          path = "Gemfile";
          sourceTree = "<group>";
       };
-      "OBJ_115" = {
+      "OBJ_113" = {
          isa = "PBXFileReference";
          path = "Gemfile.lock";
          sourceTree = "<group>";
       };
-      "OBJ_116" = {
+      "OBJ_114" = {
          isa = "PBXFileReference";
          path = "Brewfile";
          sourceTree = "<group>";
       };
-      "OBJ_117" = {
+      "OBJ_115" = {
          isa = "PBXFileReference";
          path = "MagicPills.podspec";
          sourceTree = "<group>";
       };
-      "OBJ_119" = {
+      "OBJ_117" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_120",
-            "OBJ_121"
+            "OBJ_118",
+            "OBJ_119"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_12" = {
-         isa = "PBXFileReference";
-         path = "Info.plist";
-         sourceTree = "<group>";
-      };
-      "OBJ_120" = {
+      "OBJ_118" = {
          isa = "XCBuildConfiguration";
-         baseConfigurationReference = "OBJ_8";
          buildSettings = {
             ENABLE_TESTABILITY = "YES";
             FRAMEWORK_SEARCH_PATHS = (
@@ -251,9 +234,8 @@
          };
          name = "Debug";
       };
-      "OBJ_121" = {
+      "OBJ_119" = {
          isa = "XCBuildConfiguration";
-         baseConfigurationReference = "OBJ_8";
          buildSettings = {
             ENABLE_TESTABILITY = "YES";
             FRAMEWORK_SEARCH_PATHS = (
@@ -293,9 +275,36 @@
          };
          name = "Release";
       };
-      "OBJ_122" = {
+      "OBJ_12" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_13",
+            "OBJ_14",
+            "OBJ_15",
+            "OBJ_16",
+            "OBJ_17",
+            "OBJ_18",
+            "OBJ_19",
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_24",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_30",
+            "OBJ_31"
+         );
+         name = "Extensions";
+         path = "Extensions";
+         sourceTree = "<group>";
+      };
+      "OBJ_120" = {
          isa = "PBXSourcesBuildPhase";
          files = (
+            "OBJ_121",
+            "OBJ_122",
             "OBJ_123",
             "OBJ_124",
             "OBJ_125",
@@ -331,10 +340,16 @@
             "OBJ_155",
             "OBJ_156",
             "OBJ_157",
-            "OBJ_158",
-            "OBJ_159",
-            "OBJ_160"
+            "OBJ_158"
          );
+      };
+      "OBJ_121" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_122" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
       };
       "OBJ_123" = {
          isa = "PBXBuildFile";
@@ -362,23 +377,16 @@
       };
       "OBJ_129" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
+         fileRef = "OBJ_22";
       };
       "OBJ_13" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_14",
-            "OBJ_34",
-            "OBJ_37",
-            "OBJ_40"
-         );
-         name = "Foundation";
-         path = "Foundation";
+         isa = "PBXFileReference";
+         path = "ArrayExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_130" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
+         fileRef = "OBJ_23";
       };
       "OBJ_131" = {
          isa = "PBXBuildFile";
@@ -414,68 +422,48 @@
       };
       "OBJ_139" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
+         fileRef = "OBJ_33";
       };
       "OBJ_14" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_15",
-            "OBJ_16",
-            "OBJ_17",
-            "OBJ_18",
-            "OBJ_19",
-            "OBJ_20",
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_23",
-            "OBJ_26",
-            "OBJ_27",
-            "OBJ_28",
-            "OBJ_29",
-            "OBJ_30",
-            "OBJ_31",
-            "OBJ_32",
-            "OBJ_33"
-         );
-         name = "Extensions";
-         path = "Extensions";
+         isa = "PBXFileReference";
+         path = "BoolExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_140" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
+         fileRef = "OBJ_34";
       };
       "OBJ_141" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_35";
+         fileRef = "OBJ_36";
       };
       "OBJ_142" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_36";
+         fileRef = "OBJ_37";
       };
       "OBJ_143" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_38";
+         fileRef = "OBJ_39";
       };
       "OBJ_144" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_39";
+         fileRef = "OBJ_40";
       };
       "OBJ_145" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_41";
+         fileRef = "OBJ_43";
       };
       "OBJ_146" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_42";
+         fileRef = "OBJ_44";
       };
       "OBJ_147" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_45";
+         fileRef = "OBJ_46";
       };
       "OBJ_148" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_46";
+         fileRef = "OBJ_47";
       };
       "OBJ_149" = {
          isa = "PBXBuildFile";
@@ -483,7 +471,7 @@
       };
       "OBJ_15" = {
          isa = "PBXFileReference";
-         path = "ArrayExtensions.swift";
+         path = "BundleExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_150" = {
@@ -523,33 +511,25 @@
          fileRef = "OBJ_57";
       };
       "OBJ_159" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_58";
-      };
-      "OBJ_16" = {
-         isa = "PBXFileReference";
-         path = "BoolExtensions.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_160" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_59";
-      };
-      "OBJ_161" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
          );
       };
-      "OBJ_163" = {
+      "OBJ_16" = {
+         isa = "PBXFileReference";
+         path = "DataExtensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_161" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_164",
-            "OBJ_165"
+            "OBJ_162",
+            "OBJ_163"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_164" = {
+      "OBJ_162" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -561,13 +541,13 @@
                "-target",
                "x86_64-apple-macosx10.10",
                "-sdk",
-               "/Applications/Xcode_10.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+               "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk"
             );
             SWIFT_VERSION = "5.0";
          };
          name = "Debug";
       };
-      "OBJ_165" = {
+      "OBJ_163" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -579,64 +559,63 @@
                "-target",
                "x86_64-apple-macosx10.10",
                "-sdk",
-               "/Applications/Xcode_10.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+               "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk"
             );
             SWIFT_VERSION = "5.0";
          };
          name = "Release";
       };
-      "OBJ_166" = {
+      "OBJ_164" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_167"
+            "OBJ_165"
          );
       };
-      "OBJ_167" = {
+      "OBJ_165" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_6";
       };
-      "OBJ_169" = {
+      "OBJ_167" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_170",
-            "OBJ_171"
+            "OBJ_168",
+            "OBJ_169"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
+      };
+      "OBJ_168" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_169" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
       };
       "OBJ_17" = {
          isa = "PBXFileReference";
-         path = "BundleExtensions.swift";
+         path = "DateExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_170" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
-      };
-      "OBJ_171" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_172" = {
          isa = "PBXTargetDependency";
          target = "MagicPills::MagicPillsTests";
       };
-      "OBJ_174" = {
+      "OBJ_172" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_175",
-            "OBJ_176"
+            "OBJ_173",
+            "OBJ_174"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_175" = {
+      "OBJ_173" = {
          isa = "XCBuildConfiguration";
-         baseConfigurationReference = "OBJ_8";
          buildSettings = {
             CLANG_ENABLE_MODULES = "YES";
             EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
@@ -674,9 +653,8 @@
          };
          name = "Debug";
       };
-      "OBJ_176" = {
+      "OBJ_174" = {
          isa = "XCBuildConfiguration";
-         baseConfigurationReference = "OBJ_8";
          buildSettings = {
             CLANG_ENABLE_MODULES = "YES";
             EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
@@ -714,9 +692,11 @@
          };
          name = "Release";
       };
-      "OBJ_177" = {
+      "OBJ_175" = {
          isa = "PBXSourcesBuildPhase";
          files = (
+            "OBJ_176",
+            "OBJ_177",
             "OBJ_178",
             "OBJ_179",
             "OBJ_180",
@@ -747,10 +727,16 @@
             "OBJ_205",
             "OBJ_206",
             "OBJ_207",
-            "OBJ_208",
-            "OBJ_209",
-            "OBJ_210"
+            "OBJ_208"
          );
+      };
+      "OBJ_176" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_63";
+      };
+      "OBJ_177" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_64";
       };
       "OBJ_178" = {
          isa = "PBXBuildFile";
@@ -762,7 +748,7 @@
       };
       "OBJ_18" = {
          isa = "PBXFileReference";
-         path = "DataExtensions.swift";
+         path = "DecimalExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_180" = {
@@ -807,48 +793,48 @@
       };
       "OBJ_19" = {
          isa = "PBXFileReference";
-         path = "DateExtensions.swift";
+         path = "DictionaryExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_190" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_77";
+         fileRef = "OBJ_78";
       };
       "OBJ_191" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_78";
+         fileRef = "OBJ_79";
       };
       "OBJ_192" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_79";
+         fileRef = "OBJ_81";
       };
       "OBJ_193" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_81";
+         fileRef = "OBJ_82";
       };
       "OBJ_194" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_82";
+         fileRef = "OBJ_84";
       };
       "OBJ_195" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_84";
+         fileRef = "OBJ_87";
       };
       "OBJ_196" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_85";
+         fileRef = "OBJ_88";
       };
       "OBJ_197" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_87";
+         fileRef = "OBJ_90";
       };
       "OBJ_198" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_90";
+         fileRef = "OBJ_91";
       };
       "OBJ_199" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_91";
+         fileRef = "OBJ_92";
       };
       "OBJ_2" = {
          isa = "XCConfigurationList";
@@ -861,7 +847,7 @@
       };
       "OBJ_20" = {
          isa = "PBXFileReference";
-         path = "DecimalExtensions.swift";
+         path = "DispatchQueueExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_200" = {
@@ -894,82 +880,74 @@
       };
       "OBJ_207" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_100";
+         fileRef = "OBJ_101";
       };
       "OBJ_208" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_101";
-      };
-      "OBJ_209" = {
-         isa = "PBXBuildFile";
          fileRef = "OBJ_102";
       };
-      "OBJ_21" = {
-         isa = "PBXFileReference";
-         path = "DictionaryExtensions.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_210" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_104";
-      };
-      "OBJ_211" = {
+      "OBJ_209" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
-            "OBJ_212"
+            "OBJ_210"
          );
       };
-      "OBJ_212" = {
-         isa = "PBXBuildFile";
-         fileRef = "MagicPills::MagicPills::Product";
-      };
-      "OBJ_213" = {
-         isa = "PBXTargetDependency";
-         target = "MagicPills::MagicPills";
-      };
-      "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "DispatchQueueExtensions.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_23" = {
+      "OBJ_21" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_24",
-            "OBJ_25"
+            "OBJ_22",
+            "OBJ_23"
          );
          name = "Formatters";
          path = "Formatters";
          sourceTree = "<group>";
       };
-      "OBJ_24" = {
+      "OBJ_210" = {
+         isa = "PBXBuildFile";
+         fileRef = "MagicPills::MagicPills::Product";
+      };
+      "OBJ_211" = {
+         isa = "PBXTargetDependency";
+         target = "MagicPills::MagicPills";
+      };
+      "OBJ_22" = {
          isa = "PBXFileReference";
          path = "DateFormatterExtensions.swift";
          sourceTree = "<group>";
       };
-      "OBJ_25" = {
+      "OBJ_23" = {
          isa = "PBXFileReference";
          path = "NumberFormatterExtensions.swift";
          sourceTree = "<group>";
       };
-      "OBJ_26" = {
+      "OBJ_24" = {
          isa = "PBXFileReference";
          path = "OptionalExtensions.swift";
          sourceTree = "<group>";
       };
-      "OBJ_27" = {
+      "OBJ_25" = {
          isa = "PBXFileReference";
          path = "SequenceExtensions.swift";
          sourceTree = "<group>";
       };
-      "OBJ_28" = {
+      "OBJ_26" = {
          isa = "PBXFileReference";
          path = "StringExtensions+Formating.swift";
          sourceTree = "<group>";
       };
-      "OBJ_29" = {
+      "OBJ_27" = {
          isa = "PBXFileReference";
          path = "StringExtensions+Validators.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "StringExtensions+Values.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXFileReference";
+         path = "StringExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_3" = {
@@ -1015,62 +993,66 @@
       };
       "OBJ_30" = {
          isa = "PBXFileReference";
-         path = "StringExtensions+Values.swift";
+         path = "TimeIntervalExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_31" = {
          isa = "PBXFileReference";
-         path = "StringExtensions.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_32" = {
-         isa = "PBXFileReference";
-         path = "TimeIntervalExtensions.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_33" = {
-         isa = "PBXFileReference";
          path = "URLExtensions.swift";
          sourceTree = "<group>";
       };
-      "OBJ_34" = {
+      "OBJ_32" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_35",
-            "OBJ_36"
+            "OBJ_33",
+            "OBJ_34"
          );
          name = "Protocols";
          path = "Protocols";
          sourceTree = "<group>";
       };
-      "OBJ_35" = {
+      "OBJ_33" = {
          isa = "PBXFileReference";
          path = "DefinesPrimaryKey.swift";
          sourceTree = "<group>";
       };
-      "OBJ_36" = {
+      "OBJ_34" = {
          isa = "PBXFileReference";
          path = "Optionable.swift";
          sourceTree = "<group>";
       };
-      "OBJ_37" = {
+      "OBJ_35" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_38",
-            "OBJ_39"
+            "OBJ_36",
+            "OBJ_37"
          );
          name = "Types";
          path = "Types";
          sourceTree = "<group>";
       };
-      "OBJ_38" = {
+      "OBJ_36" = {
          isa = "PBXFileReference";
          path = "OrderedSet.swift";
          sourceTree = "<group>";
       };
-      "OBJ_39" = {
+      "OBJ_37" = {
          isa = "PBXFileReference";
          path = "SharedDictionary.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_39"
+         );
+         name = "Utilities";
+         path = "Utilities";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "Fold.swift";
          sourceTree = "<group>";
       };
       "OBJ_4" = {
@@ -1111,57 +1093,45 @@
          name = "Release";
       };
       "OBJ_40" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_41"
-         );
-         name = "Utilities";
-         path = "Utilities";
-         sourceTree = "<group>";
-      };
-      "OBJ_41" = {
-         isa = "PBXFileReference";
-         path = "Fold.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_42" = {
          isa = "PBXFileReference";
          path = "MagicPills.swift";
          sourceTree = "<group>";
       };
-      "OBJ_43" = {
+      "OBJ_41" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_44",
-            "OBJ_47"
+            "OBJ_42",
+            "OBJ_45"
          );
          name = "UIKit";
          path = "UIKit";
          sourceTree = "<group>";
       };
-      "OBJ_44" = {
+      "OBJ_42" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_45",
-            "OBJ_46"
+            "OBJ_43",
+            "OBJ_44"
          );
          name = "Components";
          path = "Components";
          sourceTree = "<group>";
       };
-      "OBJ_45" = {
+      "OBJ_43" = {
          isa = "PBXFileReference";
          path = "SnackBar.swift";
          sourceTree = "<group>";
       };
-      "OBJ_46" = {
+      "OBJ_44" = {
          isa = "PBXFileReference";
          path = "Toast.swift";
          sourceTree = "<group>";
       };
-      "OBJ_47" = {
+      "OBJ_45" = {
          isa = "PBXGroup";
          children = (
+            "OBJ_46",
+            "OBJ_47",
             "OBJ_48",
             "OBJ_49",
             "OBJ_50",
@@ -1171,22 +1141,30 @@
             "OBJ_54",
             "OBJ_55",
             "OBJ_56",
-            "OBJ_57",
-            "OBJ_58",
-            "OBJ_59"
+            "OBJ_57"
          );
          name = "Extensions";
          path = "Extensions";
          sourceTree = "<group>";
       };
-      "OBJ_48" = {
+      "OBJ_46" = {
          isa = "PBXFileReference";
          path = "CGImageExtensions+UIKit.swift";
          sourceTree = "<group>";
       };
-      "OBJ_49" = {
+      "OBJ_47" = {
          isa = "PBXFileReference";
          path = "CIImageExtensions+UIKit.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_48" = {
+         isa = "PBXFileReference";
+         path = "StringExtensions+UIKit.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_49" = {
+         isa = "PBXFileReference";
+         path = "UICollectionViewExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_5" = {
@@ -1194,9 +1172,10 @@
          children = (
             "OBJ_6",
             "OBJ_7",
-            "OBJ_9",
-            "OBJ_60",
-            "OBJ_105",
+            "OBJ_58",
+            "OBJ_103",
+            "OBJ_106",
+            "OBJ_107",
             "OBJ_108",
             "OBJ_109",
             "OBJ_110",
@@ -1204,62 +1183,73 @@
             "OBJ_112",
             "OBJ_113",
             "OBJ_114",
-            "OBJ_115",
-            "OBJ_116",
-            "OBJ_117"
+            "OBJ_115"
          );
          path = "";
          sourceTree = "<group>";
       };
       "OBJ_50" = {
          isa = "PBXFileReference";
-         path = "StringExtensions+UIKit.swift";
+         path = "UIFontExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_51" = {
          isa = "PBXFileReference";
-         path = "UICollectionViewExtensions.swift";
+         path = "UIImageExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_52" = {
          isa = "PBXFileReference";
-         path = "UIFontExtensions.swift";
+         path = "UILabelExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_53" = {
          isa = "PBXFileReference";
-         path = "UIImageExtensions.swift";
+         path = "UIScrollViewExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_54" = {
          isa = "PBXFileReference";
-         path = "UILabelExtensions.swift";
+         path = "UIStackViewExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_55" = {
          isa = "PBXFileReference";
-         path = "UIScrollViewExtensions.swift";
+         path = "UITableViewExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_56" = {
          isa = "PBXFileReference";
-         path = "UIStackViewExtensions.swift";
+         path = "UIViewControllerExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_57" = {
          isa = "PBXFileReference";
-         path = "UITableViewExtensions.swift";
+         path = "UIViewExtensions.swift";
          sourceTree = "<group>";
       };
       "OBJ_58" = {
-         isa = "PBXFileReference";
-         path = "UIViewControllerExtensions.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_59"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_59" = {
-         isa = "PBXFileReference";
-         path = "UIViewExtensions.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_60",
+            "OBJ_61",
+            "OBJ_83",
+            "OBJ_85",
+            "OBJ_100",
+            "OBJ_102"
+         );
+         name = "MagicPillsTests";
+         path = "Tests/MagicPillsTests";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_6" = {
          isa = "PBXFileReference";
@@ -1268,46 +1258,26 @@
          sourceTree = "<group>";
       };
       "OBJ_60" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_61"
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "Info.plist";
+         sourceTree = "<group>";
       };
       "OBJ_61" = {
          isa = "PBXGroup";
          children = (
             "OBJ_62",
-            "OBJ_63",
-            "OBJ_86",
-            "OBJ_88",
-            "OBJ_103"
-         );
-         name = "MagicPillsTests";
-         path = "Tests/MagicPillsTests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_62" = {
-         isa = "PBXFileReference";
-         path = "Info.plist";
-         sourceTree = "<group>";
-      };
-      "OBJ_63" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_64",
-            "OBJ_80",
-            "OBJ_83"
+            "OBJ_77",
+            "OBJ_80"
          );
          name = "Foundation";
          path = "Foundation";
          sourceTree = "<group>";
       };
-      "OBJ_64" = {
+      "OBJ_62" = {
          isa = "PBXGroup";
          children = (
+            "OBJ_63",
+            "OBJ_64",
             "OBJ_65",
             "OBJ_66",
             "OBJ_67",
@@ -1319,38 +1289,45 @@
             "OBJ_73",
             "OBJ_74",
             "OBJ_75",
-            "OBJ_76",
-            "OBJ_77",
-            "OBJ_78",
-            "OBJ_79"
+            "OBJ_76"
          );
          name = "Extensions";
          path = "Extensions";
          sourceTree = "<group>";
       };
-      "OBJ_65" = {
-         isa = "PBXFileReference";
-         path = "ArrayExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_66" = {
+      "OBJ_63" = {
          isa = "PBXFileReference";
          path = "BoolExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_67" = {
+      "OBJ_64" = {
          isa = "PBXFileReference";
          path = "BundleExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_68" = {
+      "OBJ_65" = {
          isa = "PBXFileReference";
          path = "DateExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_69" = {
+      "OBJ_66" = {
          isa = "PBXFileReference";
          path = "DecimalExtensionsTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_67" = {
+         isa = "PBXFileReference";
+         path = "DictionaryExtensionsTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_68" = {
+         isa = "PBXFileReference";
+         path = "DispatchQueueExtensionsTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_69" = {
+         isa = "PBXFileReference";
+         path = "OptionalExtensionsTests.swift";
          sourceTree = "<group>";
       };
       "OBJ_7" = {
@@ -1358,65 +1335,77 @@
          children = (
             "OBJ_8"
          );
-         name = "Configs";
+         name = "Sources";
          path = "";
-         sourceTree = "<group>";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_70" = {
-         isa = "PBXFileReference";
-         path = "DictionaryExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_71" = {
-         isa = "PBXFileReference";
-         path = "DispatchQueueExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_72" = {
-         isa = "PBXFileReference";
-         path = "OptionalExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_73" = {
          isa = "PBXFileReference";
          path = "SequenceExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_74" = {
+      "OBJ_71" = {
          isa = "PBXFileReference";
          path = "StringExtensions+FormatingTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_75" = {
+      "OBJ_72" = {
          isa = "PBXFileReference";
          path = "StringExtensions+ValidatorsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_76" = {
+      "OBJ_73" = {
          isa = "PBXFileReference";
          path = "StringExtensions+ValuesTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_77" = {
+      "OBJ_74" = {
          isa = "PBXFileReference";
          path = "StringExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_78" = {
+      "OBJ_75" = {
          isa = "PBXFileReference";
          path = "TimeIntervalExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_79" = {
+      "OBJ_76" = {
          isa = "PBXFileReference";
          path = "URLExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_8" = {
-         isa = "PBXFileReference";
-         name = "ios.xcconfig";
-         path = "Sources/ios.xcconfig";
+      "OBJ_77" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_78",
+            "OBJ_79"
+         );
+         name = "Protocols";
+         path = "Protocols";
          sourceTree = "<group>";
+      };
+      "OBJ_78" = {
+         isa = "PBXFileReference";
+         path = "DefinesPrimaryKeyTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_79" = {
+         isa = "PBXFileReference";
+         path = "OptionableTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10",
+            "OBJ_11",
+            "OBJ_40",
+            "OBJ_41"
+         );
+         name = "MagicPills";
+         path = "Sources/MagicPills";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_80" = {
          isa = "PBXGroup";
@@ -1424,144 +1413,135 @@
             "OBJ_81",
             "OBJ_82"
          );
-         name = "Protocols";
-         path = "Protocols";
+         name = "Types";
+         path = "Types";
          sourceTree = "<group>";
       };
       "OBJ_81" = {
          isa = "PBXFileReference";
-         path = "DefinesPrimaryKeyTests.swift";
+         path = "OrderedSetTests.swift";
          sourceTree = "<group>";
       };
       "OBJ_82" = {
          isa = "PBXFileReference";
-         path = "OptionableTests.swift";
+         path = "SharedDictionaryExtensionsTests.swift";
          sourceTree = "<group>";
       };
       "OBJ_83" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_84",
-            "OBJ_85"
-         );
-         name = "Types";
-         path = "Types";
-         sourceTree = "<group>";
-      };
-      "OBJ_84" = {
-         isa = "PBXFileReference";
-         path = "OrderedSetTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_85" = {
-         isa = "PBXFileReference";
-         path = "SharedDictionaryExtensionsTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_86" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_87"
+            "OBJ_84"
          );
          name = "Helpers";
          path = "Helpers";
          sourceTree = "<group>";
       };
-      "OBJ_87" = {
+      "OBJ_84" = {
          isa = "PBXFileReference";
          path = "FakeBundle.swift";
          sourceTree = "<group>";
       };
-      "OBJ_88" = {
+      "OBJ_85" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_89",
-            "OBJ_92"
+            "OBJ_86",
+            "OBJ_89"
          );
          name = "UIKit";
          path = "UIKit";
+         sourceTree = "<group>";
+      };
+      "OBJ_86" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_87",
+            "OBJ_88"
+         );
+         name = "Components";
+         path = "Components";
+         sourceTree = "<group>";
+      };
+      "OBJ_87" = {
+         isa = "PBXFileReference";
+         path = "SnackBarTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_88" = {
+         isa = "PBXFileReference";
+         path = "ToastTests.swift";
          sourceTree = "<group>";
       };
       "OBJ_89" = {
          isa = "PBXGroup";
          children = (
             "OBJ_90",
-            "OBJ_91"
-         );
-         name = "Components";
-         path = "Components";
-         sourceTree = "<group>";
-      };
-      "OBJ_9" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_10"
-         );
-         name = "Sources";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_90" = {
-         isa = "PBXFileReference";
-         path = "SnackBarTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_91" = {
-         isa = "PBXFileReference";
-         path = "ToastTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_92" = {
-         isa = "PBXGroup";
-         children = (
+            "OBJ_91",
+            "OBJ_92",
             "OBJ_93",
             "OBJ_94",
             "OBJ_95",
             "OBJ_96",
             "OBJ_97",
             "OBJ_98",
-            "OBJ_99",
-            "OBJ_100",
-            "OBJ_101",
-            "OBJ_102"
+            "OBJ_99"
          );
          name = "Extensions";
          path = "Extensions";
          sourceTree = "<group>";
       };
-      "OBJ_93" = {
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "MagicPills.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
          isa = "PBXFileReference";
          path = "StringExtensionsUIKitTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_94" = {
+      "OBJ_91" = {
          isa = "PBXFileReference";
          path = "UICollectionViewExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_95" = {
+      "OBJ_92" = {
          isa = "PBXFileReference";
          path = "UIFontExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_96" = {
+      "OBJ_93" = {
          isa = "PBXFileReference";
          path = "UIImageExtensionsTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_97" = {
+      "OBJ_94" = {
          isa = "PBXFileReference";
          path = "UILabelExtensionTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_98" = {
+      "OBJ_95" = {
          isa = "PBXFileReference";
          path = "UIScrollViewExtensionsTest.swift";
          sourceTree = "<group>";
       };
-      "OBJ_99" = {
+      "OBJ_96" = {
          isa = "PBXFileReference";
          path = "UIStackViewExtensionsTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_97" = {
+         isa = "PBXFileReference";
+         path = "UITableViewExtensionsTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_98" = {
+         isa = "PBXFileReference";
+         path = "UIViewControllerExtensionsTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_99" = {
+         isa = "PBXFileReference";
+         path = "UIViewExtensionsTests.swift";
          sourceTree = "<group>";
       };
    };

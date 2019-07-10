@@ -18,33 +18,42 @@ public extension String {
 
     var isValidNIF: Bool {
         let identifierBase = self.uppercased()
+            .replacingOccurrences(of: "-", with: "")
+            .replacingOccurrences(of: "\\", with: "")
+            .removingWhiteSpaces
+        
+        if identifierBase.satisfiesRegex("^[0-9]{0,1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKET]{1}$") {
+            guard let numberBase: Int = Int(identifierBase.prefix(identifierBase.count - 1)),
+                let letter: Character = identifierBase.last else {
+                    return false
+            }
+            let letterMap = "TRWAGMYFPDXBNJZSQVHLCKET"
+            let letterIndex = numberBase % 23
+            let letterPositionInMap = letterMap.firstIndex(of: letter)?.utf16Offset(in: letterMap)
 
-        guard
-            !identifierBase.isEmpty,
-            let numberBase = Int(identifierBase.prefix(self.count - 1)),
-            let letter = identifierBase.last else {
-                return false
+            return letterPositionInMap == letterIndex ? true : false
         }
-
-        let letterMap = "TRWAGMYFPDXBNJZSQVHLCKET"
-        let letterIndex = numberBase % 23
-        let letterPositionInMap = letterMap.firstIndex(of: letter)?.utf16Offset(in: letterMap)
-
-        return letterPositionInMap == letterIndex ? true : false
+        return false
     }
 
     var isValidNIE: Bool {
-        guard !self.isEmpty else {
+        let identifierBase = self.uppercased()
+        
+        if identifierBase.satisfiesRegex("^[XYZ]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKET]{1}$") {
+            let buffer = NSMutableString(string: self.uppercased())
+            buffer.replaceOccurrences(of: "X", with: "0", options: .anchored, range: NSRange(location: 0, length: 1))
+            buffer.replaceOccurrences(of: "Y", with: "1", options: .anchored, range: NSRange(location: 0, length: 1))
+            buffer.replaceOccurrences(of: "Z", with: "2", options: .anchored, range: NSRange(location: 0, length: 1))
+            guard let numberBase: Int = Int(buffer.standardizingPath.prefix(self.count - 1)), let letter: Character = identifierBase.last else {
+                return false
+            }
+            let letterMap = "TRWAGMYFPDXBNJZSQVHLCKET"
+            let letterIndex = numberBase % 23
+            let letterPositionInMap = letterMap.firstIndex(of: letter)?.utf16Offset(in: letterMap)
+            
+            return letterPositionInMap == letterIndex ? true : false
+        } else {
             return false
         }
-
-        var identifierBase = self.uppercased()
-        let start = identifierBase.startIndex
-        let end = identifierBase.index(identifierBase.startIndex, offsetBy: 1)
-        identifierBase = identifierBase.replacingOccurrences(of: "X", with: "0", options: .anchored, range: start..<end)
-        identifierBase = identifierBase.replacingOccurrences(of: "Y", with: "1", options: .anchored, range: start..<end)
-        identifierBase = identifierBase.replacingOccurrences(of: "Z", with: "2", options: .anchored, range: start..<end)
-
-        return identifierBase.isValidNIF
     }
 }
