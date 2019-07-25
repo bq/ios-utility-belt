@@ -23,6 +23,39 @@ class StringExtensionsUIKitTests: XCTestCase {
         XCTAssertEqual(foundFont, font)
     }
 
+    func test_format_last_character_with_default_font() {
+        let string = "500 GB"
+        let font = UIFont.boldSystemFont(ofSize: 40)
+        let defaultFont = UIFont.boldSystemFont(ofSize: 30)
+        let attributedText = string.attributed(lastCharacters: 2, font: font, defaultFont: defaultFont)
+        let fullRange = NSRange(location: 0, length: attributedText.length)
+        let amountRange = string.firstRangeOcurrence("500 ")!
+        let unitRange = string.firstRangeOcurrence("GB")!
+
+        var foundAmountFont: UIFont?
+        attributedText
+            .enumerateAttribute(.font,
+                                in: fullRange,
+                                options: [.longestEffectiveRangeNotRequired]) { value, range, _ in
+                                    if range == amountRange, let font = value as? UIFont {
+                                        foundAmountFont = font
+                                    }
+            }
+
+        var foundUnitFont: UIFont?
+        attributedText
+            .enumerateAttribute(.font,
+                                in: fullRange,
+                                options: [.longestEffectiveRangeNotRequired]) { value, range, _ in
+                                    if range == unitRange, let font = value as? UIFont {
+                                        foundUnitFont = font
+                                    }
+            }
+
+        XCTAssertEqual(foundAmountFont, defaultFont)
+        XCTAssertEqual(foundUnitFont, font)
+    }
+
     func test_format_last_character_with_more_characters_than_lenght() {
         let string = "RGB"
         let font = UIFont.boldSystemFont(ofSize: 40)

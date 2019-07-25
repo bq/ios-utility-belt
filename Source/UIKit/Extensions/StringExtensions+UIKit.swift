@@ -7,9 +7,16 @@ public extension String {
     /// - Parameters:
     ///   - characters: Number of last characters to change
     ///   - font: Font to set of this last characters
+    ///   - defaultFont: Font to set to the rest of characters (optional)
     /// - Returns: String with last characters indicated with custom font attribute (optional)
-    func attributed(lastCharacters quantity: Int, font: UIFont) -> NSAttributedString {
-        let stringAttributed = NSMutableAttributedString(string: self)
+    func attributed(lastCharacters quantity: Int, font: UIFont, defaultFont: UIFont? = nil) -> NSAttributedString {
+        var stringAttributed = NSMutableAttributedString(string: self)
+
+        if let defaultFont = defaultFont {
+            stringAttributed = NSMutableAttributedString(string: self,
+                                                         attributes: [.font: defaultFont])
+        }
+
         if self.count >= quantity {
             let startIndex = self.index(self.endIndex, offsetBy: -(quantity))
             let substring = self[startIndex..<self.endIndex]
