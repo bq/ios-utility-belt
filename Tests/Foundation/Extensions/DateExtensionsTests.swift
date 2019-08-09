@@ -18,6 +18,14 @@ class DateExtensionsTests: XCTestCase {
         XCTAssertNil(Date(formattedSpanishFullDate: "👋"))
     }
 
+    func test_init_with_iso8601date() {
+        let iso8601Date = "2019-08-09T10:48:00.000+0000"
+        let date = Date(iso8601Date: iso8601Date)
+
+        XCTAssertEqual(date?.formattedISO8601Date, iso8601Date)
+        XCTAssertNil(Date(iso8601Date: "👋"))
+    }
+
     func test_init_with_rfc822Date() {
         let rfc822Date = "Fri, 09 Aug 2019 10:48:00 GMT"
         let date = Date(rfc822Date: rfc822Date)
@@ -68,6 +76,13 @@ class DateExtensionsTests: XCTestCase {
         let someDateTime = formatter.date(from: "2016/10/12 22:31")
         let timeDate = someDateTime?.formattedTime()
         XCTAssertEqual(timeDate, expectedResult)
+    }
+
+    func test_ISO8601_formatted_date() {
+        let spanishFullDate = "09/08/2019 10:48"
+        let expectedResult = "2019-08-09T10:48:00.000+0000"
+        let date = Date(formattedSpanishFullDate: spanishFullDate, timeZone: TimeZone(secondsFromGMT: 0))
+        XCTAssertEqual(date?.formattedISO8601Date, expectedResult)
     }
 
     func test_RFC822_formatted_date() {

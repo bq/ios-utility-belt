@@ -17,6 +17,13 @@ public extension Date {
         self = date
     }
 
+    init?(iso8601Date: String) {
+        guard let date = DateFormatter.iso8601DateFormatter.date(from: iso8601Date) else {
+            return nil
+        }
+        self = date
+    }
+
     init?(rfc822Date: String) {
         guard let date = DateFormatter.rfc822DateFormatter.date(from: rfc822Date) else {
             return nil
@@ -62,6 +69,10 @@ public extension Date {
 
     func formattedTime(timeZone: TimeZone? = nil) -> String {
         return formatWith(dateFormat: "HH:mm", timeZone: timeZone)
+    }
+
+    var formattedISO8601Date: String {
+        return DateFormatter.iso8601DateFormatter.string(from: self)
     }
 
     var formattedRFC822Date: String {
