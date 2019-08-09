@@ -61,4 +61,11 @@ class DateExtensionsTests: XCTestCase {
         let timeDate = someDateTime?.formattedTime()
         XCTAssertEqual(timeDate, expectedResult)
     }
+
+    func test_RFC822_formatted_date() {
+        let spanishFullDate = "09/08/2019 10:48"
+        let expectedResult = "Fri, 09 Aug 2019 10:48:00 GMT"
+        let date = Date(formattedSpanishFullDate: spanishFullDate, timeZone: TimeZone(secondsFromGMT: 0))
+        XCTAssertEqual(date?.formattedRFC822Date, expectedResult)
+    }
 }

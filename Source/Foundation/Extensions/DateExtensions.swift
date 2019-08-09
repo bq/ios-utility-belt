@@ -57,6 +57,10 @@ public extension Date {
         return formatWith(dateFormat: "HH:mm", timeZone: timeZone)
     }
 
+    var formattedRFC822Date: String {
+        return DateFormatter.rfc822DateFormatter.string(from: self)
+    }
+
     var isInTheFirstElevenDaysOfTheMonth: Bool {
         let day = Calendar.current.component(.day, from: self)
         return 1...11 ~= day
