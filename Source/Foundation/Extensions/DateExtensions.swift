@@ -17,6 +17,13 @@ public extension Date {
         self = date
     }
 
+    init?(rfc822Date: String) {
+        guard let date = DateFormatter.rfc822DateFormatter.date(from: rfc822Date) else {
+            return nil
+        }
+        self = date
+    }
+
     var millisecondsSince1970: Double {
         return timeIntervalSince1970 * 1_000.0
     }

@@ -18,6 +18,14 @@ class DateExtensionsTests: XCTestCase {
         XCTAssertNil(Date(formattedSpanishFullDate: "👋"))
     }
 
+    func test_init_with_rfc822Date() {
+        let rfc822Date = "Fri, 09 Aug 2019 10:48:00 GMT"
+        let date = Date(rfc822Date: rfc822Date)
+
+        XCTAssertEqual(date?.formattedRFC822Date, rfc822Date)
+        XCTAssertNil(Date(rfc822Date: "👋"))
+    }
+
     func test_date_parts() {
         let timeZone = TimeZone(secondsFromGMT: 3_600)
         let date = Date(formattedSpanishFullDate: "20/02/2018 12:33", timeZone: timeZone)
