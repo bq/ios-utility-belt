@@ -24,6 +24,7 @@ public extension Array where Element: Equatable {
     }
 
     /// Append the given element if not exists in array
+    @discardableResult
     mutating func appendIfNotExists(_ element: Element) -> Bool {
         if !self.contains(element) {
             append(element)
