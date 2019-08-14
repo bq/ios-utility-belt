@@ -100,9 +100,9 @@ class UIViewExtensionsTests: XCTestCase {
         let view = UIView(frame: frame)
         view.addShadow()
         XCTAssertEqual(view.shadowColor, UIColor.black)
-        XCTAssertEqual(view.shadowRadius, 1)
+        XCTAssertEqual(view.shadowRadius, 2)
         XCTAssertEqual(view.shadowOffset, CGSize(width: 1, height: 1))
-        XCTAssertEqual(view.shadowOpacity, 0.5)
+        XCTAssertEqual(view.shadowOpacity, 0.2)
     }
 
     func test_remove_shadow() {
@@ -110,9 +110,9 @@ class UIViewExtensionsTests: XCTestCase {
         let view = UIView(frame: frame)
         view.addShadow()
         XCTAssertEqual(view.shadowColor, UIColor.black)
-        XCTAssertEqual(view.shadowRadius, 1)
+        XCTAssertEqual(view.shadowRadius, 2)
         XCTAssertEqual(view.shadowOffset, CGSize(width: 1, height: 1))
-        XCTAssertEqual(view.shadowOpacity, 0.5)
+        XCTAssertEqual(view.shadowOpacity, 0.2)
         view.removeShadow()
         XCTAssertEqual(view.shadowColor, UIColor.clear)
         XCTAssertEqual(view.shadowRadius, 0)

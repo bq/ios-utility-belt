@@ -107,24 +107,32 @@ public extension UIView {
     ///
     /// - Parameters:
     ///   - color: shadow color (default is black)
-    ///   - opacity: shadow opacity (default is 0.5)
-    ///   - offSet: shadow offset (default is 1)
-    ///   - radius: shadow radius (default is 1)
-    ///   - haveRasterizationScale: if shadow have rasterization scale (default is true)
+    ///   - opacity: shadow opacity (default is 0.2)
+    ///   - offSet: shadow offset (default is 0 ; 2)
+    ///   - radius: shadow radius (default is 2)
     func addShadow(color: UIColor = .black,
-                   opacity: Float = 0.5,
+                   opacity: Float = 0.2,
                    offSet: CGSize = CGSize(width: 1, height: 1),
-                   radius: CGFloat = 1,
-                   haveRasterizationScale: Bool = true) {
-        layer.masksToBounds = false
-        layer.shadowColor = color.cgColor
-        layer.shadowOpacity = opacity
-        layer.shadowOffset = offSet
-        layer.shadowRadius = radius
+                   radius: CGFloat = 2) {
 
-        layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        layer.shouldRasterize = true
-        layer.rasterizationScale = haveRasterizationScale ? UIScreen.main.scale : 1
+        layer.masksToBounds = false
+        layer.shadowOffset = opacity.isZero ? CGSize(width: 0.0, height: 0.0) : offSet
+        layer.shadowOpacity = opacity
+        layer.shadowRadius = opacity.isZero ? 0.0 : radius
+        layer.shadowColor = opacity.isZero ? UIColor.clear.cgColor : color.cgColor
+        if cornerRadius != 0 {
+            layer.roundSublayers(cornerRadius)
+        }
+    }
+
+    /// Remove custom shadow
+    func removeShadow() {
+        layer.masksToBounds = true
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowOpacity = 0
+        layer.shadowRadius = 0
+        layer.shadowColor = UIColor.clear.cgColor
+        layer.unroundSublayers()
     }
 
     /// Animate opacity of custom shadow
@@ -141,15 +149,6 @@ public extension UIView {
         shadowAnimation.fillMode = CAMediaTimingFillMode.forwards
         shadowAnimation.isRemovedOnCompletion = false
         layer.add(shadowAnimation, forKey: nil)
-    }
-
-    /// Remove custom shadow
-    func removeShadow() {
-        layer.masksToBounds = true
-        layer.shadowColor = UIColor.clear.cgColor
-        layer.shadowOpacity = 0
-        layer.shadowOffset = CGSize(width: 0, height: 0)
-        layer.shadowRadius = 0
     }
 
     /// Show view with animation
