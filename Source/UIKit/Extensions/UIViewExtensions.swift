@@ -127,6 +127,22 @@ public extension UIView {
         layer.rasterizationScale = haveRasterizationScale ? UIScreen.main.scale : 1
     }
 
+    /// Animate opacity of custom shadow
+    ///
+    /// - Parameters:
+    ///   - value: opacity value
+    ///   - duration: duration animation
+    func animateShadowOpacity(to value: Float,
+                              withDuration duration: CFTimeInterval) {
+        let shadowAnimation = CABasicAnimation(keyPath: NSExpression(forKeyPath: \CALayer.shadowOpacity).keyPath)
+        shadowAnimation.fromValue = shadowOpacity
+        shadowAnimation.toValue = value
+        shadowAnimation.duration = duration
+        shadowAnimation.fillMode = CAMediaTimingFillMode.forwards
+        shadowAnimation.isRemovedOnCompletion = false
+        layer.add(shadowAnimation, forKey: nil)
+    }
+
     /// Remove custom shadow
     func removeShadow() {
         layer.masksToBounds = true
