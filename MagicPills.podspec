@@ -27,7 +27,7 @@ DESC
   s.watchos.deployment_target = '4.0'
   s.watchos.frameworks = 'UIKit', 'WatchKit'
   s.watchos.source_files  = 'Source/Foundation/**/*.swift'
-  s.watchos.exclude_files = 'Source/Foundation/Extensions/StringExtensions+Formating.swift', 'Source/Foundation/Extensions/CALayerExtensions.swift'
+  s.watchos.exclude_files = 'Source/Foundation/Extensions/StringExtensions+Formating.swift', 'Source/Foundation/Extensions/CALayerExtensions.swift', 'Source/Foundation/Extensions/CGFloatExtensions.swift'
 
   s.tvos.deployment_target = '11.0'
   s.tvos.frameworks = 'UIKit'

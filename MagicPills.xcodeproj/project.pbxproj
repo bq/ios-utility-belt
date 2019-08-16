@@ -241,7 +241,6 @@
 		F6F333192306B03F00E93F0E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F333182306B03F00E93F0E /* CGFloatExtensions.swift */; };
 		F6F3331A2306B03F00E93F0E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F333182306B03F00E93F0E /* CGFloatExtensions.swift */; };
 		F6F3331B2306B03F00E93F0E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F333182306B03F00E93F0E /* CGFloatExtensions.swift */; };
-		F6F3331C2306B03F00E93F0E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F333182306B03F00E93F0E /* CGFloatExtensions.swift */; };
 		F6F3331E2306B0AA00E93F0E /* CGFloatExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3331D2306B0AA00E93F0E /* CGFloatExtensionsTests.swift */; };
 		F6F3331F2306B0AA00E93F0E /* CGFloatExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3331D2306B0AA00E93F0E /* CGFloatExtensionsTests.swift */; };
 		F6F333202306B0AA00E93F0E /* CGFloatExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3331D2306B0AA00E93F0E /* CGFloatExtensionsTests.swift */; };
@@ -1380,7 +1379,6 @@
 				F22A38E5227C767A0012C010 /* SharedDictionary.swift in Sources */,
 				F200835A22662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
 				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
-				F6F3331C2306B03F00E93F0E /* CGFloatExtensions.swift in Sources */,
 				F68925D222CDE83C0008263B /* IntExtensions.swift in Sources */,
 				F2008328225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F22A357622807843004E8546 /* DispatchQueueExtensions.swift in Sources */,
