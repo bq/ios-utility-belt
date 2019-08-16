@@ -359,7 +359,7 @@
 		F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKit.swift"; sourceTree = "<group>"; };
 		F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
-		F6F33311230436C000E93F0E /* CALayerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CALayerExtensionsTests.swift; path = ../../Foundation/Extensions/CALayerExtensionsTests.swift; sourceTree = "<group>"; };
+		F6F33311230436C000E93F0E /* CALayerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensionsTests.swift; sourceTree = "<group>"; };
 		F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		F6F97EEA226DAA1100C3E953 /* UICollectionViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensionsTests.swift; sourceTree = "<group>"; };
 		F6F97EED226DAF2C00C3E953 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -672,7 +672,6 @@
 				F62CC32922705F5700DC46F2 /* UIStackViewExtensionsTests.swift */,
 				F62CC32F22706B6C00DC46F2 /* UITableViewExtensionsTests.swift */,
 				F62CC34D2272015500DC46F2 /* UIViewControllerExtensionsTests.swift */,
-				F6F33311230436C000E93F0E /* CALayerExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -732,6 +731,7 @@
 				F2008336225F878600AC6EE1 /* StringExtensions+ValuesTests.swift */,
 				F200835B22662DDD00AC6EE1 /* TimeIntervalExtensionsTests.swift */,
 				F20083612266317600AC6EE1 /* URLExtensionsTests.swift */,
+				F6F33311230436C000E93F0E /* CALayerExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
