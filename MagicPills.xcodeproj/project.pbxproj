@@ -236,7 +236,6 @@
 		F6F3330D23042AEA00E93F0E /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */; };
 		F6F3330E23042AEA00E93F0E /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */; };
 		F6F3330F23042AEA00E93F0E /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */; };
-		F6F3331023042AEE00E93F0E /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */; };
 		F6F333152304370800E93F0E /* CALayerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F33311230436C000E93F0E /* CALayerExtensionsTests.swift */; };
 		F6F333172304370900E93F0E /* CALayerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F33311230436C000E93F0E /* CALayerExtensionsTests.swift */; };
 		F6F97EE9226DA88500C3E953 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F97EE8226DA88500C3E953 /* UICollectionViewExtensions.swift */; };
@@ -1345,7 +1344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2008323225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
-				F6F3331023042AEE00E93F0E /* CALayerExtensions.swift in Sources */,
 				F26C3AFB22537A4600189D28 /* MagicPills.swift in Sources */,
 				F20082F6225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F200830E225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
