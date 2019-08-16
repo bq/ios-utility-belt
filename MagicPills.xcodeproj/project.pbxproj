@@ -679,25 +679,25 @@
 		F2A74DB6225765B5001F0DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F20082F7225E523D00AC6EE1 /* Formatters */,
 				F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */,
 				F20082C6225DFC9D00AC6EE1 /* BoolExtensions.swift */,
 				F200833F2266115E00AC6EE1 /* BundleExtensions.swift */,
-				F22A356B228077E8004E8546 /* DispatchQueueExtensions.swift */,
-				F20082C1225DFC6E00AC6EE1 /* OptionalExtensions.swift */,
+				F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */,
+				F2008329225F862900AC6EE1 /* DataExtensions.swift */,
 				F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */,
 				F20082F2225E518600AC6EE1 /* DecimalExtensions.swift */,
-				F2008329225F862900AC6EE1 /* DataExtensions.swift */,
 				F22A38E6227C76FD0012C010 /* DictionaryExtensions.swift */,
+				F22A356B228077E8004E8546 /* DispatchQueueExtensions.swift */,
+				F20082F7225E523D00AC6EE1 /* Formatters */,
+				F68925CE22CDE8290008263B /* IntExtensions.swift */,
+				F20082C1225DFC6E00AC6EE1 /* OptionalExtensions.swift */,
 				F200836E2266339800AC6EE1 /* SequenceExtensions.swift */,
 				F200830A225F4BFC00AC6EE1 /* StringExtensions.swift */,
-				F200831F225F83EF00AC6EE1 /* StringExtensions+Validators.swift */,
 				F2008324225F84A100AC6EE1 /* StringExtensions+Formating.swift */,
+				F200831F225F83EF00AC6EE1 /* StringExtensions+Validators.swift */,
 				F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */,
 				F200835622662DC400AC6EE1 /* TimeIntervalExtensions.swift */,
 				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
-				F68925CE22CDE8290008263B /* IntExtensions.swift */,
-				F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

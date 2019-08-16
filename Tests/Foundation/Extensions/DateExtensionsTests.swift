@@ -38,13 +38,39 @@ class DateExtensionsTests: XCTestCase {
         let timeZone = TimeZone(secondsFromGMT: 3_600)
         let date = Date(formattedSpanishFullDate: "20/02/2018 12:33", timeZone: timeZone)
 
-        XCTAssertEqual(date?.day, "20")
-        XCTAssertEqual(date?.monthSpanishName, "febrero")
-        XCTAssertEqual(date?.monthSpanishNameAndYear, "febrero 2018")
-        XCTAssertEqual(date?.shortMonthSpanishName, "feb")
-        XCTAssertEqual(date?.year, "2018")
-        XCTAssertEqual(date?.shortYear, "18")
-        XCTAssertEqual(date?.day, "20")
+        XCTAssertEqual(date?.formattedDay, "20")
+        XCTAssertEqual(date?.formattedSpanishMonth, "febrero")
+        XCTAssertEqual(date?.formattedSpanishMonthAndYear, "febrero 2018")
+        XCTAssertEqual(date?.formattedSpanishMonthAndYearWithoutSpace, "febrero_2018")
+        XCTAssertEqual(date?.formattedSpanishShortMonth, "feb")
+        XCTAssertEqual(date?.formattedYear, "2018")
+        XCTAssertEqual(date?.formattedShortYear, "18")
+    }
+
+    func test_months_between_dates() {
+        var spanishFullDate1 = "20/02/2018 12:33"
+        var date1 = Date(formattedSpanishFullDate: spanishFullDate1)!
+
+        var spanishFullDate2 = "19/06/2018 12:33"
+        var date2 = Date(formattedSpanishFullDate: spanishFullDate2)!
+
+        XCTAssertEqual(date1.monthsTo(date2), 3)
+
+        spanishFullDate1 = "19/02/2018 12:33"
+        date1 = Date(formattedSpanishFullDate: spanishFullDate1)!
+
+        spanishFullDate2 = "19/06/2018 12:33"
+        date2 = Date(formattedSpanishFullDate: spanishFullDate2)!
+
+        XCTAssertEqual(date1.monthsTo(date2), 4)
+
+        spanishFullDate1 = "25/02/2018 12:33"
+        date1 = Date(formattedSpanishFullDate: spanishFullDate1)!
+
+        spanishFullDate2 = "19/06/2018 12:33"
+        date2 = Date(formattedSpanishFullDate: spanishFullDate2)!
+
+        XCTAssertEqual(date1.monthsTo(date2, ignoringDays: true), 4)
     }
 
     func test_spanish_format_date() {

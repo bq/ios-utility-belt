@@ -35,40 +35,16 @@ public extension Date {
         return timeIntervalSince1970 * 1_000.0
     }
 
-    var day: String {
-        return formatWith(dateFormat: "d")
+    var formattedDay: String {
+        return format(dateFormat: "d")
     }
 
-    var monthSpanishNameAndYear: String {
-        return formatWith(dateFormat: "MMMM yyyy")
+    var formattedYear: String {
+        return format(dateFormat: "yyyy")
     }
 
-    var monthSpanishName: String {
-        return formatWith(dateFormat: "MMMM")
-    }
-
-    var shortMonthSpanishName: String {
-        return formatWith(dateFormat: "MMM")
-    }
-
-    var year: String {
-        return formatWith(dateFormat: "yyyy")
-    }
-
-    var shortYear: String {
-        return formatWith(dateFormat: "yy")
-    }
-
-    func formattedSpanishDate(timeZone: TimeZone? = nil) -> String {
-        return formatWith(dateFormat: "dd 'de' MMMM", timeZone: timeZone)
-    }
-
-    func formattedSpanishFullDate(timeZone: TimeZone? = nil) -> String {
-        return formatWith(dateFormat: "dd/MM/yyyy HH:mm", timeZone: timeZone)
-    }
-
-    func formattedTime(timeZone: TimeZone? = nil) -> String {
-        return formatWith(dateFormat: "HH:mm", timeZone: timeZone)
+    var formattedShortYear: String {
+        return format(dateFormat: "yy")
     }
 
     var formattedISO8601Date: String {
@@ -77,6 +53,26 @@ public extension Date {
 
     var formattedRFC822Date: String {
         return DateFormatter.rfc822DateFormatter.string(from: self)
+    }
+
+    var formattedSpanishMonthAndYear: String {
+        return format(dateFormat: "MMMM yyyy",
+                      formatter: .spanishDateFormatter)
+    }
+
+    var formattedSpanishMonthAndYearWithoutSpace: String {
+        return format(dateFormat: "MMMM_yyyy",
+                      formatter: .spanishDateFormatter)
+    }
+
+    var formattedSpanishMonth: String {
+        return format(dateFormat: "MMMM",
+                      formatter: .spanishDateFormatter)
+    }
+
+    var formattedSpanishShortMonth: String {
+        return format(dateFormat: "MMM",
+                      formatter: .spanishDateFormatter)
     }
 
     var isInTheFirstElevenDaysOfTheMonth: Bool {
@@ -89,10 +85,50 @@ public extension Date {
         return calendar.isDateInToday(self)
     }
 
+    func formattedSpanishDate(timeZone: TimeZone? = nil) -> String {
+        return format(dateFormat: "dd 'de' MMMM",
+                      timeZone: timeZone,
+                      formatter: .spanishDateFormatter)
+    }
+
+    func formattedSpanishFullDate(timeZone: TimeZone? = nil) -> String {
+        return format(dateFormat: "dd/MM/yyyy HH:mm",
+                      timeZone: timeZone,
+                      formatter: .spanishDateFormatter)
+    }
+
+    func formattedTime(timeZone: TimeZone? = nil) -> String {
+        return format(dateFormat: "HH:mm",
+                      timeZone: timeZone)
+    }
+
+    /**
+     Calculate months to end dates, included days in last month or not
+     
+     - parameters:
+     - endDate: date to
+     - ignoringDays: boolean that indicate if calculate with days (By default included it)
+     - returns: Amount of months between this dates (optional)
+     */
+    func monthsTo(_ endDate: Date, ignoringDays: Bool = false) -> Int {
+        var startDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: self)
+        var endDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: endDate)
+        startDateComponents.day = ignoringDays ? 1 : startDateComponents.day
+        endDateComponents.day = ignoringDays ? 1 : endDateComponents.day
+
+        return Calendar
+            .current
+            .dateComponents([.month],
+                            from: startDateComponents,
+                            to: endDateComponents).month!
+    }
+
     // MARK: - Private methods
 
-    private func formatWith(dateFormat: String, timeZone: TimeZone? = nil) -> String {
-        let formatter = DateFormatter.spanishDateFormatter
+    private func format(dateFormat: String,
+                        timeZone: TimeZone? = nil,
+                        formatter: DateFormatter = DateFormatter()) -> String {
+
         formatter.dateFormat = dateFormat
         if let timeZone = timeZone {
             formatter.timeZone = timeZone
