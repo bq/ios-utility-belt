@@ -136,7 +136,7 @@ class UIViewExtensionsTests: XCTestCase {
     func test_rotate_by_angle() {
         var angle: CGFloat = 0
         var angleInRadians: CGFloat {
-            return angle * .pi / 180
+            return angle.radians
         }
 
         let view1 = UIView()

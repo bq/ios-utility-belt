@@ -181,7 +181,7 @@ public extension UIView {
                 duration: TimeInterval = 1,
                 completion: ((Bool) -> Void)? = nil) {
 
-        let angleInRadians = .pi * angle / 180.0
+        let angleInRadians = angle.radians
         UIView.animate(withDuration: animated ? duration : 0,
                        delay: 0,
                        options: .curveLinear,
