@@ -3,6 +3,20 @@ import Foundation
 import MagicPills
 
 class DateExtensionsTests: XCTestCase {
+    func test_init_from_formatted_dates() {
+        let rfcDate = Date(formattedDate: "2019-08-09T12:48:00.000+0200",
+                           dateFormat: .rfc3339,
+                           timeZone: .madrid)
+        XCTAssertNotNil(rfcDate)
+
+        let invalidDate = Date(formattedDate: "⚠️")
+        XCTAssertNil(invalidDate)
+
+        let spanishDate = Date(formattedDate: "20/02/2018 12:33",
+                               timeZone: .madrid)
+        XCTAssertNotNil(spanishDate)
+    }
+
     func test_init_with_milliseconds() {
         let milliseconds: Double = 12_408_124_000
         let date = Date(millisecondsSince1970: milliseconds)
@@ -10,50 +24,61 @@ class DateExtensionsTests: XCTestCase {
         XCTAssertEqual(date.millisecondsSince1970, milliseconds)
     }
 
+    func test_init_with_rfc3339date() {
+        let rfc3339Date = "2019-08-09T10:48:00.000+0200"
+        let date = rfc3339Date.date()
+
+        XCTAssertEqual(date?.formatted(with: .rfc3339,
+                                       timeZone: .madrid),
+                       rfc3339Date)
+        XCTAssertNil("👋".date())
+    }
+
     func test_init_with_formatted_spanishDate() {
         let spanishFullDate = "20/02/2018 12:33"
-        let date = Date(formattedSpanishFullDate: spanishFullDate)
+        var date = Date(formattedDate: spanishFullDate,
+                        timeZone: .madrid)
 
-        XCTAssertEqual(date?.formattedSpanishFullDate(), spanishFullDate)
-        XCTAssertNil(Date(formattedSpanishFullDate: "👋"))
+        XCTAssertEqual(date?.formatted(with: .spanishFullDateWithSlashes,
+                                       timeZone: .madrid),
+                       spanishFullDate)
+
+        XCTAssertEqual(date?.formatted(with: .spanishFullDateWithSlashes,
+                                       timeZone: .utc),
+                       "20/02/2018 11:33")
+
+        let summerSpanishFullDate = "20/08/2018 12:33"
+        date = Date(formattedDate: summerSpanishFullDate,
+                    timeZone: .madrid)
+
+        XCTAssertEqual(date?.formatted(with: .spanishFullDateWithSlashes,
+                                       timeZone: .madrid),
+                       summerSpanishFullDate)
+
+        XCTAssertEqual(date?.formatted(with: .spanishFullDateWithSlashes,
+                                       timeZone: .utc),
+                       "20/08/2018 10:33")
     }
 
-    func test_init_with_iso8601date() {
-        let iso8601Date = "2019-08-09T10:48:00.000+0000"
-        let date = Date(iso8601Date: iso8601Date)
+    func test_date_formats() {
+        let date = Date(formattedDate: "09/08/2019 10:48", timeZone: .utc)!
 
-        XCTAssertEqual(date?.formattedISO8601Date, iso8601Date)
-        XCTAssertNil(Date(iso8601Date: "👋"))
-    }
-
-    func test_init_with_rfc822Date() {
-        let rfc822Date = "Fri, 09 Aug 2019 10:48:00 GMT"
-        let date = Date(rfc822Date: rfc822Date)
-
-        XCTAssertEqual(date?.formattedRFC822Date, rfc822Date)
-        XCTAssertNil(Date(rfc822Date: "👋"))
-    }
-
-    func test_date_parts() {
-        let timeZone = TimeZone(secondsFromGMT: 3_600)
-        let date = Date(formattedSpanishFullDate: "20/02/2018 12:33", timeZone: timeZone)
-
-        XCTAssertEqual(date?.day, "20")
-        XCTAssertEqual(date?.monthSpanishName, "febrero")
-        XCTAssertEqual(date?.monthSpanishNameAndYear, "febrero 2018")
-        XCTAssertEqual(date?.shortMonthSpanishName, "feb")
-        XCTAssertEqual(date?.year, "2018")
-        XCTAssertEqual(date?.shortYear, "18")
-        XCTAssertEqual(date?.day, "20")
-    }
-
-    func test_spanish_format_date() {
-        let date = Date(millisecondsSince1970: 1_214_124_999_000)
-
-        XCTAssertEqual(date.formattedSpanishFullDate(timeZone: TimeZone(secondsFromGMT: 0)), "22/06/2008 08:56")
-        XCTAssertEqual(date.formattedSpanishFullDate(timeZone: TimeZone(secondsFromGMT: 3_600)), "22/06/2008 09:56")
-        XCTAssertEqual(date.formattedSpanishDate(timeZone: TimeZone(secondsFromGMT: 0)), "22 de junio")
-        XCTAssertEqual(date.formattedSpanishDate(timeZone: TimeZone(secondsFromGMT: 3_600)), "22 de junio")
+        XCTAssertEqual(date.formatted(with: .rfc3339, timeZone: .madrid), "2019-08-09T12:48:00.000+0200")
+        XCTAssertEqual(date.formatted(with: .rfc2822, locale: .englishUSA, timeZone: .madrid), "Fri, 09 Aug 2019 12:48:00 +0200")
+        XCTAssertEqual(date.formatted(with: .rfc1123, locale: .englishUSA, timeZone: .madrid), "Fri, 09 Aug 2019 12:48:00 GMT+2")
+        XCTAssertEqual(date.formatted(with: .spanishFullDateWithSlashes, timeZone: .madrid), "09/08/2019 12:48")
+        XCTAssertEqual(date.formatted(with: .americanFullDateWithSlashes, timeZone: .madrid), "08/09/2019 12:48")
+        XCTAssertEqual(date.formatted(with: .europeanFullDateWithSlashes, timeZone: .madrid), "2019/08/09 12:48")
+        XCTAssertEqual(date.formatted(with: .europeanDateWithDashes, timeZone: .madrid), "2019-08-09")
+        XCTAssertEqual(date.formatted(with: .time, timeZone: .madrid), "12:48")
+        XCTAssertEqual(date.formatted(with: .day), "9")
+        XCTAssertEqual(date.formatted(with: .shortMonth, locale: .spanishSpain), "ago")
+        XCTAssertEqual(date.formatted(with: .month, locale: .spanishSpain), "agosto")
+        XCTAssertEqual(date.formatted(with: .monthAndYear, locale: .spanishSpain), "agosto 2019")
+        XCTAssertEqual(date.formatted(with: .monthAndYearWithUnderscore, locale: .spanishSpain), "agosto_2019")
+        XCTAssertEqual(date.formatted(with: .shortYear), "19")
+        XCTAssertEqual(date.formatted(with: .year), "2019")
+        XCTAssertEqual(date.formatted(with: .spanishDayAndMonth, locale: .spanishSpain, timeZone: .madrid), "09 de agosto")
     }
 
     func test_is_today() {
@@ -63,32 +88,23 @@ class DateExtensionsTests: XCTestCase {
 
     func test_is_in_the_first_eleven_days_of_the_month() {
         stride(from: 1, to: 31, by: 1).forEach { day in
-            let date = Date(formattedSpanishFullDate: "\(day)/01/2018 11:11")
+            let date = "\(day)/01/2018 11:11".date()
 
             XCTAssertEqual(date?.isInTheFirstElevenDaysOfTheMonth, day <= 11)
         }
     }
 
-    func test_time_format() {
-        let expectedResult = "22:31"
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd HH:mm"
-        let someDateTime = formatter.date(from: "2016/10/12 22:31")
-        let timeDate = someDateTime?.formattedTime()
-        XCTAssertEqual(timeDate, expectedResult)
-    }
+    func test_months_between_dates() {
+        var date1 = Date(formattedDate: "20/02/2018 12:33", timeZone: .madrid)!
+        var date2 = Date(formattedDate: "19/06/2018 12:33", timeZone: .madrid)!
+        XCTAssertEqual(date1.months(to: date2), 3)
 
-    func test_ISO8601_formatted_date() {
-        let spanishFullDate = "09/08/2019 10:48"
-        let expectedResult = "2019-08-09T10:48:00.000+0000"
-        let date = Date(formattedSpanishFullDate: spanishFullDate, timeZone: TimeZone(secondsFromGMT: 0))
-        XCTAssertEqual(date?.formattedISO8601Date, expectedResult)
-    }
+        date1 = Date(formattedDate: "19/02/2018 12:33", timeZone: .madrid)!
+        date2 = Date(formattedDate: "19/06/2018 12:33", timeZone: .madrid)!
+        XCTAssertEqual(date1.months(to: date2), 4)
 
-    func test_RFC822_formatted_date() {
-        let spanishFullDate = "09/08/2019 10:48"
-        let expectedResult = "Fri, 09 Aug 2019 10:48:00 GMT"
-        let date = Date(formattedSpanishFullDate: spanishFullDate, timeZone: TimeZone(secondsFromGMT: 0))
-        XCTAssertEqual(date?.formattedRFC822Date, expectedResult)
+        date1 = Date(formattedDate: "25/02/2018 12:33", timeZone: .madrid)!
+        date2 = Date(formattedDate: "19/06/2018 12:33", timeZone: .madrid)!
+        XCTAssertEqual(date1.months(to: date2, ignoringDays: true), 4)
     }
 }

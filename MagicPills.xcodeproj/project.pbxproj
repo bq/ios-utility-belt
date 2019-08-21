@@ -44,18 +44,10 @@
 		F20082EA225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */; };
 		F20082EB225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */; };
 		F20082EC225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */; };
-		F20082EE225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082ED225E50E800AC6EE1 /* DateFormatterExtensions.swift */; };
-		F20082EF225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082ED225E50E800AC6EE1 /* DateFormatterExtensions.swift */; };
-		F20082F0225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082ED225E50E800AC6EE1 /* DateFormatterExtensions.swift */; };
-		F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082ED225E50E800AC6EE1 /* DateFormatterExtensions.swift */; };
 		F20082F3225E518600AC6EE1 /* DecimalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F2225E518600AC6EE1 /* DecimalExtensions.swift */; };
 		F20082F4225E518600AC6EE1 /* DecimalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F2225E518600AC6EE1 /* DecimalExtensions.swift */; };
 		F20082F5225E518600AC6EE1 /* DecimalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F2225E518600AC6EE1 /* DecimalExtensions.swift */; };
 		F20082F6225E518600AC6EE1 /* DecimalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F2225E518600AC6EE1 /* DecimalExtensions.swift */; };
-		F20082F9225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F8225E525800AC6EE1 /* NumberFormatterExtensions.swift */; };
-		F20082FA225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F8225E525800AC6EE1 /* NumberFormatterExtensions.swift */; };
-		F20082FB225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F8225E525800AC6EE1 /* NumberFormatterExtensions.swift */; };
-		F20082FC225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082F8225E525800AC6EE1 /* NumberFormatterExtensions.swift */; };
 		F20082FE225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082FD225E556500AC6EE1 /* DecimalExtensionsTests.swift */; };
 		F20082FF225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082FD225E556500AC6EE1 /* DecimalExtensionsTests.swift */; };
 		F2008300225E556500AC6EE1 /* DecimalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20082FD225E556500AC6EE1 /* DecimalExtensionsTests.swift */; };
@@ -259,6 +251,15 @@
 		F69A082022672BDC00CB09F2 /* UIFontExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */; };
 		F69A08222267323600CB09F2 /* UILabelExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */; };
 		F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3838E22649D56001E4068 /* UILabelExtensions.swift */; };
+		F6D6D4C2230C108F00D161F9 /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C1230C108F00D161F9 /* LocaleExtensions.swift */; };
+		F6D6D4C3230C108F00D161F9 /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C1230C108F00D161F9 /* LocaleExtensions.swift */; };
+		F6D6D4C4230C108F00D161F9 /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C1230C108F00D161F9 /* LocaleExtensions.swift */; };
+		F6D6D4C6230D468F00D161F9 /* FormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C5230D468F00D161F9 /* FormatterExtensions.swift */; };
+		F6D6D4C7230D468F00D161F9 /* FormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C5230D468F00D161F9 /* FormatterExtensions.swift */; };
+		F6D6D4C8230D468F00D161F9 /* FormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C5230D468F00D161F9 /* FormatterExtensions.swift */; };
+		F6D6D4CA230D5CBD00D161F9 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C9230D5CBD00D161F9 /* TimeZoneExtensions.swift */; };
+		F6D6D4CB230D5CBD00D161F9 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C9230D5CBD00D161F9 /* TimeZoneExtensions.swift */; };
+		F6D6D4CC230D5CBD00D161F9 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6D4C9230D5CBD00D161F9 /* TimeZoneExtensions.swift */; };
 		F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */; };
 		F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */; };
 		F6F3330D23042AEA00E93F0E /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */; };
@@ -330,9 +331,7 @@
 		F20082E0225DFFD900AC6EE1 /* OptionalExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensionsTests.swift; sourceTree = "<group>"; };
 		F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		F20082E9225E1E7100AC6EE1 /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
-		F20082ED225E50E800AC6EE1 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		F20082F2225E518600AC6EE1 /* DecimalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtensions.swift; sourceTree = "<group>"; };
-		F20082F8225E525800AC6EE1 /* NumberFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtensions.swift; sourceTree = "<group>"; };
 		F20082FD225E556500AC6EE1 /* DecimalExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtensionsTests.swift; sourceTree = "<group>"; };
 		F200830A225F4BFC00AC6EE1 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F200830F225F4C5200AC6EE1 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
@@ -400,6 +399,9 @@
 		F69A081F22672BDB00CB09F2 /* UIFontExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionsTests.swift; sourceTree = "<group>"; };
 		F69A08212267323600CB09F2 /* UILabelExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensionTests.swift; sourceTree = "<group>"; };
 		F6B3838E22649D56001E4068 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		F6D6D4C1230C108F00D161F9 /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
+		F6D6D4C5230D468F00D161F9 /* FormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterExtensions.swift; sourceTree = "<group>"; };
+		F6D6D4C9230D5CBD00D161F9 /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		F6E394DE2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensions+UIKit.swift"; sourceTree = "<group>"; };
 		F6E7C6862264902E00F0F11E /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
@@ -589,15 +591,6 @@
 			path = Types;
 			sourceTree = "<group>";
 		};
-		F20082F7225E523D00AC6EE1 /* Formatters */ = {
-			isa = PBXGroup;
-			children = (
-				F20082ED225E50E800AC6EE1 /* DateFormatterExtensions.swift */,
-				F20082F8225E525800AC6EE1 /* NumberFormatterExtensions.swift */,
-			);
-			path = Formatters;
-			sourceTree = "<group>";
-		};
 		F2008348226612E800AC6EE1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,22 +726,26 @@
 		F2A74DB6225765B5001F0DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F20082F7225E523D00AC6EE1 /* Formatters */,
 				F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */,
 				F20082C6225DFC9D00AC6EE1 /* BoolExtensions.swift */,
 				F200833F2266115E00AC6EE1 /* BundleExtensions.swift */,
-				F22A356B228077E8004E8546 /* DispatchQueueExtensions.swift */,
-				F20082C1225DFC6E00AC6EE1 /* OptionalExtensions.swift */,
+				F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */,
+				F2008329225F862900AC6EE1 /* DataExtensions.swift */,
 				F20082E4225E1E0000AC6EE1 /* DateExtensions.swift */,
 				F20082F2225E518600AC6EE1 /* DecimalExtensions.swift */,
-				F2008329225F862900AC6EE1 /* DataExtensions.swift */,
 				F22A38E6227C76FD0012C010 /* DictionaryExtensions.swift */,
+				F22A356B228077E8004E8546 /* DispatchQueueExtensions.swift */,
+				F6D6D4C5230D468F00D161F9 /* FormatterExtensions.swift */,
+				F68925CE22CDE8290008263B /* IntExtensions.swift */,
+				F6D6D4C1230C108F00D161F9 /* LocaleExtensions.swift */,
+				F20082C1225DFC6E00AC6EE1 /* OptionalExtensions.swift */,
 				F200836E2266339800AC6EE1 /* SequenceExtensions.swift */,
 				F200830A225F4BFC00AC6EE1 /* StringExtensions.swift */,
-				F200831F225F83EF00AC6EE1 /* StringExtensions+Validators.swift */,
 				F2008324225F84A100AC6EE1 /* StringExtensions+Formating.swift */,
+				F200831F225F83EF00AC6EE1 /* StringExtensions+Validators.swift */,
 				F200831A225F831F00AC6EE1 /* StringExtensions+Values.swift */,
 				F200835622662DC400AC6EE1 /* TimeIntervalExtensions.swift */,
+				F6D6D4C9230D5CBD00D161F9 /* TimeZoneExtensions.swift */,
 				F200835F2266316C00AC6EE1 /* URLExtensions.swift */,
 				F68925CE22CDE8290008263B /* IntExtensions.swift */,
 				F6F3330C23042AEA00E93F0E /* CALayerExtensions.swift */,
@@ -1174,6 +1171,7 @@
 				F6F97EEE226DAF2C00C3E953 /* UIViewExtensions.swift in Sources */,
 				F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */,
 				F62CC32722704F0500DC46F2 /* UIStackViewExtensions.swift in Sources */,
+				F6D6D4CA230D5CBD00D161F9 /* TimeZoneExtensions.swift in Sources */,
 				F20082F3225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F2496739230EB99400C06E2E /* ZoomAndSnapFlowLayout.swift in Sources */,
 				F200830B225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
@@ -1192,6 +1190,7 @@
 				F200832A225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082C7225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F6F3330D23042AEA00E93F0E /* CALayerExtensions.swift in Sources */,
+				F6D6D4C2230C108F00D161F9 /* LocaleExtensions.swift in Sources */,
 				F20082E5225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F20083602266316C00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20083402266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
@@ -1202,9 +1201,8 @@
 				F68925CF22CDE8290008263B /* IntExtensions.swift in Sources */,
 				F249672D230D5DA200C06E2E /* Difference.swift in Sources */,
 				F200835722662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
-				F20082EE225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008325225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
-				F20082F9225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
+				F6D6D4C6230D468F00D161F9 /* FormatterExtensions.swift in Sources */,
 				F6F97F01226F501E00C3E953 /* UIScrollViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1263,6 +1261,7 @@
 				F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */,
 				F6F3330E23042AEA00E93F0E /* CALayerExtensions.swift in Sources */,
 				F20083662266317E00AC6EE1 /* URLExtensions.swift in Sources */,
+				F6D6D4C3230C108F00D161F9 /* LocaleExtensions.swift in Sources */,
 				F20082F4225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F200830C225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
 				F20082C3225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
@@ -1271,6 +1270,7 @@
 				F2008326225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F22A38E8227C76FD0012C010 /* DictionaryExtensions.swift in Sources */,
 				F249672E230D5DA200C06E2E /* Difference.swift in Sources */,
+				F6D6D4CB230D5CBD00D161F9 /* TimeZoneExtensions.swift in Sources */,
 				F20082C8225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F20082E6225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F200831C225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
@@ -1284,12 +1284,11 @@
 				F22A38E3227C767A0012C010 /* SharedDictionary.swift in Sources */,
 				F2008374226633AB00AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F6F3331A2306B03F00E93F0E /* CGFloatExtensions.swift in Sources */,
-				F20082EF225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F68925D022CDE83B0008263B /* IntExtensions.swift in Sources */,
-				F20082FA225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 				F22A357422807841004E8546 /* DispatchQueueExtensions.swift in Sources */,
 				F20083412266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F22A38D9227C634D0012C010 /* OrderedSet.swift in Sources */,
+				F6D6D4C7230D468F00D161F9 /* FormatterExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1345,6 +1344,7 @@
 				F21A677A226F4E520026F6E9 /* CIImageExtensions+UIKit.swift in Sources */,
 				F20082C4225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
 				F2A74DBB225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
+				F6D6D4CC230D5CBD00D161F9 /* TimeZoneExtensions.swift in Sources */,
 				F62CC32822704F0500DC46F2 /* UIStackViewExtensions.swift in Sources */,
 				F249673C230EBB7A00C06E2E /* ZoomAndSnapFlowLayout.swift in Sources */,
 				F20082D5225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
@@ -1363,6 +1363,7 @@
 				F2008322225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
 				F21A677E226F4E600026F6E9 /* UIViewExtensions.swift in Sources */,
 				F6F3330F23042AEA00E93F0E /* CALayerExtensions.swift in Sources */,
+				F6D6D4C4230C108F00D161F9 /* LocaleExtensions.swift in Sources */,
 				F200835922662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
 				F21A677B226F4E540026F6E9 /* CGImageExtensions+UIKit.swift in Sources */,
 				F200832C225F862900AC6EE1 /* DataExtensions.swift in Sources */,
@@ -1373,9 +1374,8 @@
 				F68925D122CDE83B0008263B /* IntExtensions.swift in Sources */,
 				F249672F230D5DA200C06E2E /* Difference.swift in Sources */,
 				F62CC33E2270862800DC46F2 /* UIViewControllerExtensions.swift in Sources */,
-				F20082F0225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F2008378226789A700AC6EE1 /* UIFontExtensions.swift in Sources */,
-				F20082FB225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
+				F6D6D4C8230D468F00D161F9 /* FormatterExtensions.swift in Sources */,
 				F20083422266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1453,11 +1453,9 @@
 				F2496727230D504200C06E2E /* SemVer.swift in Sources */,
 				F22A38E5227C767A0012C010 /* SharedDictionary.swift in Sources */,
 				F200835A22662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
-				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
 				F68925D222CDE83C0008263B /* IntExtensions.swift in Sources */,
 				F2008328225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F22A357622807843004E8546 /* DispatchQueueExtensions.swift in Sources */,
-				F20082FC225E525800AC6EE1 /* NumberFormatterExtensions.swift in Sources */,
 				F22A38DB227C634F0012C010 /* OrderedSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

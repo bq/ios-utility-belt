@@ -4,7 +4,7 @@ import MagicPills
 
 class DifferenceTests: XCTestCase {
     func test_dumping_init_helper() {
-        let date = Date(iso8601Date: "2019-08-09T10:48:00.000+0000")!
+        let date = "2019-08-09T10:48:00.000+0000".date()!
         let dump = String(dumping: date)
         let expectedDump = """
         ▿ 2019-08-09 10:48:00 +0000
@@ -15,8 +15,8 @@ class DifferenceTests: XCTestCase {
     }
 
     func test_diff_equal_dates() {
-        let date1 = Date(iso8601Date: "2019-08-09T10:48:00.000+0000")!
-        let date2 = Date(iso8601Date: "2019-08-09T10:48:00.000+0000")!
+        let date1 = "2019-08-09T10:48:00.000+0000".date()!
+        let date2 = "2019-08-09T10:48:00.000+0000".date()!
 
         let difference = diff(date1, date2).clean()
 
@@ -24,8 +24,8 @@ class DifferenceTests: XCTestCase {
     }
 
     func test_diff_of_two_dates() {
-        let date1 = Date(iso8601Date: "2019-08-09T10:48:00.000+0000")!
-        let date2 = Date(iso8601Date: "2019-06-09T11:38:00.000+0000")!
+        let date1 = "2019-08-09T10:48:00.000+0000".date()!
+        let date2 = "2019-06-09T11:38:00.000+0000".date()!
 
         let difference = diff(date1, date2).clean()
 
@@ -51,8 +51,8 @@ class DifferenceTests: XCTestCase {
     }
 
     func test_diff_of_two_array_with_system_objects() {
-        let date1 = Date(iso8601Date: "2019-08-09T10:48:00.000+0000")!
-        let date2 = Date(iso8601Date: "2016-04-09T10:48:00.000+0000")!
+        let date1 = "2019-08-09T10:48:00.000+0000".date()!
+        let date2 = "2016-04-09T10:48:00.000+0000".date()!
         let array1 = [date1]
         let array2 = [date2]
 

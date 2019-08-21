@@ -26,14 +26,14 @@ class StringExtensionsValuesTests: XCTestCase {
     }
 
     func test_date_value() {
-        XCTAssertEqual("2018".dateValue(timeZone: TimeZone(secondsFromGMT: 0)),
-                       Date(formattedSpanishFullDate: "01/01/2018 00:00", timeZone: TimeZone(secondsFromGMT: 0)))
-        XCTAssertEqual("2015-05-20T12:00:00.000Z".dateValue(),
-                       Date(formattedSpanishFullDate: "20/05/2015 12:00", timeZone: TimeZone(secondsFromGMT: 0)))
-        XCTAssertEqual("2018-12-25".dateValue(timeZone: TimeZone(secondsFromGMT: 0)),
-                       Date(formattedSpanishFullDate: "25/12/2018 00:00", timeZone: TimeZone(secondsFromGMT: 0)))
+        XCTAssertEqual("2018".date(),
+                       "01/01/2018 00:00".date())
+        XCTAssertEqual("2015-05-20T12:00:00.000Z".date(),
+                       "20/05/2015 12:00".date())
+        XCTAssertEqual("2018-12-25".date(),
+                       "25/12/2018 00:00".date())
 
-        XCTAssertNil("".dateValue())
-        XCTAssertNil("wawa".dateValue())
+        XCTAssertNil("".date())
+        XCTAssertNil("wawa".date())
     }
 }

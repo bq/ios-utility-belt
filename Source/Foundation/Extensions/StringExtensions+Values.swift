@@ -15,26 +15,4 @@ public extension String {
     var urlValue: URL? {
         return URL(string: self)
     }
-
-    func dateValue(timeZone: TimeZone? = nil) -> Date? {
-        let defaultDateFormatter = DateFormatter.plainDateFormatter
-        let yearDateFormatter = DateFormatter.yearDateFormatter
-
-        if let timeZone = timeZone {
-            defaultDateFormatter.timeZone = timeZone
-            yearDateFormatter.timeZone = timeZone
-        }
-
-        let ISO8601Formatter = DateFormatter.iso8601DateFormatter
-
-        if let dateFormatted = defaultDateFormatter.date(from: self) {
-            return dateFormatted
-        } else if let dateFormatted = yearDateFormatter.date(from: self) {
-            return dateFormatted
-        } else if let dateFormatted = ISO8601Formatter.date(from: self) {
-            return dateFormatted
-        }
-
-        return nil
-    }
 }

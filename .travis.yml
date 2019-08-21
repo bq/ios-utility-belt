@@ -1,10 +1,10 @@
 language: swift
-osx_image: xcode10.2
+osx_image: xcode10.3
 
 script:
 - set -o pipefail
 - swift --version
 - rake
 - bundle exec fastlane pass_tests
-- pod lib lint
+- bundle exec pod lib lint
 - bundle exec danger
