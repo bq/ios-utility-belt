@@ -186,6 +186,13 @@
 		F22A38FE227C80800012C010 /* DefinesPrimaryKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A38FD227C80800012C010 /* DefinesPrimaryKeyTests.swift */; };
 		F22A38FF227C80800012C010 /* DefinesPrimaryKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A38FD227C80800012C010 /* DefinesPrimaryKeyTests.swift */; };
 		F22A3900227C80800012C010 /* DefinesPrimaryKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A38FD227C80800012C010 /* DefinesPrimaryKeyTests.swift */; };
+		F2496724230D504200C06E2E /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496723230D504100C06E2E /* SemVer.swift */; };
+		F2496725230D504200C06E2E /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496723230D504100C06E2E /* SemVer.swift */; };
+		F2496726230D504200C06E2E /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496723230D504100C06E2E /* SemVer.swift */; };
+		F2496727230D504200C06E2E /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496723230D504100C06E2E /* SemVer.swift */; };
+		F2496729230D506F00C06E2E /* SemVerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496728230D506F00C06E2E /* SemVerTests.swift */; };
+		F249672A230D506F00C06E2E /* SemVerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496728230D506F00C06E2E /* SemVerTests.swift */; };
+		F249672B230D506F00C06E2E /* SemVerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496728230D506F00C06E2E /* SemVerTests.swift */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
@@ -335,6 +342,8 @@
 		F22A38F3227C77770012C010 /* SharedDictionaryExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDictionaryExtensionsTests.swift; sourceTree = "<group>"; };
 		F22A38F7227C7FE20012C010 /* DefinesPrimaryKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinesPrimaryKey.swift; sourceTree = "<group>"; };
 		F22A38FD227C80800012C010 /* DefinesPrimaryKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinesPrimaryKeyTests.swift; sourceTree = "<group>"; };
+		F2496723230D504100C06E2E /* SemVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVer.swift; sourceTree = "<group>"; };
+		F2496728230D506F00C06E2E /* SemVerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVerTests.swift; sourceTree = "<group>"; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
@@ -472,7 +481,6 @@
 			isa = PBXGroup;
 			children = (
 				F2008348226612E800AC6EE1 /* Helpers */,
-				F22A3566228074BD004E8546 /* Utilities */,
 				F2A74DBD225765F6001F0DF2 /* Foundation */,
 				F293266E2273310C00B9A5E8 /* UIKit */,
 				E26053FE2121880000D013B5 /* Info.plist */,
@@ -527,6 +535,7 @@
 			children = (
 				F22A38D7227C63250012C010 /* OrderedSet.swift */,
 				F22A38E1227C767A0012C010 /* SharedDictionary.swift */,
+				F2496723230D504100C06E2E /* SemVer.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -536,6 +545,7 @@
 			children = (
 				F22A38DC227C63900012C010 /* OrderedSetTests.swift */,
 				F22A38F3227C77770012C010 /* SharedDictionaryExtensionsTests.swift */,
+				F2496728230D506F00C06E2E /* SemVerTests.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -705,6 +715,7 @@
 		F2A74DBD225765F6001F0DF2 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F22A3566228074BD004E8546 /* Utilities */,
 				F2A74DBE225765FB001F0DF2 /* Extensions */,
 				F22A38FC227C805F0012C010 /* Protocols */,
 				F20082D7225DFFB100AC6EE1 /* Types */,
@@ -1127,6 +1138,7 @@
 				F62CC34122709F4500DC46F2 /* Toast.swift in Sources */,
 				F200836F2266339800AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F200831B225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
+				F2496724230D504200C06E2E /* SemVer.swift in Sources */,
 				F6F97EE9226DA88500C3E953 /* UICollectionViewExtensions.swift in Sources */,
 				F200832A225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082C7225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
@@ -1167,6 +1179,7 @@
 				F62CC32A22705F5700DC46F2 /* UIStackViewExtensionsTests.swift in Sources */,
 				F6F97EEC226DABE400C3E953 /* UICollectionViewExtensionsTests.swift in Sources */,
 				F22A357022807839004E8546 /* DispatchQueueExtensionsTests.swift in Sources */,
+				F2496729230D506F00C06E2E /* SemVerTests.swift in Sources */,
 				F6F333152304370800E93F0E /* CALayerExtensionsTests.swift in Sources */,
 				F20082E1225DFFD900AC6EE1 /* OptionalExtensionsTests.swift in Sources */,
 				F2008333225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
@@ -1206,6 +1219,7 @@
 				F20082E6225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F200831C225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
 				F22A356322807465004E8546 /* Fold.swift in Sources */,
+				F2496725230D504200C06E2E /* SemVer.swift in Sources */,
 				F2008321225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
 				F22A355D22806EAA004E8546 /* DefinesPrimaryKey.swift in Sources */,
 				F200835822662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
@@ -1239,6 +1253,7 @@
 				F22A38FF227C80800012C010 /* DefinesPrimaryKeyTests.swift in Sources */,
 				F2A74DC122576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 				F2008334225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
+				F249672A230D506F00C06E2E /* SemVerTests.swift in Sources */,
 				F20083642266317A00AC6EE1 /* URLExtensionsTests.swift in Sources */,
 				F20083462266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F200834B226612F800AC6EE1 /* FakeBundle.swift in Sources */,
@@ -1278,6 +1293,7 @@
 				F62CC3452270A1A000DC46F2 /* SnackBar.swift in Sources */,
 				F62CC34222709F4500DC46F2 /* Toast.swift in Sources */,
 				F200831D225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
+				F2496726230D504200C06E2E /* SemVer.swift in Sources */,
 				F2008379226789AA00AC6EE1 /* UILabelExtensions.swift in Sources */,
 				F2008322225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
 				F21A677E226F4E600026F6E9 /* UIViewExtensions.swift in Sources */,
@@ -1318,6 +1334,7 @@
 				F62CC32B22705F5700DC46F2 /* UIStackViewExtensionsTests.swift in Sources */,
 				F2A74DC222576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 				F22A357222807839004E8546 /* DispatchQueueExtensionsTests.swift in Sources */,
+				F249672B230D506F00C06E2E /* SemVerTests.swift in Sources */,
 				F6F333172304370900E93F0E /* CALayerExtensionsTests.swift in Sources */,
 				F2008335225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
 				F6F97F05226F53E100C3E953 /* UIScrollViewExtensionsTest.swift in Sources */,
@@ -1360,6 +1377,7 @@
 				F22A355F22806EAD004E8546 /* DefinesPrimaryKey.swift in Sources */,
 				F20083682266317F00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20083432266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
+				F2496727230D504200C06E2E /* SemVer.swift in Sources */,
 				F22A38E5227C767A0012C010 /* SharedDictionary.swift in Sources */,
 				F200835A22662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
 				F20082F1225E50E800AC6EE1 /* DateFormatterExtensions.swift in Sources */,
