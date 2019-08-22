@@ -200,6 +200,16 @@
 		F2496732230D5E1B00C06E2E /* DifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496731230D5E1B00C06E2E /* DifferenceTests.swift */; };
 		F2496733230D5E1B00C06E2E /* DifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496731230D5E1B00C06E2E /* DifferenceTests.swift */; };
 		F2496734230D5E1B00C06E2E /* DifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496731230D5E1B00C06E2E /* DifferenceTests.swift */; };
+		F2496741230EBDEF00C06E2E /* LastExecutionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496740230EBDEF00C06E2E /* LastExecutionState.swift */; };
+		F2496742230EBDEF00C06E2E /* LastExecutionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496740230EBDEF00C06E2E /* LastExecutionState.swift */; };
+		F2496743230EBDEF00C06E2E /* LastExecutionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496740230EBDEF00C06E2E /* LastExecutionState.swift */; };
+		F2496744230EBDEF00C06E2E /* LastExecutionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496740230EBDEF00C06E2E /* LastExecutionState.swift */; };
+		F2496746230EBE4200C06E2E /* LastExecutionStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496745230EBE4200C06E2E /* LastExecutionStateTests.swift */; };
+		F2496747230EBE4200C06E2E /* LastExecutionStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496745230EBE4200C06E2E /* LastExecutionStateTests.swift */; };
+		F2496748230EBE4200C06E2E /* LastExecutionStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496745230EBE4200C06E2E /* LastExecutionStateTests.swift */; };
+		F249674A230EBE9500C06E2E /* JSONTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496749230EBE9500C06E2E /* JSONTestHelper.swift */; };
+		F249674B230EBE9500C06E2E /* JSONTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496749230EBE9500C06E2E /* JSONTestHelper.swift */; };
+		F249674C230EBE9500C06E2E /* JSONTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496749230EBE9500C06E2E /* JSONTestHelper.swift */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
@@ -359,6 +369,10 @@
 		F2496728230D506F00C06E2E /* SemVerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVerTests.swift; sourceTree = "<group>"; };
 		F249672C230D5DA200C06E2E /* Difference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difference.swift; sourceTree = "<group>"; };
 		F2496731230D5E1B00C06E2E /* DifferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceTests.swift; sourceTree = "<group>"; };
+		F2496740230EBDEF00C06E2E /* LastExecutionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastExecutionState.swift; sourceTree = "<group>"; };
+		F2496745230EBE4200C06E2E /* LastExecutionStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastExecutionStateTests.swift; sourceTree = "<group>"; };
+		F2496749230EBE9500C06E2E /* JSONTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTestHelper.swift; sourceTree = "<group>"; };
+		F249674D230EC4A400C06E2E /* DefaultsSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsSerializable.swift; sourceTree = "<group>"; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
@@ -553,6 +567,7 @@
 				F22A38D7227C63250012C010 /* OrderedSet.swift */,
 				F22A38E1227C767A0012C010 /* SharedDictionary.swift */,
 				F2496723230D504100C06E2E /* SemVer.swift */,
+				F2496740230EBDEF00C06E2E /* LastExecutionState.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -563,6 +578,7 @@
 				F22A38DC227C63900012C010 /* OrderedSetTests.swift */,
 				F22A38F3227C77770012C010 /* SharedDictionaryExtensionsTests.swift */,
 				F2496728230D506F00C06E2E /* SemVerTests.swift */,
+				F2496745230EBE4200C06E2E /* LastExecutionStateTests.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -581,6 +597,7 @@
 			children = (
 				F2008349226612F800AC6EE1 /* FakeBundle.swift */,
 				F20083822267E47F00AC6EE1 /* LocalizedSample.strings */,
+				F2496749230EBE9500C06E2E /* JSONTestHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1170,6 +1187,7 @@
 				F20083402266115E00AC6EE1 /* BundleExtensions.swift in Sources */,
 				F21A6777226F4E260026F6E9 /* CIImageExtensions+UIKit.swift in Sources */,
 				F62CC33D2270862800DC46F2 /* UIViewControllerExtensions.swift in Sources */,
+				F2496741230EBDEF00C06E2E /* LastExecutionState.swift in Sources */,
 				F22A38D8227C63250012C010 /* OrderedSet.swift in Sources */,
 				F68925CF22CDE8290008263B /* IntExtensions.swift in Sources */,
 				F249672D230D5DA200C06E2E /* Difference.swift in Sources */,
@@ -1187,6 +1205,7 @@
 			files = (
 				F20082EA225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
 				F200832F225F876300AC6EE1 /* StringExtensions+ValidatorsTests.swift in Sources */,
+				F249674A230EBE9500C06E2E /* JSONTestHelper.swift in Sources */,
 				F6F3331E2306B0AA00E93F0E /* CGFloatExtensionsTests.swift in Sources */,
 				F62CC33022706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */,
 				F6F97EFC226F246100C3E953 /* UIImageExtensionsTests.swift in Sources */,
@@ -1218,6 +1237,7 @@
 				F200835C22662DDD00AC6EE1 /* TimeIntervalExtensionsTests.swift in Sources */,
 				F62CC34B2270B53C00DC46F2 /* SnackBarTests.swift in Sources */,
 				F62CC34E2272015500DC46F2 /* UIViewControllerExtensionsTests.swift in Sources */,
+				F2496746230EBE4200C06E2E /* LastExecutionStateTests.swift in Sources */,
 				F20082DD225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
 				F22A38F4227C77770012C010 /* SharedDictionaryExtensionsTests.swift in Sources */,
 				F22A38F0227C775F0012C010 /* DictionaryExtensionsTests.swift in Sources */,
@@ -1250,6 +1270,7 @@
 				F22A355D22806EAA004E8546 /* DefinesPrimaryKey.swift in Sources */,
 				F200835822662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
 				F200832B225F862900AC6EE1 /* DataExtensions.swift in Sources */,
+				F2496742230EBDEF00C06E2E /* LastExecutionState.swift in Sources */,
 				F22A38E3227C767A0012C010 /* SharedDictionary.swift in Sources */,
 				F2008374226633AB00AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F6F3331A2306B03F00E93F0E /* CGFloatExtensions.swift in Sources */,
@@ -1281,6 +1302,7 @@
 				F2A74DC122576610001F0DF2 /* ArrayExtensionsTests.swift in Sources */,
 				F2008334225F877700AC6EE1 /* StringExtensions+FormatingTests.swift in Sources */,
 				F249672A230D506F00C06E2E /* SemVerTests.swift in Sources */,
+				F249674B230EBE9500C06E2E /* JSONTestHelper.swift in Sources */,
 				F20083642266317A00AC6EE1 /* URLExtensionsTests.swift in Sources */,
 				F20083462266117700AC6EE1 /* BundleExtensionsTests.swift in Sources */,
 				F200834B226612F800AC6EE1 /* FakeBundle.swift in Sources */,
@@ -1288,6 +1310,7 @@
 				F20082DE225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
 				F6F3331F2306B0AA00E93F0E /* CGFloatExtensionsTests.swift in Sources */,
 				F22A38F1227C77610012C010 /* DictionaryExtensionsTests.swift in Sources */,
+				F2496747230EBE4200C06E2E /* LastExecutionStateTests.swift in Sources */,
 				F2008338225F878600AC6EE1 /* StringExtensions+ValuesTests.swift in Sources */,
 				F2008330225F876300AC6EE1 /* StringExtensions+ValidatorsTests.swift in Sources */,
 				F22A357122807839004E8546 /* DispatchQueueExtensionsTests.swift in Sources */,
@@ -1333,6 +1356,7 @@
 				F200832C225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F2008375226633AC00AC6EE1 /* SequenceExtensions.swift in Sources */,
 				F21A677D226F4E600026F6E9 /* UICollectionViewExtensions.swift in Sources */,
+				F2496743230EBDEF00C06E2E /* LastExecutionState.swift in Sources */,
 				F22A38DA227C634E0012C010 /* OrderedSet.swift in Sources */,
 				F68925D122CDE83B0008263B /* IntExtensions.swift in Sources */,
 				F249672F230D5DA200C06E2E /* Difference.swift in Sources */,
@@ -1350,6 +1374,7 @@
 			files = (
 				F20083812267E0AE00AC6EE1 /* StringExtensionsUIKitTests.swift in Sources */,
 				F2008373226633A700AC6EE1 /* SequenceExtensionsTests.swift in Sources */,
+				F249674C230EBE9500C06E2E /* JSONTestHelper.swift in Sources */,
 				F6F333202306B0AA00E93F0E /* CGFloatExtensionsTests.swift in Sources */,
 				F62CC33122706B6C00DC46F2 /* UITableViewExtensionsTests.swift in Sources */,
 				F20082EC225E1E7100AC6EE1 /* DateExtensionsTests.swift in Sources */,
@@ -1381,6 +1406,7 @@
 				F20082DF225DFFCF00AC6EE1 /* BoolExtensionsTests.swift in Sources */,
 				F62CC34C2270B53C00DC46F2 /* SnackBarTests.swift in Sources */,
 				F62CC34F2272015500DC46F2 /* UIViewControllerExtensionsTests.swift in Sources */,
+				F2496748230EBE4200C06E2E /* LastExecutionStateTests.swift in Sources */,
 				F2008339225F878600AC6EE1 /* StringExtensions+ValuesTests.swift in Sources */,
 				F22A38F6227C77770012C010 /* SharedDictionaryExtensionsTests.swift in Sources */,
 				F22A38F2227C77620012C010 /* DictionaryExtensionsTests.swift in Sources */,
@@ -1406,6 +1432,7 @@
 				F200831E225F831F00AC6EE1 /* StringExtensions+Values.swift in Sources */,
 				F200832D225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F20082CA225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
+				F2496744230EBDEF00C06E2E /* LastExecutionState.swift in Sources */,
 				F22A356522807465004E8546 /* Fold.swift in Sources */,
 				F20082E8225E1E0000AC6EE1 /* DateExtensions.swift in Sources */,
 				F22A355F22806EAD004E8546 /* DefinesPrimaryKey.swift in Sources */,
