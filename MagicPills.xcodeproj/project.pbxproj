@@ -210,6 +210,10 @@
 		F249674A230EBE9500C06E2E /* JSONTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496749230EBE9500C06E2E /* JSONTestHelper.swift */; };
 		F249674B230EBE9500C06E2E /* JSONTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496749230EBE9500C06E2E /* JSONTestHelper.swift */; };
 		F249674C230EBE9500C06E2E /* JSONTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496749230EBE9500C06E2E /* JSONTestHelper.swift */; };
+		F2496739230EB99400C06E2E /* ZoomAndSnapFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496738230EB99400C06E2E /* ZoomAndSnapFlowLayout.swift */; };
+		F249673C230EBB7A00C06E2E /* ZoomAndSnapFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2496738230EB99400C06E2E /* ZoomAndSnapFlowLayout.swift */; };
+		F249673E230EBCFA00C06E2E /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249673D230EBCFA00C06E2E /* TableDataSource.swift */; };
+		F249673F230EBCFA00C06E2E /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249673D230EBCFA00C06E2E /* TableDataSource.swift */; };
 		F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AF922537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
 		F26C3AFA22537A4600189D28 /* MagicPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C3AF722537A4600189D28 /* MagicPills.swift */; };
@@ -373,6 +377,8 @@
 		F2496745230EBE4200C06E2E /* LastExecutionStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastExecutionStateTests.swift; sourceTree = "<group>"; };
 		F2496749230EBE9500C06E2E /* JSONTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTestHelper.swift; sourceTree = "<group>"; };
 		F249674D230EC4A400C06E2E /* DefaultsSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsSerializable.swift; sourceTree = "<group>"; };
+		F2496738230EB99400C06E2E /* ZoomAndSnapFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAndSnapFlowLayout.swift; sourceTree = "<group>"; };
+		F249673D230EBCFA00C06E2E /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		F26C3AF722537A4600189D28 /* MagicPills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicPills.swift; sourceTree = "<group>"; };
 		F2A74DB8225765CF001F0DF2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		F2A74DBF22576610001F0DF2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
@@ -661,6 +667,8 @@
 			children = (
 				F62CC34022709F4500DC46F2 /* Toast.swift */,
 				F62CC3432270A1A000DC46F2 /* SnackBar.swift */,
+				F2496738230EB99400C06E2E /* ZoomAndSnapFlowLayout.swift */,
+				F249673D230EBCFA00C06E2E /* TableDataSource.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1159,6 +1167,7 @@
 				F6F97EFA226F1E5000C3E953 /* UIImageExtensions.swift in Sources */,
 				F26C3AF822537A4600189D28 /* MagicPills.swift in Sources */,
 				F6E7C6872264902E00F0F11E /* UIFontExtensions.swift in Sources */,
+				F249673E230EBCFA00C06E2E /* TableDataSource.swift in Sources */,
 				F21A6779226F4E360026F6E9 /* CGImageExtensions+UIKit.swift in Sources */,
 				F6B3838F22649D56001E4068 /* UILabelExtensions.swift in Sources */,
 				F22A38E2227C767A0012C010 /* SharedDictionary.swift in Sources */,
@@ -1166,6 +1175,7 @@
 				F6E394DF2260BC5E00AFE7B1 /* StringExtensions+UIKit.swift in Sources */,
 				F62CC32722704F0500DC46F2 /* UIStackViewExtensions.swift in Sources */,
 				F20082F3225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
+				F2496739230EB99400C06E2E /* ZoomAndSnapFlowLayout.swift in Sources */,
 				F200830B225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
 				F22A356222807465004E8546 /* Fold.swift in Sources */,
 				F20082C2225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
@@ -1328,6 +1338,7 @@
 				F20083672266317F00AC6EE1 /* URLExtensions.swift in Sources */,
 				F20082F5225E518600AC6EE1 /* DecimalExtensions.swift in Sources */,
 				F21A677C226F4E580026F6E9 /* UIImageExtensions.swift in Sources */,
+				F249673F230EBCFA00C06E2E /* TableDataSource.swift in Sources */,
 				F6F97F02226F501E00C3E953 /* UIScrollViewExtensions.swift in Sources */,
 				F200830D225F4BFC00AC6EE1 /* StringExtensions.swift in Sources */,
 				F22A38E4227C767A0012C010 /* SharedDictionary.swift in Sources */,
@@ -1335,6 +1346,7 @@
 				F20082C4225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
 				F2A74DBB225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 				F62CC32822704F0500DC46F2 /* UIStackViewExtensions.swift in Sources */,
+				F249673C230EBB7A00C06E2E /* ZoomAndSnapFlowLayout.swift in Sources */,
 				F20082D5225DFF4F00AC6EE1 /* Optionable.swift in Sources */,
 				F22A356422807465004E8546 /* Fold.swift in Sources */,
 				F20083772267899A00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
