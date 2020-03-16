@@ -164,4 +164,21 @@ public extension Date {
                             from: startDateComponents,
                             to: endDateComponents).month!
     }
+
+    /// Calculate moment of day
+    var dayMoment: DayMomentType {
+        let dateComponents = Calendar.current.dateComponents([.hour], from: self)
+
+        if let hour = dateComponents.hour {
+            switch hour {
+            case 7..<15:
+                return .morning
+            case 15..<21:
+                return .afternoon
+            default:
+                return .night
+            }
+        }
+        return .morning
+    }
 }

@@ -129,4 +129,19 @@ class DateExtensionsTests: XCTestCase {
         date2 = Date(formattedDate: "19/06/2018 12:33", timeZone: .europeMadrid)!
         XCTAssertEqual(date1.months(to: date2, ignoringDays: true), 4)
     }
+
+    func test_morning_day_moment() {
+        let morningMoment = Date(formattedDate: "20/02/2018 8:00", timeZone: .europeMadrid)!.dayMoment
+        XCTAssertEqual(morningMoment, DayMomentType.morning)
+    }
+    
+    func test_afternoon_day_moment() {
+        let afternoonMoment = Date(formattedDate: "20/02/2018 16:00", timeZone: .europeMadrid)!.dayMoment
+        XCTAssertEqual(afternoonMoment, DayMomentType.afternoon)
+    }
+    
+    func test_night_day_moment() {
+        let nightMoment = Date(formattedDate: "20/02/2018 22:00", timeZone: .europeMadrid)!.dayMoment
+        XCTAssertEqual(nightMoment, DayMomentType.night)
+    }
 }

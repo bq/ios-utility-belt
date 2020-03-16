@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47269D43241FE79A008D58EB /* DayMomentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47269D42241FE79A008D58EB /* DayMomentType.swift */; };
+		47269D44241FE7CC008D58EB /* DayMomentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47269D42241FE79A008D58EB /* DayMomentType.swift */; };
+		47269D45241FE7CD008D58EB /* DayMomentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47269D42241FE79A008D58EB /* DayMomentType.swift */; };
+		47269D46241FE7CF008D58EB /* DayMomentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47269D42241FE79A008D58EB /* DayMomentType.swift */; };
 		E23E36F9212191CE00A81C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23E36F8212191CD00A81C2A /* UIKit.framework */; };
 		E26053F82121880000D013B5 /* MasMagicPills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26053EE212187FF00D013B5 /* MasMagicPills.framework */; };
 		E26053FF2121880000D013B5 /* MagicPills.h in Headers */ = {isa = PBXBuildFile; fileRef = E26053F12121880000D013B5 /* MagicPills.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -328,17 +332,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47269D42241FE79A008D58EB /* DayMomentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMomentType.swift; sourceTree = "<group>"; };
 		E23E36F8212191CD00A81C2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E26053EE212187FF00D013B5 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MasMagicPills.framework; path = MagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26053EE212187FF00D013B5 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MasMagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26053F12121880000D013B5 /* MagicPills.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicPills.h; sourceTree = "<group>"; };
 		E26053F22121880000D013B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26053F72121880000D013B5 /* MasMagicPills-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MasMagicPills-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26053FE2121880000D013B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E28123D72122C2CB00E4F6D0 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MasMagicPills.framework; path = MagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28123D72122C2CB00E4F6D0 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MasMagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28123DF2122C2CB00E4F6D0 /* MasMagicPills-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MasMagicPills-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E28124322122CC4C00E4F6D0 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MasMagicPills.framework; path = MagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28124322122CC4C00E4F6D0 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MasMagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E281243A2122CC4C00E4F6D0 /* MasMagicPills-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MasMagicPills-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E281244E2122CC5B00E4F6D0 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MasMagicPills.framework; path = MagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E281244E2122CC5B00E4F6D0 /* MasMagicPills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MasMagicPills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28C312021494B4300DE964B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F20082C1225DFC6E00AC6EE1 /* OptionalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
 		F20082C6225DFC9D00AC6EE1 /* BoolExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtensions.swift; sourceTree = "<group>"; };
@@ -599,6 +604,7 @@
 				F22A38E1227C767A0012C010 /* SharedDictionary.swift */,
 				F2496723230D504100C06E2E /* SemVer.swift */,
 				F2496740230EBDEF00C06E2E /* LastExecutionState.swift */,
+				47269D42241FE79A008D58EB /* DayMomentType.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -1224,6 +1230,7 @@
 				F22A356222807465004E8546 /* Fold.swift in Sources */,
 				F20082C2225DFC6E00AC6EE1 /* OptionalExtensions.swift in Sources */,
 				F2C78F1F238D67E1008C4846 /* UITableViewCellExtensions.swift in Sources */,
+				47269D43241FE79A008D58EB /* DayMomentType.swift in Sources */,
 				F2A74DB9225765CF001F0DF2 /* ArrayExtensions.swift in Sources */,
 				F62CC32D2270683C00DC46F2 /* UITableViewExtensions.swift in Sources */,
 				F22A38E7227C76FD0012C010 /* DictionaryExtensions.swift in Sources */,
@@ -1330,6 +1337,7 @@
 				F2008321225F83EF00AC6EE1 /* StringExtensions+Validators.swift in Sources */,
 				F22A355D22806EAA004E8546 /* DefinesPrimaryKey.swift in Sources */,
 				F200835822662DC400AC6EE1 /* TimeIntervalExtensions.swift in Sources */,
+				47269D44241FE7CC008D58EB /* DayMomentType.swift in Sources */,
 				F200832B225F862900AC6EE1 /* DataExtensions.swift in Sources */,
 				F2496742230EBDEF00C06E2E /* LastExecutionState.swift in Sources */,
 				F22A38E3227C767A0012C010 /* SharedDictionary.swift in Sources */,
@@ -1404,6 +1412,7 @@
 				F22A356422807465004E8546 /* Fold.swift in Sources */,
 				F20083772267899A00AC6EE1 /* StringExtensions+UIKit.swift in Sources */,
 				F2C78F20238D67E1008C4846 /* UITableViewCellExtensions.swift in Sources */,
+				47269D45241FE7CD008D58EB /* DayMomentType.swift in Sources */,
 				F2008327225F84A100AC6EE1 /* StringExtensions+Formating.swift in Sources */,
 				F20082C9225DFC9D00AC6EE1 /* BoolExtensions.swift in Sources */,
 				F22A38E9227C76FD0012C010 /* DictionaryExtensions.swift in Sources */,
@@ -1518,6 +1527,7 @@
 				F22A357622807843004E8546 /* DispatchQueueExtensions.swift in Sources */,
 				F22A38DB227C634F0012C010 /* OrderedSet.swift in Sources */,
 				F2AC727A23460D2E00661BE9 /* FormatterExtensions.swift in Sources */,
+				47269D46241FE7CF008D58EB /* DayMomentType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
