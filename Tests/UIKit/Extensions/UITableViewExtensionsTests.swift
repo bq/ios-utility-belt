@@ -15,20 +15,20 @@ class UITableViewExtensionsTests: XCTestCase {
     }
 
     func test_register_cell_with_class() {
-        tableView.register(UITableViewCell.self)
-        _ = tableView.dequeueReusableCell() as UITableViewCell
+        tableView.register(TableViewCellForTests.self)
+        _ = tableView.dequeueReusableCell() as TableViewCellForTests
     }
 
     func test_register_cell_with_class_and_indexpath() {
         let indexPath = IndexPath(row: 0, section: 0)
-        tableView.register(UITableViewCell.self)
-        _ = tableView.dequeueReusableCell(indexPath: indexPath) as UITableViewCell
+        tableView.register(TableViewCellForTests.self)
+        _ = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewCellForTests
     }
 
     func test_register_cell_with_nib_using_class() {
         let indexPath = IndexPath(row: 0, section: 0)
-        tableView.registerWithNib(UITableViewCell.self, bundle: Bundle(for: UITableViewExtensionsTests.self))
-        _ = tableView.dequeueReusableCell(indexPath: indexPath) as UITableViewCell
+        tableView.registerWithNib(TableViewCellForTests.self, bundle: Bundle(for: UITableViewExtensionsTests.self))
+        _ = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewCellForTests
     }
 
     func test_register_header_footer_view() {

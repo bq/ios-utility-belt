@@ -2,8 +2,6 @@ import UIKit
 
 public extension UIView {
 
-    // MARK: - Variables
-
     /// Border color
     var borderColor: UIColor? {
         get {
@@ -87,8 +85,11 @@ public extension UIView {
     /// Load view from nib.
     ///
     /// - Returns: optional UIView (if applicable).
-    class func fromNib<T: UIView>(bundle: Bundle = .main) -> T? {
-        return bundle.loadNibNamed(String(describing: T.self), owner: nil, options: nil)?[0] as? T
+    class func fromNib(bundle: Bundle = .main) -> Self {
+        guard let view = bundle.loadNibNamed(Self.xibName, owner: nil, options: nil)?[0] as? Self else {
+            fatalError("\(Self.xibName) could not be load view in bundle as \(Self.self)")
+        }
+        return view
     }
 
     /// Add array of subviews

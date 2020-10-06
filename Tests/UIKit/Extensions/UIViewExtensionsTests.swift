@@ -35,8 +35,11 @@ class UIViewExtensionsTests: XCTestCase {
     }
 
     func test_init_from_nib() {
-        let cell: UICollectionViewCell? = .fromNib(bundle: Bundle(for: UIViewExtensionsTests.self))
-        XCTAssertNotNil(cell)
+        let cell1 = TableViewCellForTests.fromNib(bundle: Bundle(for: UIViewExtensionsTests.self))
+        XCTAssertEqual(cell1.type, "UITableViewCell")
+
+        let cell2 = CollectionCellForTests.fromNib(bundle: Bundle(for: UIViewExtensionsTests.self))
+        XCTAssertEqual(cell2.type, "UICollectionViewCell")
     }
 
     func test_add_subviews() {
