@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class SharedDictionaryTests: XCTestCase {
     func test_init() {

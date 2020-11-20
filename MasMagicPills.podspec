@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name             = 'MagicPills'
-  s.version          = '2.2.6'
+  s.name             = 'MasMagicPills'
+  s.version          = '2.4.2'
   s.swift_version    = '5.0'
   s.summary          = 'Set of powerful utilities 💊.'
 
@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
 Set of powerful utilities for development in Swift (Support for iOS, tvOS and mac)
 DESC
 
-  s.homepage         = 'https://github.com/bq/swift-magic-pills'
+  s.homepage         = 'https://github.com/masmovil/swift-mas-magic-pills'
   s.license          = { :type => 'APACHE', :file => 'LICENSE' }
-  s.author           = { 'bq' => 'info@bq.com' }
-  s.source           = { :git => 'https://github.com/bq/swift-magic-pills.git', :tag => "v#{s.version.to_s}" }
-  #s.social_media_url = 'https://twitter.com/bqreaders'
+  s.authors          = { 'MásMóvil' => 'info@grupomasmovil.com' }
+  s.source           = { :git => 'https://github.com/masmovil/swift-mas-magic-pills.git', :tag => "v#{s.version.to_s}" }
+  s.social_media_url = 'https://twitter.com/masmovil'
 
   s.frameworks = 'Foundation'
 
@@ -27,7 +27,10 @@ DESC
   s.watchos.deployment_target = '4.0'
   s.watchos.frameworks = 'UIKit', 'WatchKit'
   s.watchos.source_files  = 'Source/Foundation/**/*.swift'
-  s.watchos.exclude_files = 'Source/Foundation/Extensions/StringExtensions+Formating.swift', 'Source/Foundation/Extensions/CALayerExtensions.swift', 'Source/Foundation/Extensions/CGFloatExtensions.swift'
+  s.watchos.exclude_files = 'Source/Foundation/Extensions/StringExtensions+Formating.swift', 
+    'Source/Foundation/Extensions/CALayerExtensions.swift', 
+    'Source/Foundation/Extensions/CGFloatExtensions.swift', 
+    'Source/Foundation/Extensions/NSAttributedStringExtensions.swift'
 
   s.tvos.deployment_target = '11.0'
   s.tvos.frameworks = 'UIKit'

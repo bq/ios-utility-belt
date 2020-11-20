@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E281244D2122CC5B00E4F6D0"
-               BuildableName = "MagicPills.framework"
-               BlueprintName = "MagicPills-watchOS"
-               ReferencedContainer = "container:MagicPills.xcodeproj">
+               BlueprintIdentifier = "E28123D62122C2CB00E4F6D0"
+               BuildableName = "MasMagicPills.framework"
+               BlueprintName = "MasMagicPills-macOS"
+               ReferencedContainer = "container:MasMagicPills.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,12 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E28123D62122C2CB00E4F6D0"
+            BuildableName = "MasMagicPills.framework"
+            BlueprintName = "MasMagicPills-macOS"
+            ReferencedContainer = "container:MasMagicPills.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E28123DE2122C2CB00E4F6D0"
+               BuildableName = "MasMagicPills-macOSTests.xctest"
+               BlueprintName = "MasMagicPills-macOSTests"
+               ReferencedContainer = "container:MasMagicPills.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -46,14 +63,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E281244D2122CC5B00E4F6D0"
-            BuildableName = "MagicPills.framework"
-            BlueprintName = "MagicPills-watchOS"
-            ReferencedContainer = "container:MagicPills.xcodeproj">
+            BlueprintIdentifier = "E28123D62122C2CB00E4F6D0"
+            BuildableName = "MasMagicPills.framework"
+            BlueprintName = "MasMagicPills-macOS"
+            ReferencedContainer = "container:MasMagicPills.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -64,10 +79,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E281244D2122CC5B00E4F6D0"
-            BuildableName = "MagicPills.framework"
-            BlueprintName = "MagicPills-watchOS"
-            ReferencedContainer = "container:MagicPills.xcodeproj">
+            BlueprintIdentifier = "E28123D62122C2CB00E4F6D0"
+            BuildableName = "MasMagicPills.framework"
+            BlueprintName = "MasMagicPills-macOS"
+            ReferencedContainer = "container:MasMagicPills.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

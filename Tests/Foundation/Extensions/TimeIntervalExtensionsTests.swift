@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class TimeIntervalExtensionsTests: XCTestCase {
     func test_formatted_for_positive_values() {

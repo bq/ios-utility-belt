@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class BundleExtensionsTests: XCTestCase {
     func test_version_number() {

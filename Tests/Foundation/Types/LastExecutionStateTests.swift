@@ -1,5 +1,5 @@
 import XCTest
-import MagicPills
+import MasMagicPills
 
 class LastExecutionStateTests: XCTestCase {
     private let jsonHelper = JSONTestHelper()

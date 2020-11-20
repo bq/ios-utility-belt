@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class XibRepresentableTests: XCTestCase {
     func test_xib_name() {

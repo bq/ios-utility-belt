@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class DifferenceTests: XCTestCase {
     func test_dumping_init_helper() {

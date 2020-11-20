@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 import UIKit
 
 class CALayerExtensionsTests: XCTestCase {

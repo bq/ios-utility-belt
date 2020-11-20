@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class DecimalExtensionsTests: XCTestCase {
     func test_format_megabytes_in_spanish_format() {
@@ -50,6 +50,23 @@ class DecimalExtensionsTests: XCTestCase {
         XCTAssertEqual((1_345 as Decimal).formatted(decimals: 1,
                                                     locale: .spanishSpain,
                                                     unit: Unit(symbol: "€")), "1345,0 €")
+
+        XCTAssertEqual((33 as Decimal).formatted(decimals: 2,
+                                                 currencyCode: .euro,
+                                                 locale: .spanishSpain), "33,00 €")
+
+        XCTAssertEqual((345 as Decimal).formatted(decimals: 4,
+                                                  currencyCode: .custom("AWA"),
+                                                  locale: .spanishSpain), "345,0000 AWA")
+    }
+
+    func test_format_numberstyle() {
+        XCTAssertEqual((1_000 as Decimal).formatted(decimals: 2,
+                                                    locale: .spanishSpain,
+                                                    numberStyle: .scientific), "1,00E3")
+
+        XCTAssertEqual((16_868 as Decimal).formatted(locale: .spanishSpain,
+                                                     numberStyle: .ordinal), "16.868.º")
     }
 
     func test_convert_miliseconds_to_seconds() {

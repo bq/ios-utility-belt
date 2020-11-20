@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class FoldTests: XCTestCase {
     func test_closure_parameters() {

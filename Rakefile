@@ -3,12 +3,12 @@
 task default: %w[setup]
 
 task(:setup) do
-  unless system('which brew')
-    raise '`brew` is required. Please install brew. https://brew.sh/'
-  end
+  raise '`brew` is required. Please install brew. https://brew.sh/' unless system('which brew')
+
   puts('➡️  Bundle')
   sh('brew bundle')
   sh('bundle install')
+
   puts('➡️  Overcommit')
   sh('bundle exec overcommit --install')
   sh('bundle exec overcommit --sign')

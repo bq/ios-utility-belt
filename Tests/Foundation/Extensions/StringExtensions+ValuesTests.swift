@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class StringExtensionsValuesTests: XCTestCase {
     func test_bool_value() {

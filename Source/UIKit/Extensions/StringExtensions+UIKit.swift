@@ -2,6 +2,67 @@ import UIKit
 
 public extension String {
 
+    /// Add multiples attributes
+    ///
+    /// - Parameters:
+    ///   - alignment: Alignment of the text
+    ///   - lineHeight: Line space + font height (CSS Line Height)
+    ///   - lineSpace: Line space value
+    ///   - paragraphSpace: Paragraph space value
+    ///   - letterSpacing: Space between characters
+    ///   - font: Font to use
+    ///   - color: Color to use
+    /// - Returns: Attributed string
+    func attributed(alignment: NSTextAlignment? = nil,
+                    lineHeight: CGFloat? = nil,
+                    lineSpace: CGFloat? = nil,
+                    paragraphSpace: CGFloat? = nil,
+                    letterSpacing: CGFloat? = nil,
+                    font: UIFont,
+                    color: UIColor? = nil) -> NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: self)
+        let style = NSMutableParagraphStyle()
+
+        if let alignment = alignment {
+            style.alignment = alignment
+        }
+
+        if let lineHeight = lineHeight {
+            style.maximumLineHeight = lineHeight
+            style.minimumLineHeight = lineHeight
+        }
+
+        if let lineSpace = lineSpace {
+            style.lineSpacing = lineSpace
+        }
+
+        if let paragraphSpace = paragraphSpace {
+            style.paragraphSpacing = paragraphSpace
+        }
+
+        attributedString.addAttribute(.paragraphStyle,
+                                      value: style,
+                                      range: NSRange(location: 0, length: self.count))
+
+        if let letterSpacing = letterSpacing {
+            attributedString.addAttribute(NSAttributedString.Key.kern,
+                                          value: letterSpacing,
+                                          range: NSRange(location: 0, length: self.count))
+        }
+
+        if let color = color {
+            attributedString.addAttribute(.foregroundColor,
+                                          value: color,
+                                          range: NSRange(location: 0, length: self.count))
+        }
+
+        attributedString.addAttribute(.font,
+                                      value: font,
+                                      range: NSRange(location: 0, length: self.count))
+
+        return attributedString
+    }
+
     /// Add specific font attribute to last # characters
     ///
     /// - Parameters:
@@ -26,36 +87,6 @@ public extension String {
             stringAttributed.addAttributes([.font: font], range: NSRange(location: 0, length: self.count))
         }
         return stringAttributed
-    }
-
-    /// Add multiples attributes
-    ///
-    /// - Parameters:
-    ///   - lineSpace: Line space value
-    ///   - paragraphSpace: Paragraph space value
-    ///   - font: Font to use
-    /// - Returns: Attributed string (optional)
-    func attributed(lineSpace: CGFloat? = nil,
-                    paragraphSpace: CGFloat? = nil,
-                    font: UIFont? = nil) -> NSAttributedString {
-        let descriptionAttributedString = NSMutableAttributedString(string: self)
-        let style = NSMutableParagraphStyle()
-        if let lineSpace = lineSpace {
-            style.lineSpacing = lineSpace
-        }
-        if let paragraphSpace = paragraphSpace {
-            style.paragraphSpacing = paragraphSpace
-        }
-        descriptionAttributedString.addAttribute(.paragraphStyle,
-                                                 value: style,
-                                                 range: NSRange(location: 0, length: self.count))
-        if let font = font {
-            descriptionAttributedString.addAttribute(.font,
-                                                     value: font,
-                                                     range: NSRange(location: 0, length: self.count))
-        }
-
-        return descriptionAttributedString
     }
 
     /// Bold text included in other text

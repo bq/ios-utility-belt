@@ -15,4 +15,21 @@ public extension String {
     var urlValue: URL? {
         return URL(string: self)
     }
+
+    /// Convert String to Date with Date Format (if don't specify it, will look for all Date Formats contemplated)
+    ///
+    /// - Parameters:
+    ///   - dateFormat: Format Date to convert
+    ///   - locale: Language rules for date
+    ///   - timeZone: Time zone to format date
+    /// - Returns: Date with specified or resolved format
+    func date(dateFormat: Date.Format? = nil,
+              locale: Locale = .posix,
+              timeZone: TimeZone = .utc) -> Date? {
+
+        return Date(formattedDate: self,
+                    dateFormat: dateFormat,
+                    locale: locale,
+                    timeZone: timeZone)
+    }
 }

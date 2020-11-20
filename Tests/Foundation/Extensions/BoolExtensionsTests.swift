@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class BoolExtensionsTests: XCTestCase {
     func test_is_false() {

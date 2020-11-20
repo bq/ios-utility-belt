@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class SequenceExtensionsTests: XCTestCase {
     func test_group() {

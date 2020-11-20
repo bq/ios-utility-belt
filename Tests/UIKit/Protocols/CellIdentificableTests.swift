@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class CellIdentificableTests: XCTestCase {
     func test_reuseIdentifier() {

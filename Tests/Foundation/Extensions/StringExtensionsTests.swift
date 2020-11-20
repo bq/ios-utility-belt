@@ -1,12 +1,32 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class StringExtensionsTests: XCTestCase {
+    func test_capitalizeWords() {
+        XCTAssertEqual("hola que tal?".capitalizeWords, "Hola Que Tal?")
+    }
+
+    func test_capitalizeSentences() {
+        XCTAssertEqual("hola. soy un test".capitalizeSentences, "Hola. Soy un test")
+    }
+
+    func test_addtrailingspaceifnotempty() {
+        XCTAssertEqual("".addTrailingSpaceIfNotEmpty, "")
+        XCTAssertEqual("hola".addTrailingSpaceIfNotEmpty, "hola ")
+    }
+
+    func test_trimed() {
+        XCTAssertEqual(" hola ".trimed, "hola")
+    }
+
     func test_capitalized_first_letter() {
+        XCTAssertEqual("".capitalizedFirstLetter, "")
         XCTAssertEqual("Hola".capitalizedFirstLetter, "Hola")
         XCTAssertEqual("HOLA".capitalizedFirstLetter, "HOLA")
         XCTAssertEqual("hOLA".capitalizedFirstLetter, "HOLA")
+        XCTAssertEqual("¿hola?".capitalizedFirstLetter, "¿Hola?")
+        XCTAssertEqual("¡chau!".capitalizedFirstLetter, "¡Chau!")
     }
 
     func test_capitalized_words() {
@@ -61,6 +81,8 @@ class StringExtensionsTests: XCTestCase {
     func test_satisfies_regex() {
         XCTAssertTrue("X1234567X".satisfiesRegex("[XYZ][0-9]{7}[0-9A-Z]"))
         XCTAssertTrue("X1234567X".satisfiesRegex("^[xyzXYZ]{1}[0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKET]{1}$"))
+        XCTAssertTrue("C12452341".satisfiesRegex("^([ABCDEFGHJKLMNPQRSUVW]{1})([0-9A-J]{8})$"))
+        XCTAssertTrue("85731245-Z".satisfiesRegex("^([0-9]{8})([-/]{0,1})([a-zA-Z])$"))
     }
 
     func test_replacing_regex_matches() {
@@ -101,4 +123,5 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("sample_text".localized(bundle: bundle, tableName: tableName), localizedExample)
         XCTAssertEqual("not_found".localized(bundle: bundle, tableName: tableName), "**not_found**")
     }
+
 }

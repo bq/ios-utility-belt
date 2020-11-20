@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class DictionaryExtensionsTests: XCTestCase {
     func test_getorput() {

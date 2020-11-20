@@ -187,8 +187,20 @@ public extension UIView {
                        options: .curveLinear,
                        animations: { () -> Void in
 
-            self.transform = self.transform.rotated(by: angleInRadians)
+                        self.transform = self.transform.rotated(by: angleInRadians)
         }, completion: completion)
+    }
+
+    /// Shake animation for view
+    func shake() {
+        transform = CGAffineTransform(translationX: 15, y: 0)
+        UIView.animate(withDuration: 0.4,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 1,
+                       options: .curveEaseInOut,
+                       animations: { self.transform = CGAffineTransform.identity },
+                       completion: nil)
     }
 
     // MARK: - Private Methods

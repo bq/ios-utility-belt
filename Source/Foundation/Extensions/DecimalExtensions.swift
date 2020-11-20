@@ -17,7 +17,7 @@ public extension Decimal {
         return self / 60
     }
 
-    /// Convert to Megabytes (1000 bytes) and format it with Locale and specific decimals
+    /// Convert given megas to Megabytes (1000 bytes) and format it with Locale and specific decimals
     ///
     /// - Parameters:
     ///   - locale: Language rules (optional) (by default use current)
@@ -35,7 +35,7 @@ public extension Decimal {
                          unit: .init(symbol: "MB"))
     }
 
-    /// Convert to Mebibytes (1024 bytes) and format it with Locale and specific decimals
+    /// Convert given megas to Mebibytes (1024 bytes) and format it with Locale and specific decimals
     ///
     /// - Parameters:
     ///   - locale: Language rules (optional) (by default use current)
@@ -81,14 +81,15 @@ public extension Decimal {
     ///   - unit: Unit for Measurement format
     /// - Returns: String with specified format
     func formatted(decimals: Int = 2,
-                   currencyCode: String? = nil,
+                   currencyCode: CurrencyCodeType? = nil,
                    locale: Locale? = nil,
                    numberStyle: NumberFormatter.Style? = nil,
                    unit: Unit = Unit(symbol: "")) -> String {
         let numberFormatter = NumberFormatter()
 
-        if let currencyCode = currencyCode {
+        if let currencyCode = currencyCode?.rawValue {
             numberFormatter.currencyCode = currencyCode
+            numberFormatter.numberStyle = .currency
         }
 
         if let numberStyle = numberStyle {

@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class DefinesPrimaryKeyTests: XCTestCase {
     func test_wrapped_value() {

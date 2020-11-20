@@ -4,6 +4,10 @@ public extension Optional {
     var isNil: Bool {
         return self == nil
     }
+
+    var isNotNil: Bool {
+        return !isNil
+    }
 }
 
 public extension Optional where Wrapped == Bool {

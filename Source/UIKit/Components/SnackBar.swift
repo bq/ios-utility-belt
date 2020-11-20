@@ -104,7 +104,7 @@ public extension SnackBar {
         view.addSubview(snackBar)
         UIView.animate(withDuration: 0.4, animations: {
             snackBar.frame.origin.y = view.frame.height - 80
-            Timer.scheduledTimer(withTimeInterval: TimeInterval(2),
+            Timer.scheduledTimer(withTimeInterval: TimeInterval(2.5),
                                  repeats: false,
                                  block: { _ in
                                     UIView.animate(withDuration: 0.4, animations: {

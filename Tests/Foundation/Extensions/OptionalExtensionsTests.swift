@@ -1,13 +1,13 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class OptionalExtensionsTests: XCTestCase {
     func test_is_not_nil() {
         let nothing: String? = "pole"
 
         XCTAssertNotNil(nothing)
-        XCTAssertTrue(!nothing.isNil)
+        XCTAssertTrue(nothing.isNotNil)
     }
 
     func test_is_nil() {

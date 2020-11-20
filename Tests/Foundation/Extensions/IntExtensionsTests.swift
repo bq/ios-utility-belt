@@ -1,11 +1,17 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class IntExtensionsTests: XCTestCase {
     func test_int_to_string_conversion() {
-        XCTAssertEqual((24 as Int).string, "24")
-        XCTAssertEqual((1_024 as Int).string, "1024")
-        XCTAssertNotEqual((1_024 as Int).string, "10")
+        XCTAssertEqual((24 as Int).toString, "24")
+        XCTAssertEqual((1_024 as Int).toString, "1024")
+        XCTAssertNotEqual((1_024 as Int).toString, "10")
+    }
+    
+    func test_int_to_nsnumber_conversion() {
+        let expectedResultInt = 20
+        let expectedResultNumber = expectedResultInt.asNSNumber
+        XCTAssertEqual(expectedResultInt, expectedResultNumber.intValue)
     }
 }

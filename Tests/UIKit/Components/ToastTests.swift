@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-import MagicPills
+import MasMagicPills
 
 class ToastTests: XCTestCase {
     func test_show_toast() {

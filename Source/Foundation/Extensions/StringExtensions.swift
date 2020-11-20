@@ -1,8 +1,31 @@
 import Foundation
 
 public extension String {
+    var addTrailingSpaceIfNotEmpty: String {
+        return isEmpty ? "" : "\(self) "
+    }
+
+    var capitalizeWords: String {
+        return self.split(separator: " ")
+            .map { $0.capitalized }
+            .joined(separator: " ")
+    }
+
+    var capitalizeSentences: String {
+        return self.components(separatedBy: ". ")
+            .map { String($0).capitalizedFirstLetter }
+            .joined(separator: ". ")
+    }
+
+    func starts(withAnyOf: [String]) -> Bool {
+        return withAnyOf.contains { starts(with: $0) }
+    }
+
     var capitalizedFirstLetter: String {
-        return prefix(1).uppercased() + dropFirst()
+        if starts(withAnyOf: ["¡", "¿"]) {
+            return prefix(2).uppercased() + dropFirst(2)
+        }
+        return prefix(1).uppercased() + dropFirst(1)
     }
 
     var capitalizedWords: String {
@@ -122,22 +145,5 @@ public extension String {
             return nil
         }
         return NSRange(range, in: self)
-    }
-
-    /// Convert String to Date with Date Format (if don't specify it, will look for all Date Formats contemplated)
-    ///
-    /// - Parameters:
-    ///   - dateFormat: Format Date to convert
-    ///   - locale: Language rules for date
-    ///   - timeZone: Time zone to format date
-    /// - Returns: Date with specified or resolved format
-    func date(dateFormat: Date.Format? = nil,
-              locale: Locale = .posix,
-              timeZone: TimeZone = .utc) -> Date? {
-
-        return Date(formattedDate: self,
-                    dateFormat: dateFormat,
-                    locale: locale,
-                    timeZone: timeZone)
     }
 }

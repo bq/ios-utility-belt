@@ -1,6 +1,6 @@
 import XCTest
 import UIKit
-import MagicPills
+import MasMagicPills
 
 class UITableViewExtensionsTests: XCTestCase {
 

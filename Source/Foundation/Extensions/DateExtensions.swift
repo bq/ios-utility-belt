@@ -21,6 +21,7 @@ public extension Date {
     /// - year: 2019
     /// - spanishDayAndMonth: 09 de agosto
     enum Format: String, CaseIterable {
+        case iso8601 = "yyyy-MM-dd'T'HH:mm:ssZ"
         case rfc3339 = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         case rfc2822 = "EEE, dd MMM yyyy HH:mm:ss Z"
         case rfc1123 = "EEE, dd MMM yyyy HH:mm:ss z"
@@ -38,13 +39,32 @@ public extension Date {
         case shortYear = "yy"
         case year = "yyyy"
         case spanishDayAndMonth = "dd 'de' MMMM"
+        case dateStyleShort = "dateStyleShort"
+        case dateStyleMedium = "dateStyleMedium"
+        case dateStyleLong = "dateStyleLong"
+        case dateStyleFull = "dateStyleFull"
 
         func formatter(locale: Locale? = nil,
                        timeZone: TimeZone? = nil) -> DateFormatter {
 
             let dateFormatter = Formatter.date(locale: locale,
                                                timeZone: timeZone)
-            dateFormatter.dateFormat = self.rawValue
+
+            switch self {
+            //For ISO8601 dates, if the timezone is UTC, use Z instead of +0000
+            case .iso8601 where timeZone == .utc:
+                dateFormatter.dateFormat = self.rawValue.replacingOccurrences(of: "Z", with: "'Z'")
+            case .dateStyleShort:
+                dateFormatter.dateStyle = .short
+            case .dateStyleMedium:
+                dateFormatter.dateStyle = .medium
+            case .dateStyleLong:
+                dateFormatter.dateStyle = .long
+            case .dateStyleFull:
+                dateFormatter.dateStyle = .full
+            default:
+                dateFormatter.dateFormat = self.rawValue
+            }
             return dateFormatter
         }
 
@@ -53,7 +73,15 @@ public extension Date {
                   timeZone: TimeZone? = nil) -> Date? {
 
             let dateFormatter = formatter(locale: locale, timeZone: timeZone)
-            return dateFormatter.date(from: formattedDate)
+            var date = dateFormatter.date(from: formattedDate)
+
+            //For ISO8601 dates, try to parse without seconds if the default input don't pass...
+            if self == .iso8601 && date == nil {
+                dateFormatter.dateFormat = dateFormatter.dateFormat.replacingOccurrences(of: ":ss", with: "")
+                date = dateFormatter.date(from: formattedDate)
+            }
+
+            return date
         }
     }
 
@@ -91,6 +119,46 @@ public extension Date {
         self = Date(timeIntervalSince1970: millisecondsSince1970 / 1_000)
     }
 
+    /// Return a new date by adding the given years
+    func adding(years: Int) -> Date {
+        guard let newDate = Calendar.current.date(byAdding: DateComponents(year: years), to: self) else {
+            fatalError("Cannot add \(years) years to date \(self)")
+        }
+        return newDate
+    }
+
+    /// Return a new date by adding the given days
+    func adding(days: Int) -> Date {
+        guard let newDate = Calendar.current.date(byAdding: DateComponents(day: days), to: self) else {
+            fatalError("Cannot add \(days) days to date \(self)")
+        }
+        return newDate
+    }
+
+    /// Return a new date by adding the given months
+    func adding(months: Int) -> Date {
+        guard let newDate = Calendar.current.date(byAdding: DateComponents(month: months), to: self) else {
+            fatalError("Cannot add \(months) months to date \(self)")
+        }
+        return newDate
+    }
+
+    /// Return a new date by adding the given hours
+    func adding(hours: Int) -> Date {
+        guard let newDate = Calendar.current.date(byAdding: DateComponents(hour: hours), to: self) else {
+            fatalError("Cannot add \(hours) hours to date \(self)")
+        }
+        return newDate
+    }
+
+    /// Return a new date by adding the given minutes
+    func adding(minutes: Int) -> Date {
+        guard let newDate = Calendar.current.date(byAdding: DateComponents(minute: minutes), to: self) else {
+            fatalError("Cannot add \(minutes) minutes to date \(self)")
+        }
+        return newDate
+    }
+
     /// Milliseconds since midnight UTC on January 1st, 1970 that corresponds with Date
     var millisecondsSince1970: Double {
         return timeIntervalSince1970 * 1_000.0
@@ -100,6 +168,12 @@ public extension Date {
     var isInTheFirstElevenDaysOfTheMonth: Bool {
         let day = Calendar.current.component(.day, from: self)
         return 1...11 ~= day
+    }
+
+    /// Check if day in date is between day 1 and 3 of the month (included)
+    var isInTheFirstThreeDaysOfTheMonth: Bool {
+        let day = Calendar.current.component(.day, from: self)
+        return 1...3 ~= day
     }
 
     /// Check if day in date corresponds with current day
@@ -142,5 +216,27 @@ public extension Date {
             .dateComponents([.month],
                             from: startDateComponents,
                             to: endDateComponents).month!
+    }
+
+    /// Calculate moment of day
+    var dayMoment: DayMomentType {
+        let dateComponents = Calendar.current.dateComponents([.hour], from: self)
+
+        if let hour = dateComponents.hour {
+            switch hour {
+            case 7..<15:
+                return .morning
+            case 15..<21:
+                return .afternoon
+            default:
+                return .night
+            }
+        }
+        return .morning
+    }
+
+    /// Give the previous month name from current Date
+    static func previousMonthName(locale: Locale = .spanishSpain) -> String {
+        return Date().adding(months: -1).formatted(with: .month, locale: .spanishSpain)
     }
 }
